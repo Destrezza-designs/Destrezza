@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../header/Header'
+import Header from './Header'
 import paper from '@/public/home/Paper44.png'
 import Image from 'next/image'
 import chair from '@/public/home/Img.png'
