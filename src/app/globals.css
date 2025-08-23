@@ -19,6 +19,8 @@ body {
 button{
   cursor: pointer;
 }
-
+.premadeBorder{
+  border: 1px solid black;
+}
 
 
