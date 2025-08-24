@@ -1,6 +1,5 @@
 import Footor from '@/components/Footor'
 import Header from '@/components/product/Header'
-import RedirectButton from '@/components/utils/RedirectButton'
 import Image from 'next/image'
 import React from 'react'
 import p1 from '@/public/contact/location.png'
@@ -12,7 +11,7 @@ const page = () => {
             <Header />
             <div className='mt-[80px]' >
               <p className='text-[58px] leading-[68px] uppercase' >Find Us Here</p>
-              <p className='text-[18px] font-[400] mt-[24px] w-[70%]' >Come visit us and experience Destrezza up close. Whether you're seeking inspiration, exploring our latest designs, or just dropping by — we’re here. Step into our space and see where creativity meets craftsmanship.</p>
+              <p className='text-[18px] font-[400] mt-[24px] w-[70%]' >Come visit us and experience Destrezza up close. Whether you&lsquo;re seeking inspiration, exploring our latest designs, or just dropping by — we’re here. Step into our space and see where creativity meets craftsmanship.</p>
               <div className='flex gap-[68px] mt-[80px]' >
                 <div>
                   <p className='text-[18px] uppercase' >PHONE NUMBER</p>

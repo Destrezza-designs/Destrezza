@@ -13,8 +13,8 @@ const Header = () => {
         <div className='flex text-[14px] gap-[24px] uppercase' >
             <button onClick={() => router.push('/')} className='uppercase' >HOME</button>
             <button onClick={() => router.push('/about')} className='uppercase' >ABOUT US</button>
-            <button className='uppercase' >PRODUCTS</button>
-            <button className='uppercase' >GALLERY</button>
+            <button onClick={() => router.push('/product')} className='uppercase' >PRODUCTS</button>
+            <button onClick={() => router.push('/gallery')} className='uppercase' >GALLERY</button>
             <button onClick={() => router.push('/contact')} className='uppercase' >CONTACT</button>
         </div>
         

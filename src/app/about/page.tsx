@@ -26,24 +26,24 @@ const page = () => {
         <div className='mt-[80px] flex flex-col justify-center items-center gap-[148px]' >
             
                 <div className='flex flex-col justify-center items-center' >
-                    <h1 className="text-[80px] font-[700] uppercase text-center bg-[url('@/public/About/Eleagence.jpg')] bg-cover bg-center text-transparent bg-clip-text">
+                    <h1 className="text-[80px] font-[700] uppercase text-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FutilityImage%2FEleagence.jpg?alt=media&token=3c271e61-9709-47ce-861f-72463df8a418')] bg-cover bg-center text-transparent bg-clip-text">
                         ELEGANCE
                     </h1>
                     <p className='text-[#868684] w-[70%] text-[18px] font-[400] leading-[28px] text-center' >Every curve, edge, and finish is thoughtfully designed to exude timeless sophistication. We believe elegance lies in subtlety — where form enhances space without overpowering it.</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center' >
-                    <h1 className="text-[80px] font-[700] uppercase text-center bg-[url('@/public/About/Utility.png')] bg-cover bg-center text-transparent bg-clip-text">
+                    <h1 className="text-[80px] font-[700] uppercase text-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FutilityImage%2FUtility.png?alt=media&token=a8375984-35b5-4dd2-9e32-3cdef8ccc8fd')] bg-cover bg-center text-transparent bg-clip-text">
                         Utility
                     </h1>
                     <p className='text-[#868684] w-[70%] text-[18px] font-[400] leading-[28px] text-center' >True beauty is functional. Our pieces are created with purpose, offering comfort, durability, and intelligent design that integrates seamlessly into everyday living.</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center' >
-                    <h1 className="text-[80px] font-[700] uppercase text-center bg-[url('@/public/About/Simplicity.png')] bg-cover bg-center text-transparent bg-clip-text">
+                    <h1 className="text-[80px] font-[700] uppercase text-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FutilityImage%2FSimplicity.png?alt=media&token=8ed9350e-b94d-4a23-8faa-99ba2b214e81')] bg-cover bg-center text-transparent bg-clip-text">
                         Simplicity
                     </h1>
-                    <p className='text-[#868684] w-[70%] text-[18px] font-[400] leading-[28px] text-center' >We embrace clean lines and intentional choices. Simplicity isn't about less — it's about clarity, balance, and allowing quality materials and craftsmanship to speak for themselves.</p>
+                    <p className='text-[#868684] w-[70%] text-[18px] font-[400] leading-[28px] text-center' >We embrace clean lines and intentional choices. Simplicity isn&lsquo;t about less — it&lsquo;s about clarity, balance, and allowing quality materials and craftsmanship to speak for themselves.</p>
                 </div>
             
         </div>

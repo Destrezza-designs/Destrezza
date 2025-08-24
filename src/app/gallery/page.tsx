@@ -1,9 +1,7 @@
-'use client'
-import Footor from '@/components/Footor'
 import Header from '@/components/product/Header'
 import Image from 'next/image'
 import React from 'react'
-import { useRouter } from 'next/navigation'
+import Footor from '@/components/Footor'
 
 const data = [
     {
@@ -187,37 +185,182 @@ const data = [
         "year": "2024 Collection",
     },
 ]
-const Page = () => {
 
-    const router = useRouter();
-
+const page = () => {
   return (
-    <div className='text-black' >
-        <div className='mt-[48px] mx-[48px]' >
+    <div>
+        <div className='mx-[48px] mt-[48px]' >
             <Header />
-            <div className='mt-[80px]' >
-                <p className='text-[#868684] text-[14px] uppercase text-center' >products</p>
-                <div className='flex flex-col justify-center items-center' >
-                    <h1 className="text-[80px] leading-[68px] mt-[19px] font-[600] uppercase text-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FutilityImage%2FImg.jpg?alt=media&token=5b02ec17-3f7a-4075-9556-e474e1ff9dc3')] bg-cover bg-center text-transparent bg-clip-text">
-                        Designed to Define, Built <br /> to Last
-                    </h1>
-                </div>
-            </div>
-            
-            <div className="flex flex-wrap justify-center gap-[14px] gap-y-[48px] mt-[80px]">
-                {data.map((item, index) => (
-                    <button key={index} className="flex flex-col justify-center items-center">
-                        <div onClick={()=>router.push(`/product/${index+1}`)} className="h-[614px] w-[30vw] bg-slate-300">
-                            <Image src={item.mainImage} alt={item.name} width={340} height={500} className="!w-full h-full object-cover" />
-                        </div>
-                        <p className="text-left w-full text-[#141414] text-[18px] font-[600] leading-[28px] mt-[14px]">{item.name}</p>
-                    </button>
-                ))}
-            </div>
         </div>
+        <div className='my-[80px] mx-[48px] flex flex-col gap-[14px]'>
+    <div className='flex gap-[14px]'>
+        <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
+            <Image 
+                src={data[0].mainImage} 
+                alt={data[0].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+            <Image 
+                src={data[1].image2} 
+                alt={data[1].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+        </div>
+        <div className='flex flex-col gap-[14px]'>
+            <Image 
+                src={data[2].image} 
+                alt={data[2].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+            />
+            <Image 
+                src={data[3].mainImage} 
+                alt={data[3].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+            />
+            <Image 
+                src={data[4].image2} 
+                alt={data[4].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+            />
+        </div>
+        <div className='flex flex-col gap-[14px]'>
+            <Image 
+                src={data[5].mainImage} 
+                alt={data[5].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+            <Image 
+                src={data[6].image} 
+                alt={data[6].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+        </div>
+    </div>
+    <div className='flex flex-col gap-[14px]'>  
+        <div className='flex gap-[14px]'>
+            <Image 
+                src={data[7].mainImage} 
+                alt={data[7].name} 
+                width={665} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+            <Image 
+                src={data[8].image} 
+                alt={data[8].name} 
+                width={665} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+        </div>
+        <div className='flex gap-[14px]'>
+            <Image 
+                src={data[9].image2} 
+                alt={data[9].name} 
+                width={665} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+            <Image 
+                src={data[10].mainImage} 
+                alt={data[10].name} 
+                width={665} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+        </div>
+    </div>
+    <div className='flex gap-[14px]'>
+        <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
+            <Image 
+                src={data[11].image} 
+                alt={data[11].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+            <Image 
+                src={data[12].mainImage} 
+                alt={data[12].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+        </div>
+        <div className='flex flex-col gap-[14px]'>
+            <Image 
+                src={data[0].image} 
+                alt={data[0].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+            />
+            <Image 
+                src={data[1].mainImage} 
+                alt={data[1].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+            />
+            <Image 
+                src={data[2].image2} 
+                alt={data[2].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+            />
+        </div>
+        <div className='flex flex-col gap-[14px]'>
+            <Image 
+                src={data[3].image} 
+                alt={data[3].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+            <Image 
+                src={data[4].mainImage} 
+                alt={data[4].name} 
+                width={438} 
+                height={600} 
+                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+            />
+        </div>
+    </div>
+    <div className='flex flex-col gap-[14px]'>
+        <Image 
+            src={data[5].image2} 
+            alt={data[5].name} 
+            width={1344} 
+            height={600} 
+            className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+        />
+        <Image 
+            src={data[6].mainImage} 
+            alt={data[6].name} 
+            width={1344} 
+            height={600} 
+            className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+        />
+    </div>
+</div>
         <Footor />
     </div>
   )
 }
 
-export default Page
+export default page

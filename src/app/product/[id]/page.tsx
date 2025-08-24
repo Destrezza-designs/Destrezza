@@ -189,7 +189,7 @@ const data = [
 ]
 
 
-const page = () => {
+const Page = () => {
 
     const {id} = useParams();
     const idNum = Number(id);
@@ -285,4 +285,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
