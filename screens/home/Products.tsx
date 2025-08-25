@@ -1,12 +1,18 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import P1 from '@/public/home/products/Img.png'
 import P2 from '@/public/home/products/Img2.png'
 import P3 from '@/public/home/products/Img3.png'
 import P4 from '@/public/home/products/Img4.png'
+import { useRouter } from 'next/navigation'
 
 const Products = () => {
+
+    const router = useRouter();
+
   return (
+
     <div className='relative text-[#141414] mt-[80px] overflow-hidden' >
         <div className='absolute top-0 left-0 z-[-1]' >
             <svg width="1440" height="2230" viewBox="0 0 1440 2230" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +57,7 @@ const Products = () => {
             </div>
         </div>
 
-        <button className='flex gap-[12px] uppercase mx-[48px] px-[16px] py-[16px] mt-[24px]' >All Products
+        <button onClick={() => router.push('/product')} className='flex gap-[12px] uppercase mx-[48px] px-[16px] py-[16px] mt-[24px]' >All Products
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#141414" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

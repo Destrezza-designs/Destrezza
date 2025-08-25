@@ -18,8 +18,8 @@ const Main = () => {
                     <Header />
                 </div>
                 <div className='flex flex-1 flex-col justify-center items-center gap-[24px] text-center mt-[48px]' >
-                    <p className='text-[58px] font-[400] uppercase leading-[74px]' >Transform your space with our <br /> exquisite furniture collection</p>
-                    <p className='px-[20%] text-[18px] font-[300] leading-[28px]' >Experience the art of fine furniture. Where craftsmanship meets passion. Each piece is thoughtfully designed, precisely built, and elegantly finished to bring luxury and function into your space.</p>
+                    <p className='text-[58px] font-[500] uppercase leading-[74px]' >Transform your space with our <br /> exquisite furniture collection</p>
+                    <p className='px-[20%] text-[18px] font-[400] leading-[28px]' >Experience the art of fine furniture. Where craftsmanship meets passion. Each piece is thoughtfully designed, precisely built, and elegantly finished to bring luxury and function into your space.</p>
                 </div>
             
             </div>

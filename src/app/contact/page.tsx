@@ -31,7 +31,7 @@ const page = () => {
             </div>
             <Image src={p1} alt='Location Image' className='w-full h-auto mt-[80px]'  />
             <div className='flex flex-1 h-[550px] justify-between items-center mt-[80px] ' >
-              <div className='w-[50%] flex flex-col h-full justify-between  bg-red-500' > 
+              <div className='w-[50%] flex flex-col h-full justify-between  ' > 
                 <div className='flex flex-col flex-1 ' >
                   <p className='text-[14px] text-[#868684] uppercase' >CONTACT</p>
                   <p className='text-[36px] uppercase mt-[14px]'  >Reach out, connect, <br /> and let’s <br /> craft something beautiful.</p>

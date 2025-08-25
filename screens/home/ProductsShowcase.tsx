@@ -10,7 +10,7 @@ import P7 from '@/public/home/products/Frame7.png'
 
 const ProductsShowcase = () => {
   return (
-    <div className='bg-[#141414] p-[48px] w-screen flex flex-col gap-[48px] justify-center items-center' > 
+    <div className='bg-[#141414] p-[48px] w-screen flex flex-col gap-[48px] justify-center items-center mt-[80px]' > 
         <div className='grid grid-cols-3 gap-[24px] w-[100%]' >
 
             <div className='flex flex-col gap-[24px]' >

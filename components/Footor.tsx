@@ -25,16 +25,21 @@ const Footor = () => {
                 <div className='flex gap-[68px] mt-[48px]' >
                     <div>
                         <p className='text-[18px] uppercase' >PHONE NUMBER</p>
-                        <p className='text-[16px] font-[400] mt-[18px]'>+91 9765438781</p>
-                        <p className='text-[16px] font-[400]'>+91 9865487981</p>
+                        <p className='text-[16px] font-[400] mt-[18px]'>+91 81295 01494</p>
+                        <p className='text-[16px] font-[400]'>+91 79943 17246</p>
                     </div>
                     <div>
                         <p className='text-[18px] uppercase' >ADDRESS</p>
-                        <p className='text-[16px] font-[400] mt-[18px]'>1234 Elmwood Avenue, 690548 <br />Trissur, Kerala, India</p>
+                        <p className='text-[16px] font-[400] mt-[18px]'>Destrezzza art house Pvt Ltd, building no.24 <br />
+                                                                        Trikkanapuram po <br />
+                                                                        Thavanoor road Jn <br />
+                                                                        Pincode 679573 <br />
+                                                                        Kuttipuram, Malappuram district
+                                                                        </p>
                     </div>
                     <div>
                         <p className='text-[18px] uppercase' >Opening Hours</p>
-                        <p className='text-[16px] font-[400] mt-[18px]'>Mon to Sat,    8AM - 8PM</p>
+                        <p className='text-[16px] font-[400] mt-[18px]'>Mon to Sat,    9AM - 6PM</p>
                     </div>
                 </div>
             </div>
