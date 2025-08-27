@@ -23,7 +23,7 @@ const Products = () => {
             <p className='text-[#868684] text-[14px] uppercase' >Designed to be loved</p>
             <p className='text-[36px] uppercase' >Our Products</p>
             <div className='flex gap-[48px] mt-[20px]' >
-                <Image src={P1} alt='products Image' className='w-[45%] h-fit max-w-[50%]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P1} alt='products Image' className='w-[45%] h-fit max-w-[50%]' />
                 <div className='w-[55%]' >
                     <p className='text-[36px] uppercase' >Kizuki STudy table and chair</p>
                     <p className='text-[18px] font-[400] mt-[20px]' >Rooted in calm, functional elegance, the Kizuki Study Table & Chair set is a nod to mindful living and purposeful work. Inspired by Japanese simplicity and crafted with natural materials, it creates a serene workspace where clarity, creativity, and comfort coexist.
@@ -36,11 +36,11 @@ const Products = () => {
                     <p className='text-[36px] uppercase' >Crown Seater</p>
                     <p className='text-[18px] font-[400] mt-[20px]' >Experience luxury and comfort with the Crown Seater. Designed to be the focal point of any living space, this elegant piece combines plush upholstery with a regal design, offering a sophisticated seating solution that excludes style and invites relaxation.</p>
                 </div>
-                <Image src={P2} alt='products Image' className='w-[45%] h-fit max-w-[50%]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P2} alt='products Image' className='w-[45%] h-fit max-w-[50%]' />
             </div>
 
             <div className='flex gap-[48px] mt-[48px]' >
-                <Image src={P3} alt='products Image' className='w-[45%] h-fit max-w-[50%]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P3} alt='products Image' className='w-[45%] h-fit max-w-[50%]' />
                 <div className='w-[55%]' >
                     <p className='text-[36px] uppercase' >Comfish master</p>
                     <p className='text-[18px] font-[400] mt-[20px]' >Indulge in unparalleled relaxation with the Comfish Master, a perfect blend of luxurious comfort and sophisticated style. Designed to enhance your living space, this masterful piece offers exceptional support and a contemporary aesthetic, making it the ideal choice for any modern home.</p>
@@ -53,7 +53,7 @@ const Products = () => {
                     <p className='text-[18px] font-[400] mt-[20px]' >The Wellash Chair is a celebration of gentle curves, detailed craftsmanship, and serene comfort. With its cushioned seated, ergonomic backrest, and sculptural wooden frame. It brings a sense of warmth and elegance to any space - whether used as a dining chair, lounge accent, or work chair. 
                     Designed to be both functional and stylish, the Wellash Chair pairs effortlessly with modern, minimal, or earthy interior themes.</p>
                 </div>
-                <Image src={P4} alt='products Image' className='w-[45%] h-fit max-w-[50%]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P4} alt='products Image' className='w-[45%] h-fit max-w-[50%]' />
             </div>
         </div>
 

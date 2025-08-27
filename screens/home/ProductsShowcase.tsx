@@ -14,19 +14,19 @@ const ProductsShowcase = () => {
         <div className='grid grid-cols-3 gap-[24px] w-[100%]' >
 
             <div className='flex flex-col gap-[24px]' >
-                <Image src={P1} alt='Product Image' className='w-auto h-[600px]' />
-                <Image src={P2} alt='Product Image' className='w-auto h-[600px]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P1} alt='Product Image' className='w-auto h-[600px]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P2} alt='Product Image' className='w-auto h-[600px]' />
             </div>
 
             <div className='flex flex-col gap-[24px]' >
-                <Image src={P3} alt='Product Image' className='w-auto h-[288px]' />
-                <Image src={P4} alt='Product Image' className='w-auto h-[600px]' />
-                <Image src={P5} alt='Product Image' className='w-auto h-[288px]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P3} alt='Product Image' className='w-auto h-[288px]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P4} alt='Product Image' className='w-auto h-[600px]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P5} alt='Product Image' className='w-auto h-[288px]' />
             </div>
 
             <div className='flex flex-col gap-[24px]' >
-                <Image src={P6} alt='Product Image' className='w-auto h-[600px]' />
-                <Image src={P7} alt='Product Image' className='w-auto h-[600px]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P6} alt='Product Image' className='w-auto h-[600px]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P7} alt='Product Image' className='w-auto h-[600px]' />
             </div>
 
         </div>

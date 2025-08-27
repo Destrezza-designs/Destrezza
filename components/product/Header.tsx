@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className='flex justify-between items-center text-black' >
         <NamedLogo />
-        <div className='flex text-[14px] gap-[24px] uppercase' >
+        <div className='flex text-[14px] gap-[24px] uppercase font-[500]' >
             <button onClick={() => router.push('/')} className='uppercase' >HOME</button>
             <button onClick={() => router.push('/about')} className='uppercase' >ABOUT US</button>
             <button onClick={() => router.push('/product')} className='uppercase' >PRODUCTS</button>

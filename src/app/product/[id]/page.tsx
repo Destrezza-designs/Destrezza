@@ -4,6 +4,7 @@ import { useParams } from 'next/navigation'
 import Header from '@/components/product/Header';
 import Footor from '@/components/Footor';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const data = [
     {
@@ -194,6 +195,7 @@ const Page = () => {
     const {id} = useParams();
     const idNum = Number(id);
 
+    const router = useRouter();
 
   return (
     <div>
@@ -201,34 +203,34 @@ const Page = () => {
             <Header />
 
             <div className='my-[40px] flex gap-[14px] h-[500px] overflow-hidden' >
-                <Image unoptimized  src={data[idNum-1].mainImage} width={600} height={100} className='w-[60%] h-auto object-cover' alt='Main Image' />
-                <Image unoptimized  src={data[idNum-1].image} width={400} height={100}  className='w-[40%] h-auto object-cover' alt='Main Image' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  unoptimized  src={data[idNum-1].mainImage} width={600} height={100} className='w-[60%] h-auto object-cover' alt='Main Image' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  unoptimized  src={data[idNum-1].image} width={400} height={100}  className='w-[40%] h-auto object-cover' alt='Main Image' />
             </div>
             <div>
                 <p className='text-[58px] leading-[68px] uppercase' >{data[idNum-1].name} <br /> {data[idNum-1].title}</p>
             </div>
-            <div className='mt-[60px]' >
+            <div className='mt-[64px]' >
                 <div className='flex justify-between items-start' >
-                    <p className='text-[18px]' >Description</p>
-                    <p className='text-[24px] w-[70%]' >{data[idNum-1].disc}</p>
+                    <p className='text-[18px] font-[500] uppercase' >Description</p>
+                    <p className='text-[24px] w-[70%] font-[300]' >{data[idNum-1].disc}</p>
                 </div>
 
                 <div className='flex justify-between items-start mt-[64px] ' >
-                    <p className='text-[18px]' >Technical <br /> Specification</p>
+                    <p className='text-[18px] font-[500] uppercase' >Technical <br /> Specification</p>
                     <div className='w-[70%]' >
                         <div className='flex justify-between items-start border-t-[1px] border-[#00000040] py-[24px]' >
                             <p className='text-[18px] leading-[27px] font-[400]' >MATERIAL</p>
                             <p className='text-[18px] leading-[27px] font-[400] w-[80%]' >{data[idNum-1].disc}</p>
                         </div>
-                        <div className='flex justify-between items-start border-t-[1px] border-[#00000040] py-[24px]' >
+                        <div className='flex justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
                             <p className='text-[18px] leading-[27px] font-[400]' >COLOR</p>
                             <p className='text-[18px] leading-[27px] font-[400] w-[80%]' >{data[idNum-1].color}</p>
                         </div>
-                        <div className='flex justify-between items-start border-t-[1px] border-[#00000040] py-[24px]' >
+                        <div className='flex justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
                             <p className='text-[18px] leading-[27px] font-[400]' >CARE INSTRUCTION</p>
                             <p className='text-[18px] leading-[27px] font-[400] w-[80%]' >{data[idNum-1].care}</p>
                         </div>
-                        <div className='flex justify-between items-start border-t-[1px] border-[#00000040] py-[24px]' >
+                        <div className='flex justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
                             <p className='text-[18px] leading-[27px] font-[400]' >YEAR</p>
                             <p className='text-[18px] leading-[27px] font-[400] w-[80%]' >{data[idNum-1].year}</p>
                         </div>
@@ -236,16 +238,16 @@ const Page = () => {
                 </div>
 
             </div>
-            <div className='flex flex-col gap-[8px]' >
+            <div className='flex flex-col gap-[8px] mt-[64px]' >
                 <div className='flex gap-[8px]' >
-                    <Image
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
                         src={data[idNum-1].image}
                         className='w-full h-[570px] object-cover'
                         alt='Main Image'
                         width={1024}
                         height={576}
                     />
-                     <Image
+                     <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
                         src={data[idNum-1].image}
                         className='w-full h-[570px] object-cover scaleX(-1)'
                         alt='Main Image'
@@ -254,7 +256,7 @@ const Page = () => {
                         style={{transform: 'scaleX(-1)'}}
                     />
                 </div>
-                <Image
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
                     src={data[idNum-1].mainImage}
                     className='w-full h-[570px] object-cover'
                     alt='Main Image'
@@ -262,14 +264,14 @@ const Page = () => {
                     height={576}
                 />
                 <div className='flex gap-[8px]' >
-                    <Image
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
                         src={data[idNum-1].image2}
                         className='w-full h-[570px] object-cover'
                         alt='Main Image'
                         width={1024}
                         height={576}
                     />
-                     <Image
+                     <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
                         src={data[idNum-1].image2}
                         className='w-full h-[570px] object-cover scaleX(-1)'
                         alt='Main Image'
@@ -278,6 +280,20 @@ const Page = () => {
                         style={{transform: 'scaleX(-1)'}}
                     />
                 </div>
+            </div>
+            <div className='mt-[64px] ' >
+                <p className='text-[36px] font-[500] uppercase' >Other Collections</p>
+                <div className="flex flex-wrap justify-center gap-[14px]  mt-[24px]">
+                    {data.slice(idNum, idNum + 3).map((item, index) => (
+                        <button key={index} className="flex flex-col justify-center items-center">
+                            <div onClick={()=>router.push(`/product/${idNum+1+index}`)} className="h-[614px] w-[30vw] bg-slate-300">
+                                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={item.mainImage} alt={item.name} width={340} height={500} className="!w-full h-full object-cover" />
+                            </div>
+                            <p className="text-left w-full text-[#141414] text-[18px] font-[600] leading-[28px] mt-[14px]">{item.name}</p>
+                        </button>
+                    ))}
+                </div>
+
             </div>
         </div>
         <Footor />

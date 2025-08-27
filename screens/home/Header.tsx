@@ -15,7 +15,7 @@ const Header = () => {
       <div className="flex flex-1 items-center justify-between">
         {/* Left Logo */}
         <div className='w-[303px] cursor-pointer' >
-            <Image className=' bg-red' width={101} height={58} src={logo} alt='logo' />
+            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className=' bg-red' width={101} height={58} src={logo} alt='logo' />
         </div>
         {/* Nav Menu */}
         <nav className=' flex justify-center items-center ' >
@@ -39,7 +39,7 @@ const Header = () => {
         </nav>
 
         {/* Right Logo/Text */}
-        <Image className='' src={brand} alt="Brand" width={303} height={58} />
+        <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className='' src={brand} alt="Brand" width={303} height={58} />
       </div>
     </header>
   )

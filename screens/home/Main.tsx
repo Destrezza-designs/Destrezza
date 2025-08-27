@@ -27,7 +27,7 @@ const Main = () => {
 
         <div>
             <div className=' text-[#141414] mt-[-103px]' >
-                <Image src={paper} className='w-screen h-fit' alt='paper' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={paper} className='w-screen h-fit' alt='paper' />
                 <div className='flex gap-[48px] flex-1 mt-[-103px] bg-white px-[48px]' >
                     <div className='w-[50%]' >
                         <p className='uppercase text-[58px] font-[800] text-[#141414BF]' >About Us</p>
@@ -37,10 +37,10 @@ const Main = () => {
     This dedication is why our customers return time and again: they know they can trust us to deliver pieces that elevate their spaces, enrich their everyday lives, and stand the test of time.</p>
                     </div>
                     <div className='flex gap-[24px] justify-center items-center' >
-                        <Image alt='chair' src={chair} className='h-fit w-[338px] rounded-[32px]' />
+                        <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  alt='chair' src={chair} className='h-fit w-[338px] rounded-[32px]' />
                         <div className='flex flex-col gap-[24px]' >
-                            <Image alt='chair' src={Img2} className='h-auto w-[338px] rounded-[32px]' />
-                            <Image alt='chair' src={Img3} className='h-auto w-[338px] rounded-[32px]' />
+                            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  alt='chair' src={Img2} className='h-auto w-[338px] rounded-[32px]' />
+                            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  alt='chair' src={Img3} className='h-auto w-[338px] rounded-[32px]' />
                         </div>
                     </div>
                 </div>

@@ -193,171 +193,171 @@ const page = () => {
             <Header />
         </div>
         <div className='my-[80px] mx-[48px] flex flex-col gap-[14px]'>
-    <div className='flex gap-[14px]'>
-        <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
-            <Image 
-                src={data[0].mainImage} 
-                alt={data[0].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
-            <Image 
-                src={data[1].image2} 
-                alt={data[1].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
+            <div className='flex gap-[14px]'>
+                <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery1.jpg?alt=media&token=7daf5234-6e48-4c0d-b3e9-e1592b63ee20"} 
+                        alt={data[0].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery2.png?alt=media&token=01d9c86b-ed74-4516-b970-2c8937893d0c"} 
+                        alt={data[1].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                </div>
+                <div className='flex flex-col gap-[14px]'>
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FMeridian1.png?alt=media&token=e30c0f29-7f21-4a17-988d-ab0ff04e6b78"} 
+                        alt={data[2].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery3.jpg?alt=media&token=927a415d-3600-4f13-b0de-ffdf4c1cdd62"} 
+                        alt={data[3].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery4.jpeg?alt=media&token=d84e0d75-3320-468d-abf2-959e57808680"} 
+                        alt={data[4].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden object-bottom' 
+                    />
+                </div>
+                <div className='flex flex-col gap-[14px]'>
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery5.jpg?alt=media&token=65580a94-b680-4312-8012-b8974c3d8548"} 
+                        alt={data[5].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery6.jpeg?alt=media&token=c979f299-bc5a-49d9-b185-847441e45afa"} 
+                        alt={data[6].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                </div>
+            </div>
+            <div className='flex flex-col gap-[14px]'>  
+                <div className='flex gap-[14px]'>
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery1.jpg?alt=media&token=7daf5234-6e48-4c0d-b3e9-e1592b63ee20"} 
+                        alt={data[7].name} 
+                        width={665} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery5.jpg?alt=media&token=65580a94-b680-4312-8012-b8974c3d8548"} 
+                        alt={data[8].name} 
+                        width={665} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                </div>
+                <div className='flex gap-[14px]'>
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery2.png?alt=media&token=01d9c86b-ed74-4516-b970-2c8937893d0c"} 
+                        alt={data[9].name} 
+                        width={665} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery6.jpeg?alt=media&token=c979f299-bc5a-49d9-b185-847441e45afa"} 
+                        alt={data[10].name} 
+                        width={665} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                </div>
+            </div>
+            <div className='flex gap-[14px]'>
+                <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery1.jpg?alt=media&token=7daf5234-6e48-4c0d-b3e9-e1592b63ee20"} 
+                        alt={data[0].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery2.png?alt=media&token=01d9c86b-ed74-4516-b970-2c8937893d0c"} 
+                        alt={data[1].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                </div>
+                <div className='flex flex-col gap-[14px]'>
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FMeridian1.png?alt=media&token=e30c0f29-7f21-4a17-988d-ab0ff04e6b78"} 
+                        alt={data[2].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery3.jpg?alt=media&token=927a415d-3600-4f13-b0de-ffdf4c1cdd62"} 
+                        alt={data[3].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery4.jpeg?alt=media&token=d84e0d75-3320-468d-abf2-959e57808680"} 
+                        alt={data[4].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                </div>
+                <div className='flex flex-col gap-[14px]'>
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery5.jpg?alt=media&token=65580a94-b680-4312-8012-b8974c3d8548"} 
+                        alt={data[5].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery6.jpeg?alt=media&token=c979f299-bc5a-49d9-b185-847441e45afa"} 
+                        alt={data[6].name} 
+                        width={438} 
+                        height={600} 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                    />
+                </div>
+            </div>
+            <div className='flex flex-col gap-[14px]'>
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery1.jpg?alt=media&token=7daf5234-6e48-4c0d-b3e9-e1592b63ee20"} 
+                    alt={data[5].name} 
+                    width={1344} 
+                    height={600} 
+                    className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden object-[50%_70%]' 
+                />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery2.png?alt=media&token=01d9c86b-ed74-4516-b970-2c8937893d0c"} 
+                    alt={data[6].name} 
+                    width={1344} 
+                    height={600} 
+                    className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden object-[50%_65%]' 
+                />
+            </div>
         </div>
-        <div className='flex flex-col gap-[14px]'>
-            <Image 
-                src={data[2].image} 
-                alt={data[2].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
-            />
-            <Image 
-                src={data[3].mainImage} 
-                alt={data[3].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
-            />
-            <Image 
-                src={data[4].image2} 
-                alt={data[4].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
-            />
-        </div>
-        <div className='flex flex-col gap-[14px]'>
-            <Image 
-                src={data[5].mainImage} 
-                alt={data[5].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
-            <Image 
-                src={data[6].image} 
-                alt={data[6].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
-        </div>
-    </div>
-    <div className='flex flex-col gap-[14px]'>  
-        <div className='flex gap-[14px]'>
-            <Image 
-                src={data[7].mainImage} 
-                alt={data[7].name} 
-                width={665} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
-            <Image 
-                src={data[8].image} 
-                alt={data[8].name} 
-                width={665} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
-        </div>
-        <div className='flex gap-[14px]'>
-            <Image 
-                src={data[9].image2} 
-                alt={data[9].name} 
-                width={665} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
-            <Image 
-                src={data[10].mainImage} 
-                alt={data[10].name} 
-                width={665} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
-        </div>
-    </div>
-    <div className='flex gap-[14px]'>
-        <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
-            <Image 
-                src={data[11].image} 
-                alt={data[11].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
-            <Image 
-                src={data[12].mainImage} 
-                alt={data[12].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
-        </div>
-        <div className='flex flex-col gap-[14px]'>
-            <Image 
-                src={data[0].image} 
-                alt={data[0].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
-            />
-            <Image 
-                src={data[1].mainImage} 
-                alt={data[1].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
-            />
-            <Image 
-                src={data[2].image2} 
-                alt={data[2].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
-            />
-        </div>
-        <div className='flex flex-col gap-[14px]'>
-            <Image 
-                src={data[3].image} 
-                alt={data[3].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
-            <Image 
-                src={data[4].mainImage} 
-                alt={data[4].name} 
-                width={438} 
-                height={600} 
-                className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-            />
-        </div>
-    </div>
-    <div className='flex flex-col gap-[14px]'>
-        <Image 
-            src={data[5].image2} 
-            alt={data[5].name} 
-            width={1344} 
-            height={600} 
-            className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-        />
-        <Image 
-            src={data[6].mainImage} 
-            alt={data[6].name} 
-            width={1344} 
-            height={600} 
-            className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
-        />
-    </div>
-</div>
         <Footor />
     </div>
   )
