@@ -28,6 +28,7 @@ const Page = () => {
       setName('');
       setEmail('');
       setMessage('');
+      setLoading(false);
 } catch (error: unknown) {
       console.error("❌ Error writing document: ", error);
       alert(error instanceof Error ? error.message : 'An unknown error occurred');
@@ -40,7 +41,7 @@ const Page = () => {
 
   return (
     <div className='text-black' >
-        {loading && <FullPageLoader />}
+        
          <div className='mx-[48px] mt-[48px] ' >
             <Header />
             <div className='mt-[80px]' >
@@ -127,7 +128,7 @@ const Page = () => {
               </div>
             </div>
         </div>
-
+        {loading && <FullPageLoader />}
         <Footor />
     </div>
   )

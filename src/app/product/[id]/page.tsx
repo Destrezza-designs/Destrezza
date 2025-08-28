@@ -5,6 +5,7 @@ import Header from '@/components/product/Header';
 import Footor from '@/components/Footor';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import ImageLoader from '@/components/utils/ImageLoader';
 
 const data = [
     {
@@ -203,8 +204,18 @@ const Page = () => {
             <Header />
 
             <div className='my-[40px] flex gap-[14px] h-[500px] overflow-hidden' >
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  unoptimized  src={data[idNum-1].mainImage} width={600} height={100} className='w-[60%] h-auto object-cover' alt='Main Image' />
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  unoptimized  src={data[idNum-1].image} width={400} height={100}  className='w-[40%] h-auto object-cover' alt='Main Image' />
+                <div className='w-[60%] h-auto relative' >
+                    <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
+                        <ImageLoader />
+                    </div>
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  unoptimized  src={data[idNum-1].mainImage} width={600} height={100} className='w-full h-full object-cover' alt='Main Image' />
+                </div>
+                <div className='w-[40%] h-auto relative' >
+                    <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
+                        <ImageLoader />
+                    </div>
+                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  unoptimized  src={data[idNum-1].image} width={400} height={100}  className='w-full h-full object-cover' alt='Main Image' />
+                </div>
             </div>
             <div>
                 <p className='text-[58px] leading-[68px] uppercase' >{data[idNum-1].name} <br /> {data[idNum-1].title}</p>
@@ -240,45 +251,72 @@ const Page = () => {
             </div>
             <div className='flex flex-col gap-[8px] mt-[64px]' >
                 <div className='flex gap-[8px]' >
+                    <div className='w-full h-auto relative' >
+                        <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
+                            <ImageLoader />
+                        </div>
+                        <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
+                            src={data[idNum-1].image}
+                            className='w-full h-[570px] object-cover'
+                            alt='Main Image'
+                            width={1024}
+                            height={576}
+                        />
+                    </div>
+                    <div className='w-full h-auto relative' >
+                        <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
+                            <ImageLoader />
+                        </div>
+                        <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
+                            src={data[idNum-1].image}
+                            className='w-full h-[570px] object-cover scaleX(-1)'
+                            alt='Main Image'
+                            width={1024}
+                            height={576}
+                            style={{transform: 'scaleX(-1)'}}
+                        />
+                    </div>
+                </div>
+                
+                <div className='w-full h-auto relative' >
+                        <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
+                            <ImageLoader />
+                        </div>
+                
                     <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
-                        src={data[idNum-1].image}
+                        src={data[idNum-1].mainImage}
                         className='w-full h-[570px] object-cover'
                         alt='Main Image'
                         width={1024}
                         height={576}
-                    />
-                     <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
-                        src={data[idNum-1].image}
-                        className='w-full h-[570px] object-cover scaleX(-1)'
-                        alt='Main Image'
-                        width={1024}
-                        height={576}
-                        style={{transform: 'scaleX(-1)'}}
                     />
                 </div>
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
-                    src={data[idNum-1].mainImage}
-                    className='w-full h-[570px] object-cover'
-                    alt='Main Image'
-                    width={1024}
-                    height={576}
-                />
                 <div className='flex gap-[8px]' >
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
-                        src={data[idNum-1].image2}
-                        className='w-full h-[570px] object-cover'
-                        alt='Main Image'
-                        width={1024}
-                        height={576}
-                    />
-                     <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
-                        src={data[idNum-1].image2}
-                        className='w-full h-[570px] object-cover scaleX(-1)'
-                        alt='Main Image'
-                        width={1024}
-                        height={576}
-                        style={{transform: 'scaleX(-1)'}}
-                    />
+                    <div className='w-full h-auto relative' >
+                        <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
+                            <ImageLoader />
+                        </div>
+                        <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
+                            src={data[idNum-1].image2}
+                            className='w-full h-[570px] object-cover'
+                            alt='Main Image'
+                            width={1024}
+                            height={576}
+                        />
+                    </div>
+                    <div className='w-full h-auto relative' >
+                        <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
+                            <ImageLoader />
+                        </div>
+                        <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
+                            src={data[idNum-1].image2}
+                            className='w-full h-[570px] object-cover scaleX(-1)'
+                            alt='Main Image'
+                            width={1024}
+                            height={576}
+                            style={{transform: 'scaleX(-1)'}}
+                        />
+                    </div>
                 </div>
             </div>
             <div className='mt-[64px] ' >
@@ -286,8 +324,13 @@ const Page = () => {
                 <div className="flex flex-wrap justify-center gap-[14px]  mt-[24px]">
                     {data.slice(idNum, idNum + 3).map((item, index) => (
                         <button key={index} className="flex flex-col justify-center items-center">
-                            <div onClick={()=>router.push(`/product/${idNum+1+index}`)} className="h-[614px] w-[30vw] bg-slate-300">
-                                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={item.mainImage} alt={item.name} width={340} height={500} className="!w-full h-full object-cover" />
+                            <div onClick={()=>router.push(`/product/${idNum+1+index}`)} className="h-[614px] w-[30vw] relative">
+                                <div>
+                                    <div className='absolute top-0 left-0 w-[30vw] h-[614px] z-[-1]' >
+                                        <ImageLoader  />
+                                    </div>
+                                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={item.mainImage} alt={item.name} width={340} height={500} className="!w-full h-full object-cover" />
+                                </div>
                             </div>
                             <p className="text-left w-full text-[#141414] text-[18px] font-[600] leading-[28px] mt-[14px]">{item.name}</p>
                         </button>
