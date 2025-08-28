@@ -44,7 +44,7 @@ const Page = () => {
          <div className='mx-[48px] mt-[48px] ' >
             <Header />
             <div className='mt-[80px]' >
-              <p className='text-[58px] leading-[68px] uppercase' >Find Us Here</p>
+              <p className='text-[58px] leading-[68px] uppercase font-[500]' >Find Us Here</p>
               <p className='text-[18px] font-[400] mt-[24px] w-[70%]' >Come visit us and experience Destrezza up close. Whether you&lsquo;re seeking inspiration, exploring our latest designs, or just dropping by — we’re here. Step into our space and see where creativity meets craftsmanship.</p>
               <div className='flex gap-[68px] mt-[80px]' >
                 <div>
