@@ -36,7 +36,7 @@ const Footor = () => {
                     <div>
                         <p className='text-[18px] uppercase font-[500]' >ADDRESS</p>
                         <p className='text-[16px] font-[400] mt-[18px]'>Destrezzza art house Pvt Ltd, building no.24 <br />
-                                                                        Trikkanapuram po <br />
+                                                                        Trikkanapuram po 
                                                                         Thavanoor road Jn <br />
                                                                         Pincode 679573 <br />
                                                                         Kuttipuram, Malappuram district

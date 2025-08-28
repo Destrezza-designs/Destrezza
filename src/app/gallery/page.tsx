@@ -192,7 +192,7 @@ const page = () => {
         <div className='mx-[48px] mt-[48px]' >
             <Header />
         </div>
-        <div className='my-[80px] mx-[48px] flex flex-col gap-[14px]'>
+        <div className='my-[80px] mx-[48px] flex flex-col gap-[14px] justify-center items-center'>
             <div className='flex gap-[14px]'>
                 <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
                     <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  

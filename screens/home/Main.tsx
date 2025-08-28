@@ -47,7 +47,7 @@ const Main = () => {
             </div>
         </div>
 
-        <div className='mt-[92px] flex justify-between items-center text-[#141414] px-[48px] ' >
+        <div className='mt-[92px] flex justify-between items-center text-[#141414] px-[48px] mx-[56px]' >
             <div>
                 <p className='text-[48px] font-[600] text-[#CEA338]' >2022</p>
                 <p className='text-[18px] font-[500] text-[]' >Year of establishment</p>

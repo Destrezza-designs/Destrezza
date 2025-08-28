@@ -10,6 +10,14 @@ const Header = () => {
 
   const router = useRouter()
 
+  const handleScroll = () => {
+    const target = document.getElementById("target-section");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
   return (
     <header className="w-full flex flex-1 bg-[#1A1F26] px-[48px] py-[13px]">
       <div className="flex flex-1 items-center justify-between">
@@ -27,10 +35,10 @@ const Header = () => {
               <button onClick={() => router.push('/about')} >ABOUT US</button>
             </li>
             <li className="cursor-pointer hover:text-yellow-400">
-              <button>PRODUCTS</button>
+              <button onClick={() => router.push('/product')} >PRODUCTS</button>
             </li>
             <li className="cursor-pointer hover:text-yellow-400">
-              <button>OUR LOGO</button>
+              <button onClick={handleScroll} >OUR LOGO</button>
             </li>
             <li className="cursor-pointer hover:text-yellow-400">
               <button onClick={() => router.push('/contact')} >CONTACT</button>

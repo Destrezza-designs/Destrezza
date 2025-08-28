@@ -5,7 +5,9 @@ import Image from 'next/image'
 
 const OurLogo = () => {
   return (
-    <div className='mx-[48px] mt-[80px] text-[#141414]' >
+    <div 
+      id="target-section"
+      className='mx-[48px] mt-[80px] text-[#141414]' >
         <p className='text-[14px] text-[#868684] uppercase' >the story of z/z</p>
         <p className='text-[36px] uppercase mt-[14px]' >Our signature mark</p>
         <p className='text-[18px] font-[400] leading-[28px] w-[60%]' >Our logo is more than just a symbol — it represents who we are, what we believe in, and how we build. Every line and curve reflects our commitment to timeless design, refined craftsmanship, and thoughtful detail.</p>

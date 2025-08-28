@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import React from 'react'
 import P1 from '@/public/home/products/Frame1.png'
@@ -7,8 +9,10 @@ import P4 from '@/public/home/products/Frame4.png'
 import P5 from '@/public/home/products/Frame5.png'
 import P6 from '@/public/home/products/Frame6.png'
 import P7 from '@/public/home/products/Frame7.png'
+import { useRouter } from 'next/navigation'
 
 const ProductsShowcase = () => {
+    const router = useRouter();
   return (
     <div className='bg-[#141414] p-[48px] w-screen flex flex-col gap-[48px] justify-center items-center mt-[80px]' > 
         <div className='grid grid-cols-3 gap-[24px] w-[100%]' >
@@ -30,7 +34,9 @@ const ProductsShowcase = () => {
             </div>
 
         </div>
-        <button className='text-[16px] border border-[#F8F8F5] border-solid rounded-[48px] w-fit px-[20px] py-[12px] flex gap-[16px]' >
+        <button 
+            onClick={() => router.push('/gallery')}
+            className='text-[16px] border border-[#F8F8F5] border-solid rounded-[48px] w-fit px-[20px] py-[12px] flex gap-[16px] uppercase font-[600] hover:bg-[#F8F8F5] hover:text-[#141414] hover:transition-all duration-300' >
             See What We’ve Created
             <div className='bg-white w-[24px] h-[24px] rounded-[24px] flex justify-center items-center ' >
                 <svg  width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
