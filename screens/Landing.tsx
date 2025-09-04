@@ -20,7 +20,7 @@ const Landing = () => {
   return (
     <div>
 
-        {loading && <FullPageLoader />}
+        {/* {loading && <FullPageLoader />} */}
 
         <Main />
         <Products />

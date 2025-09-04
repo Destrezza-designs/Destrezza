@@ -24,7 +24,7 @@ button{
 }
 
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   body * {
     display: none !important;
   }
@@ -34,4 +34,4 @@ button{
   body * {
     display: none !important;
   }
-}
+} */
