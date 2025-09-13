@@ -329,7 +329,7 @@ const Page = () => {
                                     <div className='absolute top-0 left-0 w-[30vw] h-[614px] z-[-1]' >
                                         <ImageLoader  />
                                     </div>
-                                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={item.mainImage} alt={item.name} width={340} height={500} className="!w-full h-full object-cover" />
+                                    <Image src={item.mainImage} alt={item.name} fill className="!w-full h-full object-cover" />
                                 </div>
                             </div>
                             <p className="text-left w-full text-[#141414] text-[18px] font-[600] leading-[28px] mt-[14px]">{item.name}</p>
