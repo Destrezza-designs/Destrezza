@@ -14,8 +14,8 @@ import { useRouter } from 'next/navigation'
 const ProductsShowcase = () => {
     const router = useRouter();
   return (
-    <div className='bg-[#141414] p-[48px] w-screen flex flex-col gap-[48px] justify-center items-center mt-[80px]' > 
-        <div className='grid grid-cols-3 gap-[24px] w-[100%]' >
+    <div className='bg-[#141414] p-[0px] py-[40px] lg:py-[48px] lg:px-[48px] w-screen flex flex-col gap-[48px] justify-center items-center mt-[80px]' > 
+        <div className='hidden lg:grid grid-cols-3 gap-[24px] w-[100%] ' >
 
             <div className='flex flex-col gap-[24px]' >
                 <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P1} alt='Product Image' className='w-auto h-[600px]' />
@@ -32,6 +32,16 @@ const ProductsShowcase = () => {
                 <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P6} alt='Product Image' className='w-auto h-[600px]' />
                 <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P7} alt='Product Image' className='w-auto h-[600px]' />
             </div>
+
+        </div>
+
+        <div className='flex lg:hidden flex-col gap-[5px]' >
+            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P1} alt='Product Image' className='w-auto h-[600px]' />
+            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P2} alt='Product Image' className='w-auto h-[600px]' />
+            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P3} alt='Product Image' className='w-auto h-[288px]' />
+            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P4} alt='Product Image' className='w-auto h-[600px]' />
+            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P5} alt='Product Image' className='w-auto h-[288px]' />
+
 
         </div>
         <button 

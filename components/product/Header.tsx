@@ -8,7 +8,7 @@ const Header = () => {
   const router = useRouter();
     
   return (
-    <div className='flex justify-between items-center text-black' >
+    <div className='flex w-full justify-between items-center text-black' >
         <NamedLogo />
         <div className='flex text-[14px] gap-[24px] uppercase font-[500]' >
             <button onClick={() => router.push('/')} className='uppercase' >HOME</button>

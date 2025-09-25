@@ -1,9 +1,10 @@
 'use client'
-import React from 'react'
+import React,{useState} from 'react'
 import Image from 'next/image'
 import logo from '@/public/header/Vector86.png'
 import brand from '@/public/header/Brand.png'
 import { useRouter } from 'next/navigation'
+import NamedLogo from './NamedLogo'
 
 
   /**
@@ -13,6 +14,8 @@ import { useRouter } from 'next/navigation'
 const Header = () => {
 
   const router = useRouter()
+
+  const [navbar,setNavbar] = useState(false);
 
   const handleScroll = () => {
     const target = document.getElementById("target-section");
@@ -25,11 +28,11 @@ const Header = () => {
   return (
     <header className="w-full flex flex-1 bg-[#1A1F26] px-[16px] lg:px-[48px] py-[13px] pt-[40px] lg:py-[13px]">
       <div className="flex flex-1 items-center justify-between">
-        {/* Left Logo */}
+        
         <div className='lg:block hidden sm:hidden md:block w-[303px] cursor-pointer' >
             <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className=' bg-red' width={101} height={58} src={logo} alt='logo' />
         </div>
-        {/* Nav Menu */}
+        
         <nav className=' lg:flex md:hidden sm:hidden justify-center items-center ' >
           <ul className="hidden md:flex gap-8 text-sm text-white tracking-widest">
             <li className="cursor-pointer hover:text-yellow-400">
@@ -50,12 +53,12 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* Right Logo/Text */}
+        
         <div className='w-full lg:w-fit flex justify-between items-center' >
           <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
             <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className='' src={brand} alt="Brand" width={303} height={58} />
           </div>
-          <button className='flex lg:hidden' >
+          <button onClick={()=>setNavbar(true)} className='flex lg:hidden' >
             <svg
               width="22"
               height="14"
@@ -73,6 +76,44 @@ const Header = () => {
             </svg>
           </button>
         </div>
+      </div>
+
+
+      <div 
+        className={`fixed z-50 top-0 left-0 bg-[#1A1F26] w-screen h-screen mt-[40px] px-[16px] transition-all duration-300 ease-in-out transform ${
+          navbar ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full pointer-events-none'
+        }`}
+      >
+        <div className='w-full lg:w-fit flex justify-between items-center' >
+            <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
+              <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className='' src={brand} alt="Brand" width={303} height={58} />
+            </div>
+            <button onClick={()=>setNavbar(false)} className='flex lg:hidden' >
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.98589 17.5L0.285889 15.8L7.08589 9L0.285889 2.2L1.98589 0.5L8.78589 7.3L15.5859 0.5L17.2859 2.2L10.4859 9L17.2859 15.8L15.5859 17.5L8.78589 10.7L1.98589 17.5Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+          <nav className=' flex flex-col justify-start items-start mt-[60px]' >
+            <ul className="flex flex-col gap-[18px] text-[32px] font-[400] text-white tracking-widest">
+              <li className="cursor-pointer hover:text-yellow-400">
+                <button>HOME</button>
+              </li>
+              <li className="cursor-pointer hover:text-yellow-400">
+                <button onClick={() => router.push('/about')} >ABOUT US</button>
+              </li>
+              <li className="cursor-pointer hover:text-yellow-400">
+                <button onClick={() => router.push('/product')} >PRODUCTS</button>
+              </li>
+              <li className="cursor-pointer hover:text-yellow-400">
+                <button onClick={handleScroll} >OUR LOGO</button>
+              </li>
+              <li className="cursor-pointer hover:text-yellow-400">
+                <button onClick={() => router.push('/contact')} >CONTACT</button>
+              </li>
+            </ul>
+          </nav>
+
       </div>
     </header>
   )

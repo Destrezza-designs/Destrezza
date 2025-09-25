@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header'
+import Header from '../../components/utils/Header'
 import paper from '@/public/home/Paper44.png'
 import Image from 'next/image'
 import chair from '@/public/home/Img.png'
@@ -58,7 +58,7 @@ const Main = () => {
             </div>
         </div>
 
-        <div className='mt-[92px] flex justify-between items-center text-[#141414] px-[48px] mx-[56px]' >
+        <div className='mt-[40px] lg:mt-[92px] flex flex-col lg:flex-row  justify-center lg:justify-between items-center text-center lg:text-left text-[#141414] px-[48px] mx-[56px]' >
             <div>
                 <p className='text-[48px] font-[600] text-[#CEA338]' >2022</p>
                 <p className='text-[18px] font-[500] text-[]' >Year of establishment</p>
