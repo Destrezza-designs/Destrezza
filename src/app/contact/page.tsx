@@ -1,6 +1,7 @@
 'use client'
 import Footor from '@/components/Footor'
 import Header from '@/components/product/Header'
+import UtilsHeader from '@/components/utils/Header'
 import React,{useState} from 'react'
 import { collection, addDoc } from 'firebase/firestore';
 import {db } from '@/lib/firebase'
@@ -42,19 +43,25 @@ const Page = () => {
   return (
     <div className='text-black' >
         
-         <div className='mx-[48px] mt-[48px] ' >
+        <div className='hidden lg:flex  mx-[48px] mt-[48px]' >
             <Header />
-            <div className='mt-[80px]' >
-              <p className='text-[58px] leading-[68px] uppercase font-[500]' >Find Us Here</p>
-              <p className='text-[18px] font-[400] mt-[24px] w-[70%]' >Come visit us and experience Destrezza up close. Whether you&lsquo;re seeking inspiration, exploring our latest designs, or just dropping by — we’re here. Step into our space and see where creativity meets craftsmanship.</p>
-              <div className='flex gap-[68px] mt-[80px]' >
+        </div>
+        <div className='flex lg:hidden' >
+            <UtilsHeader />
+        </div>
+
+         <div className='mx-[16px] lg:mx-[48px] mt-[43px] lg:mt-[48px] ' >
+            <div className='mt-[43px] lg:mt-[80px]' >
+              <p className='text-[48px] lg:text-[58px] leading-[68px] lg:leading-[68px] uppercase font-[500]' >Find Us Here</p>
+              <p className='text-[18px] font-[400] mt-[24px] w-full lg:w-[70%]' >Come visit us and experience Destrezza up close. Whether you&lsquo;re seeking inspiration, exploring our latest designs, or just dropping by — we’re here. Step into our space and see where creativity meets craftsmanship.</p>
+              <div className='flex lg:flex-row flex-col gap-[22px] lg:gap-[68px] mt-[25px] lg:mt-[80px]' >
                 <div>
-                  <p className='text-[18px] uppercase' >PHONE NUMBER</p>
+                  <p className='text-[18px] font-[500] uppercase' >PHONE NUMBER</p>
                   <p className='text-[16px] font-[400] mt-[18px]' >+91 9765438781</p>
                   <p className='text-[16px] font-[400]' >+91 9865487981</p>
                 </div>
-                <div>
-                  <p className='text-[18px] uppercase' >ADDRESS</p>
+                <div >
+                  <p className='text-[18px] font-[500] uppercase' >ADDRESS</p>
                   <p className='text-[16px] font-[400] mt-[18px]'>Destrezzza art house Pvt Ltd, building no.24 <br />
                                                                         Trikkanapuram po 
                                                                         Thavanoor road Jn <br />
@@ -63,35 +70,47 @@ const Page = () => {
                                                                         </p>
                 </div>
                 <div>
-                  <p className='text-[18px] uppercase' >Opening Hours</p>
+                  <p className='text-[18px] font-[500] uppercase' >Opening Hours</p>
                   <p className='text-[16px] font-[400] mt-[18px]' >Mon to Sat,    8AM - 8PM</p>
                 </div>
               </div>
             </div>
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6820692138604!2d76.01528821108347!3d10.835624489272211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7bb0e2ffdccad%3A0x929f67da161bd1b2!2sDESTREZZZA%20ART%20HOUSE!5e0!3m2!1sen!2sin!4v1756286932084!5m2!1sen!2sin" 
-              width="100%" 
-              height="590px" 
-              style={{border: '0'}} 
-              loading="lazy" 
-              className='mt-[80px]'
-              referrerPolicy="no-referrer-when-downgrade"></iframe>
-            <div className='flex flex-1 h-[550px] justify-between items-center mt-[80px] ' >
-              <div className='w-[50%] flex flex-col h-full justify-between  ' > 
+            <div className='hidden lg:flex' >
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6820692138604!2d76.01528821108347!3d10.835624489272211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7bb0e2ffdccad%3A0x929f67da161bd1b2!2sDESTREZZZA%20ART%20HOUSE!5e0!3m2!1sen!2sin!4v1756286932084!5m2!1sen!2sin" 
+                width="100%" 
+                height="590px" 
+                style={{border: '0'}} 
+                loading="lazy" 
+                className='mt-[80px]'
+                referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div className='lg:hidden' >
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6820692138604!2d76.01528821108347!3d10.835624489272211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7bb0e2ffdccad%3A0x929f67da161bd1b2!2sDESTREZZZA%20ART%20HOUSE!5e0!3m2!1sen!2sin!4v1756286932084!5m2!1sen!2sin" 
+                width="100%" 
+                height="172px" 
+                style={{border: '0'}} 
+                loading="lazy" 
+                className='mt-[20px]'
+                referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div className='flex lg:flex-row flex-col flex-1 lg:h-[550px] justify-between items-center mt-[30px] lg:mt-[80px] ' >
+              <div className='w-full lg:w-[50%] flex flex-col h-full justify-between  ' > 
                 <div className='flex flex-col flex-1 ' >
-                  <p className='text-[14px] text-[#868684] uppercase' >CONTACT</p>
-                  <p className='text-[36px] uppercase mt-[14px]'  >Reach out, connect, <br /> and let’s <br /> craft something beautiful.</p>
+                  <p className=' hidden lg:flex text-[14px] text-[#868684] uppercase' >CONTACT</p>
+                  <p className='text-[26px] font-[500] lg:text-[36px] uppercase mt-[14px]'  >Reach out, connect, <br /> and let’s <br /> craft something beautiful.</p>
                 </div>
-                <div className='flex flex-col ' >
+                <div className='hidden lg:flex flex-col ' >
                   <p className='text-[16px] font-[400] uppercase' >looking for experienced assistance?</p>
                   <p className='text-[16px] font-[400] uppercase mt-[18px]' >+91 9765438781</p>
                   <p className='text-[16px] font-[400] uppercase' >+91 9865487981</p>
                   <p className='text-[16px] font-[400] uppercase mt-[24px]' >hello@destrezzzaarthouse.com</p>
                 </div>
               </div>
-              <div className='w-[50%]' >
+              <div className='w-full mt-[29px] lg:mt-[0px] lg:w-[50%]' >
                 <form onSubmit={handleSubmit}  >
-                  <div className='flex flex-1 w-full gap-[14px]' >
+                  <div className='flex lg:flex-row flex-col flex-1 w-full gap-[10px] lg:gap-[14px]' >
                     <input 
                       value={name}
                       onChange={(e) => setName(e.target.value)}
@@ -126,6 +145,12 @@ const Page = () => {
                   </button>
                 </form>
               </div>
+              <div className='lg:hidden flex-col mt-[29px]' >
+                  <p className='text-[16px] font-[400] uppercase' >looking for experienced assistance?</p>
+                  <p className='text-[16px] font-[400] uppercase mt-[18px]' >+91 9765438781</p>
+                  <p className='text-[16px] font-[400] uppercase' >+91 9865487981</p>
+                  <p className='text-[16px] font-[400] uppercase mt-[24px]' >hello@destrezzzaarthouse.com</p>
+                </div>
             </div>
         </div>
         {loading && <FullPageLoader />}

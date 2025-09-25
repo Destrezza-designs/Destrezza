@@ -1,7 +1,8 @@
 'use client'
 import React from 'react'
 import { useParams } from 'next/navigation'
-import Header from '@/components/product/Header';
+import Header from '@/components/product/Header'
+import UtilsHeader from '@/components/utils/Header'
 import Footor from '@/components/Footor';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -199,58 +200,66 @@ const Page = () => {
     const router = useRouter();
 
   return (
-    <div>
-        <div className='mx-[48px] mt-[48px] text-black' >
+    <div className='overflow-x-hidden' >
+        <div className='hidden lg:flex  mx-[48px] mt-[48px]' >
             <Header />
-
-            <div className='my-[40px] flex gap-[14px] h-[500px] overflow-hidden' >
-                <div className='w-[60%] h-auto relative' >
-                    <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
+        </div>
+        <div className='flex lg:hidden' >
+            <UtilsHeader />
+        </div>
+        
+        <div className='lg:hidden text-black flex mt-[30px] mx-[20px]' >
+            <p className='text-[36px] leading-[40px] font-[500] uppercase' >{data[idNum-1].name} <br /> {data[idNum-1].title}</p>
+        </div>
+        <div className='mx-[0px] lg:mx-[48px] mt-[20px] lg:mt-[48px] text-black' >
+            <div className='my-[40px] flex lg:flex-row flex-col lg:gap-[14px] gap-y-[5px] lg:gap-y-0 h-[500px] overflow-hidden' >
+                <div className='w-full lg:w-[60%] h-auto relative' >
+                    <div className='hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
                         <ImageLoader />
                     </div>
                     <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  unoptimized  src={data[idNum-1].mainImage} width={600} height={100} className='w-full h-full object-cover' alt='Main Image' />
                 </div>
-                <div className='w-[40%] h-auto relative' >
-                    <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
+                <div className='w-full lg:w-[40%] h-auto relative' >
+                    <div className='hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
                         <ImageLoader />
                     </div>
                     <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  unoptimized  src={data[idNum-1].image} width={400} height={100}  className='w-full h-full object-cover' alt='Main Image' />
                 </div>
             </div>
-            <div>
+            <div className='hidden lg:flex' >
                 <p className='text-[58px] leading-[68px] uppercase' >{data[idNum-1].name} <br /> {data[idNum-1].title}</p>
             </div>
-            <div className='mt-[64px]' >
-                <div className='flex justify-between items-start' >
+            <div className='mt-[24px] mx-[16px] lg:mt-[64px]' >
+                <div className='flex lg:flex-row flex-col justify-between items-start my-[12px]' >
                     <p className='text-[18px] font-[500] uppercase' >Description</p>
-                    <p className='text-[24px] w-[70%] font-[300]' >{data[idNum-1].disc}</p>
+                    <p className='mt-[10px] lg:mt-[0px] text-[15px] lg:text-[24px] w-full lg:w-[70%] font-[400] lg:font-[300]' >{data[idNum-1].disc}</p>
                 </div>
 
-                <div className='flex justify-between items-start mt-[64px] ' >
-                    <p className='text-[18px] font-[500] uppercase' >Technical <br /> Specification</p>
-                    <div className='w-[70%]' >
-                        <div className='flex justify-between items-start border-t-[1px] border-[#00000040] py-[24px]' >
+                <div className='flex lg:flex-row flex-col justify-between items-start mt-[38px] lg:mt-[64px] ' >
+                    <p className='text-[18px] font-[500] uppercase mb-[13px] lg:mb-[0px]' >Technical <br className='hidden lg:flex' /> Specification</p>
+                    <div className='w-full lg:w-[70%]' >
+                        <div className='flex lg:flex-row flex-col justify-between items-start border-t-[1px] border-[#00000040] py-[24px]' >
                             <p className='text-[18px] leading-[27px] font-[400]' >MATERIAL</p>
-                            <p className='text-[18px] leading-[27px] font-[400] w-[80%]' >{data[idNum-1].disc}</p>
+                            <p className='text-[15px] lg:text-[18px] leading-[27px] font-[400] w-full lg:w-[80%] mt-[20px] lg:mt-[0px]' >{data[idNum-1].disc}</p>
                         </div>
-                        <div className='flex justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
+                        <div className='flex lg:flex-row flex-col justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
                             <p className='text-[18px] leading-[27px] font-[400]' >COLOR</p>
-                            <p className='text-[18px] leading-[27px] font-[400] w-[80%]' >{data[idNum-1].color}</p>
+                            <p className='text-[15px] lg:text-[18px] leading-[27px] font-[400] w-full lg:w-[80%] mt-[20px] lg:mt-[0px]' >{data[idNum-1].color}</p>
                         </div>
-                        <div className='flex justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
+                        <div className='flex lg:flex-row flex-col justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
                             <p className='text-[18px] leading-[27px] font-[400]' >CARE INSTRUCTION</p>
-                            <p className='text-[18px] leading-[27px] font-[400] w-[80%]' >{data[idNum-1].care}</p>
+                            <p className='text-[15px] lg:text-[18px] leading-[27px] font-[400] w-full lg:w-[80%] mt-[20px] lg:mt-[0px]' >{data[idNum-1].care}</p>
                         </div>
-                        <div className='flex justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
+                        <div className='flex lg:flex-row flex-col justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
                             <p className='text-[18px] leading-[27px] font-[400]' >YEAR</p>
-                            <p className='text-[18px] leading-[27px] font-[400] w-[80%]' >{data[idNum-1].year}</p>
+                            <p className='text-[15px] lg:text-[18px] leading-[27px] font-[400] w-full lg:w-[80%] mt-[20px] lg:mt-[0px]' >{data[idNum-1].year}</p>
                         </div>
                     </div>
                 </div>
 
             </div>
             <div className='flex flex-col gap-[8px] mt-[64px]' >
-                <div className='flex gap-[8px]' >
+                <div className='hidden lg:flex gap-[8px]' >
                     <div className='w-full h-auto relative' >
                         <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
                             <ImageLoader />
@@ -279,13 +288,13 @@ const Page = () => {
                 </div>
                 
                 <div className='w-full h-auto relative' >
-                        <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
-                            <ImageLoader />
-                        </div>
+                    <div className='hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
+                        <ImageLoader />
+                    </div>
                 
                     <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
                         src={data[idNum-1].mainImage}
-                        className='w-full h-[570px] object-cover'
+                        className='w-full h-auto lg:h-[570px] object-cover'
                         alt='Main Image'
                         width={1024}
                         height={576}
@@ -293,24 +302,24 @@ const Page = () => {
                 </div>
                 <div className='flex gap-[8px]' >
                     <div className='w-full h-auto relative' >
-                        <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
+                        <div className='hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
                             <ImageLoader />
                         </div>
                         <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
                             src={data[idNum-1].image2}
-                            className='w-full h-[570px] object-cover'
+                            className='w-full lg:h-[570px] object-cover'
                             alt='Main Image'
                             width={1024}
                             height={576}
                         />
                     </div>
                     <div className='w-full h-auto relative' >
-                        <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
+                        <div className=' hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
                             <ImageLoader />
                         </div>
                         <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
                             src={data[idNum-1].image2}
-                            className='w-full h-[570px] object-cover scaleX(-1)'
+                            className='w-full lg:h-[570px] object-cover scaleX(-1)'
                             alt='Main Image'
                             width={1024}
                             height={576}
@@ -319,17 +328,22 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-[64px] ' >
+            <div className='mt-[64px] hidden lg:block' >
                 <p className='text-[36px] font-[500] uppercase' >Other Collections</p>
-                <div className="flex flex-wrap justify-center gap-[14px]  mt-[24px]">
+                <div className="flex flex-wrap justify-center gap-[14px] mt-[24px]">
                     {data.slice(idNum, idNum + 3).map((item, index) => (
-                        <button key={index} className="flex flex-col justify-center items-center">
+                        <button key={`desktop-${index}`} className="flex flex-col justify-center items-center">
                             <div onClick={()=>router.push(`/product/${idNum+1+index}`)} className="h-[614px] w-[30vw] relative">
                                 <div>
                                     <div className='absolute top-0 left-0 w-[30vw] h-[614px] z-[-1]' >
                                         <ImageLoader  />
                                     </div>
-                                    <Image src={item.mainImage} alt={item.name} fill className="!w-full h-full object-cover" />
+                                    <Image 
+                                        src={item.mainImage} 
+                                        alt={item.name} 
+                                        fill 
+                                        className="!w-full h-full object-cover" 
+                                    />
                                 </div>
                             </div>
                             <p className="text-left w-full text-[#141414] text-[18px] font-[600] leading-[28px] mt-[14px]">{item.name}</p>
@@ -337,6 +351,30 @@ const Page = () => {
                     ))}
                 </div>
 
+            </div>
+            <div className='mt-[40px] lg:hidden mx-[5px]' >
+                <p className='text-[24px] font-[500] uppercase mb-[16px]' >Other Collections</p>
+                <div className="grid grid-cols-2 gap-[10px]">
+                    {data.slice(0, 4).map((item, index) => (
+                        <div key={`mobile-${index}`} className="flex flex-col">
+                            <div 
+                                onClick={()=>router.push(`/product/${index + 1}`)} 
+                                className="h-[259px] w-full relative"
+                            >
+                                <Image 
+                                    src={item.mainImage} 
+                                    alt={item.name} 
+                                    fill
+                                    className="object-cover w-full h-full"
+                                    sizes="(max-width: 768px) 50vw, 100vw"
+                                />
+                            </div>
+                            <p className="text-[14px] font-[600] leading-[20px] mt-[8px] text-left">
+                                {item.name}
+                            </p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
         <Footor />

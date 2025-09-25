@@ -1,6 +1,7 @@
 'use client'
 import Footor from '@/components/Footor'
 import Header from '@/components/product/Header'
+import UtilsHeader from '@/components/utils/Header'
 import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/navigation'
@@ -188,37 +189,79 @@ const data = [
         "year": "2024 Collection",
     },
 ]
+
 const Page = () => {
 
     const router = useRouter();
 
   return (
     <div className='text-black' >
-        <div className='mt-[48px] mx-[48px]' >
+
+        <div className='hidden lg:flex  mx-[48px] mt-[48px]' >
             <Header />
-            <div className='mt-[80px]' >
-                <p className='text-[#868684] text-[14px] uppercase text-center' >products</p>
+        </div>
+        <div className='flex lg:hidden' >
+            <UtilsHeader />
+        </div>
+
+        <div className='mt-[0px] lg:mt-[48px] mx-[16px] lg:mx-[48px]' >
+            
+            <div className='mt-[30px] lg:mt-[80px]' >
+                <p className='text-[#868684] hidden lg:flex text-[14px] uppercase text-center' >products</p>
                 <div className='flex flex-col justify-center items-center' >
-                    <h1 className="text-[80px] leading-[68px] mt-[19px] font-[600] uppercase text-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FutilityImage%2FImg.jpg?alt=media&token=5b02ec17-3f7a-4075-9556-e474e1ff9dc3')] bg-cover bg-center text-transparent bg-clip-text">
-                        Designed to Define, Built <br /> to Last
+                    <h1 className="text-[36px] lg:text-[80px] leading-[40px] lg:leading-[68px] mt-[19px] font-[600] uppercase text-left lg:text-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FutilityImage%2FImg.jpg?alt=media&token=5b02ec17-3f7a-4075-9556-e474e1ff9dc3')] bg-cover bg-center text-transparent bg-clip-text">
+                        Designed to Define, Built <br className='hidden lg:flex' /> to Last
                     </h1>
                 </div>
             </div>
             
-            <div className="flex flex-wrap justify-center gap-[14px] gap-y-[48px] mt-[80px]">
+            {/* Desktop View */}
+            <div className="hidden lg:flex flex-wrap justify-center gap-[14px] gap-y-[48px] mt-[80px]">
                 {data.map((item, index) => (
-                    <button key={index} className="flex flex-col justify-center items-center">
+                    <button key={`desktop-${index}`} className="flex flex-col justify-center items-center">
                         <div onClick={()=>router.push(`/product/${index+1}`)} className="h-[614px] w-[30vw] relative">
                             <div className='absolute top-0 left-0 w-[30vw] h-[614px] z-[-1]' >
                                 <ImageLoader  />
                             </div>
                             <Image 
-                                blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={item.mainImage} alt={item.name} width={340} height={500} className="!w-full h-full object-cover" />
+                                blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                                src={item.mainImage} 
+                                alt={item.name} 
+                                width={340} 
+                                height={500} 
+                                className="!w-full h-full object-cover" 
+                            />
                         </div>
                         <p className="text-left w-full text-[#141414] text-[18px] font-[600] leading-[28px] mt-[14px]">{item.name}</p>
                     </button>
                 ))}
             </div>
+
+            {/* Mobile View */}
+            <div className="lg:hidden grid grid-cols-2 gap-[10px] gap-y-[25px] mt-[28px] w-full">
+                {data.map((item, index) => (
+                    <div key={`mobile-${index}`} className="flex flex-col">
+                        <div 
+                            onClick={()=>router.push(`/product/${index+1}`)} 
+                            className="h-[259px] w-full relative"
+                        >
+                            <Image 
+                                blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                                src={item.mainImage} 
+                                alt={item.name} 
+                                fill
+                                className="object-cover w-full h-full"
+                                sizes="(max-width: 768px) 50vw, 100vw"
+                            />
+                        </div>
+                        <p className="text-[#141414] text-[14px] font-[600] leading-[20px] mt-[10px] text-left">
+                            {item.name}
+                        </p>
+                    </div>
+                ))}
+            </div>
+
+            
         </div>
         <Footor />
     </div>

@@ -97,7 +97,7 @@ const Header = () => {
           <nav className=' flex flex-col justify-start items-start mt-[60px]' >
             <ul className="flex flex-col gap-[18px] text-[32px] font-[400] text-white tracking-widest">
               <li className="cursor-pointer hover:text-yellow-400">
-                <button>HOME</button>
+                <button onClick={() => router.push('/')} >HOME</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
                 <button onClick={() => router.push('/about')} >ABOUT US</button>
@@ -106,7 +106,7 @@ const Header = () => {
                 <button onClick={() => router.push('/product')} >PRODUCTS</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button onClick={handleScroll} >OUR LOGO</button>
+                <button  onClick={() => router.push('/gallery')} >Gallery</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
                 <button onClick={() => router.push('/contact')} >CONTACT</button>
