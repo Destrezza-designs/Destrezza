@@ -106,7 +106,7 @@ const Header = () => {
                 <button onClick={() => router.push('/product')} >PRODUCTS</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button  onClick={() => router.push('/gallery')} >Gallery</button>
+                <button  onClick={() => router.push('/gallery')} >GALLERY</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
                 <button onClick={() => router.push('/contact')} >CONTACT</button>

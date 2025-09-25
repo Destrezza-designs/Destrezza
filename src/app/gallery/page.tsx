@@ -363,7 +363,7 @@ const page = () => {
             </div>
         </div>
 
-        <div className='m-[5px] flex flex-col gap-[5px]' >
+        <div className='m-[5px] lg:hidden flex flex-col gap-[5px]' >
             <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
                 src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery1.jpg?alt=media&token=7daf5234-6e48-4c0d-b3e9-e1592b63ee20"} 
                 alt={data[0].name} 
