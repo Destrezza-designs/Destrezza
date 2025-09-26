@@ -21,39 +21,38 @@ const Products = () => {
             <div className='flex lg:flex-row flex-col gap-[20px] lg:gap-[48px] mt-[20px]' >
                 <Image 
                     blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFLY09099%20Large.png?alt=media&token=a819db1c-2d9f-4124-a150-3a5b8e3c8fb0"} 
+                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F62.jpeg?alt=media&token=70e55951-aab2-4e69-a0c2-8cea7a81c782"} 
                     height={718} width={682} alt='products Image' 
                     style={{ width: '682px', height: '618px' }}
                     className='border-2 border-white hidden lg:flex rounded-[32px] object-cover' 
                 />
                 <Image 
                     blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFLY09099%20Large.png?alt=media&token=a819db1c-2d9f-4124-a150-3a5b8e3c8fb0"} 
+                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F62.jpeg?alt=media&token=70e55951-aab2-4e69-a0c2-8cea7a81c782"} 
                     height={718} width={682} alt='products Image' 
                     style={{ width: '682px', height: '383px' }}
                     className='border-2 border-white object-right lg:hidden rounded-[32px] object-cover' 
                 />
                 <div className=' w-full lg:w-[55%]' >
-                    <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Kizuki STudy table and chair</p>
-                    <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >Rooted in calm, functional elegance, the Kizuki Study Table & Chair set is a nod to mindful living and purposeful work. Inspired by Japanese simplicity and crafted with natural materials, it creates a serene workspace where clarity, creativity, and comfort coexist.
-                    Whether it’s for a home office, creative nook, or reading corner, this set offers a peaceful no clutter, no distractions. Just you and your thoughts.</p>
+                    <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Noir Cabinet</p>
+                    <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >The Noir Cabinet embodies quiet sophistication through its clean lines and refined detailing. Crafted from rich wood with a rhythmic fluted front, it merges utility with artistry, offering both storage and statement. Its minimal silhouette makes it versatile—equally at home in a dining area, living room, or hallway—while its timeless design invites a sense of grounded elegance into any interior.</p>
                 </div>
             </div>
 
             <div className='flex flex-col-reverse lg:flex-row gap-[20px] lg:gap-[48px] mt-[48px]' >
                 <div className='w-full lg:w-[55%] ' >
-                    <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Crown Seater</p>
-                    <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >Experience luxury and comfort with the Crown Seater. Designed to be the focal point of any living space, this elegant piece combines plush upholstery with a regal design, offering a sophisticated seating solution that excludes style and invites relaxation.</p>
+                    <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Lureth Chair</p>
+                    <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >The Lureth Chair is an elegant balance of tradition and modernity, designed to bring warmth and refinement to any space. Its handcrafted wooden frame, paired with a woven cane backrest, evokes timeless craftsmanship, while the patterned upholstered seat adds a touch of contemporary charm.</p>
                 </div>
                 <Image 
                     blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCrown2.png?alt=media&token=a8cf3161-1b53-44d3-8264-6ac481da3d36"} 
+                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F36.jpeg?alt=media&token=51b17be9-6765-42fa-82a9-3a483171f568"} 
                     height={718} width={682} alt='products Image'
                     style={{ width: '682px', height: '618px', objectPosition: 'right' }} 
                     className='object-cover border-2 hidden lg:flex border-white rounded-[32px]' />
                 <Image 
                     blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCrown2.png?alt=media&token=a8cf3161-1b53-44d3-8264-6ac481da3d36"} 
+                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F36.jpeg?alt=media&token=51b17be9-6765-42fa-82a9-3a483171f568"} 
                     height={718} width={682} alt='products Image'
                     style={{ width: '682px', height: '383px', objectPosition: 'right' }} 
                     className='object-cover border-2 lg:hidden border-white rounded-[32px]' />
@@ -62,25 +61,25 @@ const Products = () => {
             <div className='flex lg:flex-row flex-col gap-[20px] lg:gap-[48px] mt-[48px]' >
                 <Image  
                     blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FHeaven2.png?alt=media&token=96a3199b-00e4-42e7-b4fb-881ec199afd8"} 
+                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F32.jpeg?alt=media&token=127cc221-3e73-4864-b836-c5f63b5786af"} 
                     alt='products Image' 
                     height={718} width={682}
                     style={{ width: '682px', height: '618px' }}
                     className='w-[45%] h-fit object-cover hidden lg:flex border-2 border-white rounded-[32px]' />
                 <Image  
                     blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FHeaven2.png?alt=media&token=96a3199b-00e4-42e7-b4fb-881ec199afd8"} 
+                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F32.jpeg?alt=media&token=127cc221-3e73-4864-b836-c5f63b5786af"} 
                     alt='products Image' 
                     height={718} width={682}
                     style={{ width: '682px', height: '383px' }}
                     className='w-[45%] h-fit object-cover border-2 lg:hidden border-white rounded-[32px]' />
                 <div className='w-full lg:w-[55%] ' >
-                    <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Comfish master</p>
-                    <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >Indulge in unparalleled relaxation with the Comfish Master, a perfect blend of luxurious comfort and sophisticated style. Designed to enhance your living space, this masterful piece offers exceptional support and a contemporary aesthetic, making it the ideal choice for any modern home.</p>
+                    <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Arvionc Console</p>
+                    <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >The Arvionc Console is a celebration of fine craftsmanship and thoughtful design. Defined by its clean form, layered shelving, and subtle detailing, it offers both utility and aesthetic presence. The warm wooden finish brings natural character, while the spacious shelves and drawers provide versatile storage for everyday essentials or curated displays.</p>
                 </div>
             </div>
 
-            <div className='flex flex-col-reverse lg:flex-row  gap-[20px] lg:gap-[48px] mt-[48px]' >
+            {/* <div className='flex flex-col-reverse lg:flex-row  gap-[20px] lg:gap-[48px] mt-[48px]' >
                 <div className='w-full lg:w-[55%] ' >
                     <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Wellash chair</p>
                     <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >The Wellash Chair is a celebration of gentle curves, detailed craftsmanship, and serene comfort. With its cushioned seated, ergonomic backrest, and sculptural wooden frame. It brings a sense of warmth and elegance to any space - whether used as a dining chair, lounge accent, or work chair. 
@@ -100,7 +99,7 @@ const Products = () => {
                     height={718} width={682}
                     style={{ width: '682px', height: '383px' }}
                     className='object-cover border-2 lg:hidden border-white rounded-[32px]' />
-            </div>
+            </div> */}
 
         </div>
 
