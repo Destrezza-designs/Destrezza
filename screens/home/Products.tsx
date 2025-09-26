@@ -20,15 +20,15 @@ const Products = () => {
             <p data-aos="fade-up" className='text-[36px] font-[500] uppercase' >Our Products</p>
             <div data-aos="fade-up" className='flex lg:flex-row flex-col gap-[20px] lg:gap-[48px] mt-[20px]' >
                 <Image 
-                    blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F62.jpeg?alt=media&token=70e55951-aab2-4e69-a0c2-8cea7a81c782"} 
+                      
+                    src={"/62.jpeg"} 
                     height={718} width={682} alt='products Image' 
                     style={{ width: '682px', height: '618px' }}
                     className='popup border-2 border-white hidden lg:flex rounded-[32px] object-cover' 
                 />
                 <Image 
-                    blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F62.jpeg?alt=media&token=70e55951-aab2-4e69-a0c2-8cea7a81c782"} 
+                      
+                    src={"/62.jpeg"} 
                     height={718} width={682} alt='products Image' 
                     style={{ width: '682px', height: '383px' }}
                     className=' border-2 border-white object-right lg:hidden rounded-[32px] object-cover' 
@@ -45,14 +45,14 @@ const Products = () => {
                     <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >The Lureth Chair is an elegant balance of tradition and modernity, designed to bring warmth and refinement to any space. Its handcrafted wooden frame, paired with a woven cane backrest, evokes timeless craftsmanship, while the patterned upholstered seat adds a touch of contemporary charm.</p>
                 </div>
                 <Image 
-                    blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F36.jpeg?alt=media&token=51b17be9-6765-42fa-82a9-3a483171f568"} 
+                      
+                    src={"/36.jpeg"} 
                     height={718} width={682} alt='products Image'
                     style={{ width: '682px', height: '618px', objectPosition: 'right' }} 
                     className='popup object-cover border-2 hidden lg:flex border-white rounded-[32px]' />
                 <Image 
-                    blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F36.jpeg?alt=media&token=51b17be9-6765-42fa-82a9-3a483171f568"} 
+                      
+                    src={"/36.jpeg"} 
                     height={718} width={682} alt='products Image'
                     style={{ width: '682px', height: '383px', objectPosition: 'right' }} 
                     className='object-cover border-2 lg:hidden border-white rounded-[32px]' />
@@ -60,15 +60,15 @@ const Products = () => {
 
             <div data-aos="fade-up" className='flex lg:flex-row flex-col gap-[20px] lg:gap-[48px] mt-[48px]' >
                 <Image  
-                    blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F32.jpeg?alt=media&token=127cc221-3e73-4864-b836-c5f63b5786af"} 
+                      
+                    src={"/32.jpeg"} 
                     alt='products Image' 
                     height={718} width={682}
                     style={{ width: '682px', height: '618px' }}
                     className='popup w-[45%] h-fit object-cover hidden lg:flex border-2 border-white rounded-[32px]' />
                 <Image  
-                    blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F32.jpeg?alt=media&token=127cc221-3e73-4864-b836-c5f63b5786af"} 
+                      
+                    src={"/32.jpeg"} 
                     alt='products Image' 
                     height={718} width={682}
                     style={{ width: '682px', height: '383px' }}
@@ -86,14 +86,14 @@ const Products = () => {
                     Designed to be both functional and stylish, the Wellash Chair pairs effortlessly with modern, minimal, or earthy interior themes.</p>
                 </div>
                 <Image 
-                    blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                      
                     src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FWellash1.png?alt=media&token=2d733f2c-3912-4cba-ad87-45d394c8ebc5"} 
                     alt='products Image' 
                     height={718} width={682}
                     style={{ width: '682px', height: '618px' }}
                     className='object-cover border-2 hidden lg:flex border-white rounded-[32px]' />
                 <Image 
-                    blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                      
                     src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FWellash1.png?alt=media&token=2d733f2c-3912-4cba-ad87-45d394c8ebc5"} 
                     alt='products Image' 
                     height={718} width={682}

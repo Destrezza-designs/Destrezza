@@ -35,11 +35,11 @@ const page = () => {
         
         <div className="relative lg:hidden lg:w-screen w-[calc(100vw-32px)] lg:mx-0 mx-4 h-[250px] mt-[31px] lg:mt-[74px] overflow-hidden">
             <Image
-                src="https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F14.jpeg?alt=media&token=0baf9070-586b-446a-8a52-ff493d6b8daa"
+                src="/ece.jpeg"
                 alt="Image"
                 fill
                 className="object-cover object-center"
-                blurDataURL="https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600"
+                
             />
         </div>
         <p className='mx-[5%] text-[15px] lg:hidden lg:text-[18px] font-[400] leading-[28px] w-[90%] lg:w-[70%] mt-[19px] lg:mt-[24px] mb-[32px] lg:mb-[53px]' >We are a bespoke furniture studio dedicated to timeless design and masterful craftsmanship. With a deep respect for materials and form, we create pieces that embody sophistication, comfort, and enduring beauty — tailored for spaces that deserve nothing less.</p>
@@ -48,32 +48,32 @@ const page = () => {
         </div>
         <div className="relative hidden lg:flex lg:w-screen  lg:mx-0 mx-4 h-[80vh] mt-[31px] lg:mt-[74px] overflow-hidden">
             <Image
-                src="https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F14.jpeg?alt=media&token=0baf9070-586b-446a-8a52-ff493d6b8daa"
+                src="/ece.jpeg"
                 alt="Image"
                 fill
                 className="object-cover object-center"
-                blurDataURL="https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600"
+                
             />
         </div>
 
         <div className='mt-[31px] lg:mt-[80px] flex flex-col justify-center items-center gap-[22px] lg:gap-[148px]' >
             
                 <div className='flex flex-col justify-center items-center' >
-                    <h1 className="text-[36px] lg:text-[80px] font-[700] uppercase text-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FutilityImage%2FEleagence.jpg?alt=media&token=3c271e61-9709-47ce-861f-72463df8a418')] bg-cover bg-center text-transparent bg-clip-text">
+                    <h1 className="text-[36px] lg:text-[80px] font-[700] uppercase text-center bg-[url('/ece.jpeg')] bg-cover bg-center text-transparent bg-clip-text">
                         ELEGANCE
                     </h1>
                     <p className='mt-[10px] lg:mt-[0px] text-[#868684] w-[90%] lg:w-[70%] text-[14px] lg:text-[18px] font-[400] leading-[28px] text-center' >Every curve, edge, and finish is thoughtfully designed to exude timeless sophistication. We believe elegance lies in subtlety — where form enhances space without overpowering it.</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center' >
-                    <h1 className="text-[36px] lg:text-[80px] font-[700] uppercase text-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FutilityImage%2FUtility.png?alt=media&token=a8375984-35b5-4dd2-9e32-3cdef8ccc8fd')] bg-cover bg-center text-transparent bg-clip-text">
+                    <h1 className="text-[36px] lg:text-[80px] font-[700] uppercase text-center bg-[url('/u.jpeg')] bg-cover bg-center text-transparent bg-clip-text">
                         Utility
                     </h1>
                     <p className='mt-[10px] lg:mt-[0px] text-[#868684] w-[90%] lg:w-[70%] text-[14px] lg:text-[18px] font-[400] leading-[28px] text-center' >True beauty is functional. Our pieces are created with purpose, offering comfort, durability, and intelligent design that integrates seamlessly into everyday living.</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center' >
-                    <h1 className="text-[36px] lg:text-[80px] font-[700] uppercase text-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FutilityImage%2FSimplicity.png?alt=media&token=8ed9350e-b94d-4a23-8faa-99ba2b214e81')] bg-cover bg-center text-transparent bg-clip-text">
+                    <h1 className="text-[36px] lg:text-[80px] font-[700] uppercase text-center bg-[url('/s.jpeg')] bg-cover bg-center text-transparent bg-clip-text">
                         Simplicity
                     </h1>
                     <p className='mt-[10px] lg:mt-[0px] text-[#868684] w-[90%] lg:w-[70%] text-[14px] lg:text-[18px] font-[400] leading-[28px] text-center' >We embrace clean lines and intentional choices. Simplicity isn&lsquo;t about less — it&lsquo;s about clarity, balance, and allowing quality materials and craftsmanship to speak for themselves.</p>

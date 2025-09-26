@@ -97,7 +97,7 @@ const Main = () => {
         <div>
           <div className=' text-[#141414] mt-[50px] lg:mt-[-103px]' >
             <div className='hidden lg:block' >
-              <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={paper} className='w-screen h-fit' alt='paper' />
+              <Image   src={paper} className='w-screen h-fit' alt='paper' />
             </div>
             <div data-aos="fade-up" className='block lg:flex gap-[48px] flex-1 mt-[14px] lg:mt-[-103px] bg-white px-[16px] lg:px-[48px]' >
               <div className='w-full lg:w-[50%]' >
@@ -110,24 +110,24 @@ const Main = () => {
               </div>
               <div className='flex gap-[14px] mt-[14px] lg:mt-[0px] lg:gap-[24px] justify-center items-center' >
                 <Image 
-                  blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                    
                   alt='chair' 
-                  src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F60.jpeg?alt=media&token=9b193c1c-985b-4d2e-aa36-39f99783e5a5"} 
+                  src={'/60.jpeg'} 
                   width={150} height={100}
                   className='!h-fit !w-[338px] lg:hidden rounded-[18px] lg:rounded-[32px]' />
                 <Image 
-                  blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                    
                   alt='chair' 
-                  src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F60.jpeg?alt=media&token=9b193c1c-985b-4d2e-aa36-39f99783e5a5"} 
+                  src={"/32.jpeg"} 
                   width={1000} height={100}
                   className='!h-fit !w-[338px] hidden lg:flex rounded-[18px] lg:rounded-[32px]' />
                 <div className='flex flex-col gap-[14px] lg:gap-[24px]' >
-                  <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                  <Image   
                   alt='chair' 
-                  src={'https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2FATR04761.jpg?alt=media&token=2e202034-e033-420c-9036-fa750f77e376'} 
+                  src={'/36.jpeg'} 
                   width={338} height={338}
                   className='h-auto !w-[338px] rounded-[18px] lg:rounded-[32px]' />
-                  <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  alt='chair' src={Img3} className='h-auto w-[338px] rounded-[18px] lg:rounded-[32px]' />
+                  <Image   alt='chair' src={Img3} className='h-auto w-[338px] rounded-[18px] lg:rounded-[32px]' />
                 </div>
               </div>
               
@@ -188,18 +188,18 @@ const Main = () => {
               </div>
               <div className='flex gap-[4px] mt-[30px] justify-center items-center' >
                 <Image 
-                  blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                    
                   alt='chair' 
                   src={about_3} 
                   width={150} height={500}
                   className='rounded-[12px] w-[150px] h-[300px] object-cover' />
                 <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
-                  <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                  <Image   
                     alt='chair' 
                     src={about_1} 
                     width={150} height={150}
                     className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
-                  <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                  <Image   
                     alt='chair' 
                     src={about_2} 
                     width={150} height={150}
@@ -293,18 +293,18 @@ const Main = () => {
         <div className=' z-[50] relative shadow-2xl bg-black rounded-[24px] mt-[-90px] p-[8px] pb-[30px] flex gap-[5px]  flex-col justify-between items-center' >
             <div className='flex gap-[4px] mt-[30px] justify-center items-center' >
               <Image 
-                blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                  
                 alt='chair' 
                 src={about_3} 
                 width={150} height={500}
                 className='rounded-[12px] w-[150px] h-[305px] object-cover' />
               <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                <Image   
                   alt='chair' 
                   src={about_1} 
                   width={150} height={150}
                   className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                <Image   
                   alt='chair' 
                   src={about_2} 
                   width={150} height={150}
@@ -315,18 +315,18 @@ const Main = () => {
             </div>
             <div className='flex flex-row-reverse gap-[4px] mt-[5px] justify-center items-center' >
               <Image 
-                blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                  
                 alt='chair' 
                 src={about_3} 
                 width={150} height={500}
                 className='rounded-[12px] w-[150px] h-[305px] object-cover' />
               <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                <Image   
                   alt='chair' 
                   src={about_1} 
                   width={150} height={150}
                   className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                <Image   
                   alt='chair' 
                   src={about_2} 
                   width={150} height={150}
