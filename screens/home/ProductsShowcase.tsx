@@ -14,7 +14,7 @@ import { useRouter } from 'next/navigation'
 const ProductsShowcase = () => {
     const router = useRouter();
   return (
-    <div className='bg-[#141414] p-[0px] py-[40px] lg:py-[48px] lg:px-[48px] w-screen flex flex-col gap-[48px] justify-center items-center mt-[80px]' > 
+    <div className='bg-[#141414] hidden lg:flex p-[0px] py-[40px] lg:py-[48px] lg:px-[48px] w-screen  flex-col gap-[48px] justify-center items-center mt-[80px]' > 
         <div  className='hidden lg:grid grid-cols-3 gap-[24px] w-[100%] ' >
 
             <div data-aos="fade-up" className='flex flex-col gap-[24px]' >

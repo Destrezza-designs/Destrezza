@@ -9,6 +9,7 @@ import about_3 from '@/public/home/Img.png'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useRouter } from 'next/navigation'
 
 
 import { Inter } from "next/font/google";
@@ -17,6 +18,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 const Main = () => {
+
+  const router = useRouter();
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -287,9 +290,66 @@ const Main = () => {
           </div>
         </div>
 
-        <div className='bg-black rounded-[10px] p-[8px] pb-[20px]' >
-
+        <div className=' z-[50] relative shadow-2xl bg-black rounded-[24px] mt-[-90px] p-[8px] pb-[30px] flex gap-[5px]  flex-col justify-between items-center' >
+            <div className='flex gap-[4px] mt-[30px] justify-center items-center' >
+              <Image 
+                blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                alt='chair' 
+                src={about_3} 
+                width={150} height={500}
+                className='rounded-[12px] w-[150px] h-[305px] object-cover' />
+              <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                  alt='chair' 
+                  src={about_1} 
+                  width={150} height={150}
+                  className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                  alt='chair' 
+                  src={about_2} 
+                  width={150} height={150}
+                  className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
+                
+              </div>
+              
+            </div>
+            <div className='flex flex-row-reverse gap-[4px] mt-[5px] justify-center items-center' >
+              <Image 
+                blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                alt='chair' 
+                src={about_3} 
+                width={150} height={500}
+                className='rounded-[12px] w-[150px] h-[305px] object-cover' />
+              <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                  alt='chair' 
+                  src={about_1} 
+                  width={150} height={150}
+                  className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                  alt='chair' 
+                  src={about_2} 
+                  width={150} height={150}
+                  className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
+                
+              </div>
+              
+            </div>
+            <button 
+                data-aos="fade-up"
+                onClick={() => router.push('/gallery')}
+                className='text-[16px] mt-[30px] border border-[#F8F8F5] border-solid rounded-[48px] w-fit px-[20px] py-[12px] flex gap-[16px] uppercase font-[600] hover:bg-[#F8F8F5] hover:text-[#141414] hover:transition-all duration-300' >
+                See What We’ve Created
+                <div className='bg-white w-[24px] h-[24px] rounded-[24px] flex justify-center items-center ' >
+                    <svg  width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.22353 1L8.90588 1.09412M8.90588 1.09412L9 7.77647M8.90588 1.09412L1 9" stroke="#141414" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                </div>
+                
+            </button>
         </div>
+
+        
 
       </div>
       
