@@ -9,29 +9,29 @@ const Products = () => {
 
   return (
 
-    <div className='relative text-[#141414] mt-[40px] overflow-hidden' >
+    <div className='relative hidden lg:block text-[#141414] mt-[40px] overflow-hidden' >
         <div className='hidden lg:flex absolute top-0 left-0 z-[-1]' >
             <svg width="1440" height="2230" viewBox="0 0 1440 2230" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1440 2230L1331.04 756.711L0 0L146.048 1826.72L1440 2230Z" fill="#CEB578"/>
             </svg>
         </div>
         <div className='px-[18px] lg:px-[48px]' >
-            <p className='text-[#868684] text-[14px] uppercase' >Designed to be loved</p>
-            <p className='text-[36px] font-[500] uppercase' >Our Products</p>
-            <div className='flex lg:flex-row flex-col gap-[20px] lg:gap-[48px] mt-[20px]' >
+            <p data-aos="fade-up" className='text-[#868684] text-[14px] uppercase' >Designed to be loved</p>
+            <p data-aos="fade-up" className='text-[36px] font-[500] uppercase' >Our Products</p>
+            <div data-aos="fade-up" className='flex lg:flex-row flex-col gap-[20px] lg:gap-[48px] mt-[20px]' >
                 <Image 
                     blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
                     src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F62.jpeg?alt=media&token=70e55951-aab2-4e69-a0c2-8cea7a81c782"} 
                     height={718} width={682} alt='products Image' 
                     style={{ width: '682px', height: '618px' }}
-                    className='border-2 border-white hidden lg:flex rounded-[32px] object-cover' 
+                    className='popup border-2 border-white hidden lg:flex rounded-[32px] object-cover' 
                 />
                 <Image 
                     blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
                     src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F62.jpeg?alt=media&token=70e55951-aab2-4e69-a0c2-8cea7a81c782"} 
                     height={718} width={682} alt='products Image' 
                     style={{ width: '682px', height: '383px' }}
-                    className='border-2 border-white object-right lg:hidden rounded-[32px] object-cover' 
+                    className=' border-2 border-white object-right lg:hidden rounded-[32px] object-cover' 
                 />
                 <div className=' w-full lg:w-[55%]' >
                     <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Noir Cabinet</p>
@@ -39,7 +39,7 @@ const Products = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col-reverse lg:flex-row gap-[20px] lg:gap-[48px] mt-[48px]' >
+            <div data-aos="fade-up" className='flex flex-col-reverse lg:flex-row gap-[20px] lg:gap-[48px] mt-[48px]' >
                 <div className='w-full lg:w-[55%] ' >
                     <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Lureth Chair</p>
                     <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >The Lureth Chair is an elegant balance of tradition and modernity, designed to bring warmth and refinement to any space. Its handcrafted wooden frame, paired with a woven cane backrest, evokes timeless craftsmanship, while the patterned upholstered seat adds a touch of contemporary charm.</p>
@@ -49,7 +49,7 @@ const Products = () => {
                     src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F36.jpeg?alt=media&token=51b17be9-6765-42fa-82a9-3a483171f568"} 
                     height={718} width={682} alt='products Image'
                     style={{ width: '682px', height: '618px', objectPosition: 'right' }} 
-                    className='object-cover border-2 hidden lg:flex border-white rounded-[32px]' />
+                    className='popup object-cover border-2 hidden lg:flex border-white rounded-[32px]' />
                 <Image 
                     blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
                     src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F36.jpeg?alt=media&token=51b17be9-6765-42fa-82a9-3a483171f568"} 
@@ -58,14 +58,14 @@ const Products = () => {
                     className='object-cover border-2 lg:hidden border-white rounded-[32px]' />
             </div>
 
-            <div className='flex lg:flex-row flex-col gap-[20px] lg:gap-[48px] mt-[48px]' >
+            <div data-aos="fade-up" className='flex lg:flex-row flex-col gap-[20px] lg:gap-[48px] mt-[48px]' >
                 <Image  
                     blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
                     src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F32.jpeg?alt=media&token=127cc221-3e73-4864-b836-c5f63b5786af"} 
                     alt='products Image' 
                     height={718} width={682}
                     style={{ width: '682px', height: '618px' }}
-                    className='w-[45%] h-fit object-cover hidden lg:flex border-2 border-white rounded-[32px]' />
+                    className='popup w-[45%] h-fit object-cover hidden lg:flex border-2 border-white rounded-[32px]' />
                 <Image  
                     blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
                     src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F32.jpeg?alt=media&token=127cc221-3e73-4864-b836-c5f63b5786af"} 
@@ -103,7 +103,7 @@ const Products = () => {
 
         </div>
 
-        <button onClick={() => router.push('/product')} className='flex justify-end lg:justify-normal items-center text-[14px] font-[600]  w-full flex-1 gap-[12px] uppercase mx-[0px] mr-[20px] lg:mx-[48px] px-[20px] lg:px-[16px] py-[16px] mt-[24px]' >All Products
+        <button data-aos="fade-up" onClick={() => router.push('/product')} className='flex justify-end lg:justify-normal items-center text-[14px] font-[600]  w-full flex-1 gap-[12px] uppercase mx-[0px] mr-[20px] lg:mx-[48px] px-[20px] lg:px-[16px] py-[16px] mt-[24px]' >All Products
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#141414" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
+@import "aos/dist/aos.css";
 
 :root {
   --background: #ffffff;
@@ -35,3 +37,24 @@ button{
     display: none !important;
   }
 } */
+
+
+.popup {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1);
+}
+
+.popup:hover {
+  transform: scale(1.01);
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+
+.inter_light {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+}
+

@@ -342,7 +342,7 @@ const Page = () => {
                                         src={item.mainImage} 
                                         alt={item.name} 
                                         fill 
-                                        className="!w-full h-full object-cover" 
+                                        className="popup !w-full h-full object-cover" 
                                     />
                                 </div>
                             </div>
@@ -365,7 +365,7 @@ const Page = () => {
                                     src={item.mainImage} 
                                     alt={item.name} 
                                     fill
-                                    className="object-cover w-full h-full"
+                                    className="popup object-cover w-full h-full"
                                     sizes="(max-width: 768px) 50vw, 100vw"
                                 />
                             </div>

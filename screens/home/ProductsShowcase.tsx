@@ -15,27 +15,34 @@ const ProductsShowcase = () => {
     const router = useRouter();
   return (
     <div className='bg-[#141414] p-[0px] py-[40px] lg:py-[48px] lg:px-[48px] w-screen flex flex-col gap-[48px] justify-center items-center mt-[80px]' > 
-        <div className='hidden lg:grid grid-cols-3 gap-[24px] w-[100%] ' >
+        <div  className='hidden lg:grid grid-cols-3 gap-[24px] w-[100%] ' >
 
-            <div className='flex flex-col gap-[24px]' >
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P1} alt='Product Image' className='w-auto h-[600px]' />
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P2} alt='Product Image' className='w-auto h-[600px]' />
+            <div data-aos="fade-up" className='flex flex-col gap-[24px]' >
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                src={P1} alt='Product Image' className='popup w-auto h-[600px]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                src={P2} alt='Product Image' className='popup w-auto h-[600px]' />
             </div>
 
-            <div className='flex flex-col gap-[24px]' >
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P3} alt='Product Image' className='w-auto h-[288px]' />
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P4} alt='Product Image' className='w-auto h-[600px]' />
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P5} alt='Product Image' className='w-auto h-[288px]' />
+            <div data-aos="fade-up" className='flex flex-col gap-[24px]' >
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                src={P3} alt='Product Image' className='popup w-auto h-[288px]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                src={P4} alt='Product Image' className='popup w-auto h-[600px]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                src={P5} alt='Product Image' className='popup w-auto h-[288px]' />
             </div>
 
-            <div className='flex flex-col gap-[24px]' >
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P6} alt='Product Image' className='w-auto h-[600px]' />
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={P7} alt='Product Image' className='w-auto h-[600px]' />
+            <div data-aos="fade-up" className='flex flex-col gap-[24px]' >
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                src={P6} alt='Product Image' className='popup w-auto h-[600px]' />
+                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                src={P7} alt='Product Image' className='popup w-auto h-[600px]' />
             </div>
 
         </div>
 
-        <div className='flex lg:hidden flex-col gap-[5px]' >
+        <div data-aos="fade-up" className='flex lg:hidden flex-col gap-[5px]' >
             <Image   
             src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2FPP2-34.jpeg?alt=media&token=4e70a3e3-d15f-46be-94d5-052ce6d981ff"} 
             width={1000} height={1000} alt='Product Image' 
@@ -60,6 +67,7 @@ const ProductsShowcase = () => {
 
         </div>
         <button 
+            data-aos="fade-up"
             onClick={() => router.push('/gallery')}
             className='text-[16px] border border-[#F8F8F5] border-solid rounded-[48px] w-fit px-[20px] py-[12px] flex gap-[16px] uppercase font-[600] hover:bg-[#F8F8F5] hover:text-[#141414] hover:transition-all duration-300' >
             See What We’ve Created

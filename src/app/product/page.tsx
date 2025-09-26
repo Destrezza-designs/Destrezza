@@ -207,7 +207,7 @@ const Page = () => {
         <div className='mt-[0px] lg:mt-[48px] mx-[16px] lg:mx-[48px]' >
             
             <div className='mt-[30px] lg:mt-[80px]' >
-                <p className='text-[#868684] hidden lg:flex text-[14px] uppercase text-center' >products</p>
+                <p className='text-[#868684] hidden  text-[14px] uppercase text-center ' >products</p>
                 <div className='flex flex-col justify-center items-center' >
                     <h1 className="text-[36px] lg:text-[80px] leading-[40px] lg:leading-[68px] mt-[19px] font-[600] uppercase text-left lg:text-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FutilityImage%2FImg.jpg?alt=media&token=5b02ec17-3f7a-4075-9556-e474e1ff9dc3')] bg-cover bg-center text-transparent bg-clip-text">
                         Designed to Define, Built <br className='hidden lg:flex' /> to Last
@@ -229,10 +229,10 @@ const Page = () => {
                                 alt={item.name} 
                                 width={340} 
                                 height={500} 
-                                className="!w-full h-full object-cover" 
+                                className="popup !w-full h-full object-cover" 
                             />
                         </div>
-                        <p className="text-left w-full text-[#141414] text-[18px] font-[600] leading-[28px] mt-[14px]">{item.name}</p>
+                        <p className="popup text-left w-full text-[#141414] text-[18px] font-[600] leading-[28px] mt-[14px]">{item.name}</p>
                     </button>
                 ))}
             </div>
@@ -254,7 +254,7 @@ const Page = () => {
                                 sizes="(max-width: 768px) 50vw, 100vw"
                             />
                         </div>
-                        <p className="text-[#141414] text-[14px] font-[600] leading-[20px] mt-[10px] text-left">
+                        <p className=" text-[#141414] text-[14px] font-[600] leading-[20px] mt-[10px] text-left">
                             {item.name}
                         </p>
                     </div>

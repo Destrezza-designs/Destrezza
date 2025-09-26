@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import AOSWrapper from "@/lib/AOSWrapper";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dezztra",
@@ -11,10 +15,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  
   return (
     <html lang="en">
-      <body>
+      <body className={inter.className} >
+        <AOSWrapper >
         {children}
+        </AOSWrapper>
       </body>
     </html>
   );

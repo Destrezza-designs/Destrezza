@@ -25,15 +25,36 @@ const page = () => {
             <div className='mt-[50px] lg:mt-[80px]' >
                 <p className='lg:block hidden text-[14px] text-[#868684] uppercase' >ABOUT us</p>
                 <p className='text-[36px] lg:text-[58px] font-[500] uppercase leading-[36px] lg:leading-[68px] mt-[0px] lg:mt-[14px]' >Crafting Elegance in <br /> Every Detail.</p>
-                <p className='text-[15px] lg:text-[18px] font-[400] leading-[28px] w-full lg:w-[70%] mt-[19px] lg:mt-[24px] mb-[32px] lg:mb-[53px]' >We are a bespoke furniture studio dedicated to timeless design and masterful craftsmanship. With a deep respect for materials and form, we create pieces that embody sophistication, comfort, and enduring beauty — tailored for spaces that deserve nothing less.</p>
-                <div className='flex flex-1 w-full justify-center items-center lg:justify-start lg:items-start' >
+                <p className='text-[15px] hidden lg:flex lg:text-[18px] font-[400] leading-[28px] w-full lg:w-[70%] mt-[19px] lg:mt-[24px] mb-[32px] lg:mb-[53px]' >We are a bespoke furniture studio dedicated to timeless design and masterful craftsmanship. With a deep respect for materials and form, we create pieces that embody sophistication, comfort, and enduring beauty — tailored for spaces that deserve nothing less.</p>
+                <div className='lg:flex hidden flex-1 w-full justify-center items-center lg:justify-start lg:items-start' >
                     <RedirectButton text='View our products' />
                 </div>
             </div>
         </div>
 
-        <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-            src={I1} className='lg:w-screen w-[calc(100vw-32px)] lg:mx-[0px] mx-[16px] h-auto mt-[31px] lg:mt-[74px] ' alt='Image' />
+        
+        <div className="relative lg:hidden lg:w-screen w-[calc(100vw-32px)] lg:mx-0 mx-4 h-[250px] mt-[31px] lg:mt-[74px] overflow-hidden">
+            <Image
+                src="https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F14.jpeg?alt=media&token=0baf9070-586b-446a-8a52-ff493d6b8daa"
+                alt="Image"
+                fill
+                className="object-cover object-center"
+                blurDataURL="https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600"
+            />
+        </div>
+        <p className='mx-[5%] text-[15px] lg:hidden lg:text-[18px] font-[400] leading-[28px] w-[90%] lg:w-[70%] mt-[19px] lg:mt-[24px] mb-[32px] lg:mb-[53px]' >We are a bespoke furniture studio dedicated to timeless design and masterful craftsmanship. With a deep respect for materials and form, we create pieces that embody sophistication, comfort, and enduring beauty — tailored for spaces that deserve nothing less.</p>
+        <div className='flex lg:hidden flex-1 w-full justify-center items-center lg:justify-start lg:items-start' >
+            <RedirectButton text='View our products' />
+        </div>
+        <div className="relative hidden lg:flex lg:w-screen  lg:mx-0 mx-4 h-[80vh] mt-[31px] lg:mt-[74px] overflow-hidden">
+            <Image
+                src="https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fphoto-quality%2F14.jpeg?alt=media&token=0baf9070-586b-446a-8a52-ff493d6b8daa"
+                alt="Image"
+                fill
+                className="object-cover object-center"
+                blurDataURL="https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600"
+            />
+        </div>
 
         <div className='mt-[31px] lg:mt-[80px] flex flex-col justify-center items-center gap-[22px] lg:gap-[148px]' >
             
