@@ -4,14 +4,13 @@ import UtilsHeader from '@/components/utils/Header'
 import RedirectButton from '@/components/utils/RedirectButton'
 import Image from 'next/image'
 import React from 'react'
-import I1 from '@/public/About/Img.png'
 import I2 from '@/public/About/Approch.png'
 import I3 from '@/public/About/Imageback.jpg'
 import Footor from '@/components/Footor'
 import { useRouter } from 'next/navigation'
 
 
-const page = () => {
+const Page = () => {
 
 
     const router = useRouter();
@@ -134,4 +133,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

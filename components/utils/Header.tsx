@@ -4,7 +4,6 @@ import Image from 'next/image'
 import logo from '@/public/header/Vector86.png'
 import brand from '@/public/header/Brand.png'
 import { useRouter } from 'next/navigation'
-import NamedLogo from './NamedLogo'
 
 
   /**
