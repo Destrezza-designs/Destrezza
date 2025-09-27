@@ -193,7 +193,7 @@ const page = () => {
         <div className='hidden lg:flex  mx-[48px] mt-[48px]' >
             <Header />
         </div>
-        <div className='flex lg:hidden' >
+        <div className='flex lg:hidden mt-[-22px]' >
             <UtilsHeader />
         </div>
         <div className='my-[80px] mx-[48px] hidden lg:flex flex-col gap-[14px] justify-center items-center'>

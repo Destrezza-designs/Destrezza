@@ -46,7 +46,7 @@ const Page = () => {
         <div className='hidden lg:flex  mx-[48px] mt-[48px]' >
             <Header />
         </div>
-        <div className='flex lg:hidden' >
+        <div className='flex lg:hidden mt-[-22px]' >
             <UtilsHeader />
         </div>
 

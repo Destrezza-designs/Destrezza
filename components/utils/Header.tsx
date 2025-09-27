@@ -7,7 +7,8 @@ import { useRouter } from 'next/navigation'
 
 
   /**
-   * A header component that includes a logo, navigation menu and a brand
+   * A header component that includes a logo, navigation menu a
+   * nd a brand
    * @returns A JSX element representing the header component
    */
 const Header = () => {
@@ -55,7 +56,9 @@ const Header = () => {
         
         <div className='w-full lg:w-fit flex justify-between items-center' >
           <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
-            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className='' src={brand} alt="Brand" width={303} height={58} />
+            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className='cover' 
+            src={brand} 
+            alt="Brand" width={303} height={58} />
           </div>
           <button onClick={()=>setNavbar(true)} className='flex lg:hidden' >
             <svg
@@ -85,7 +88,9 @@ const Header = () => {
       >
         <div className='w-full lg:w-fit flex justify-between items-center' >
             <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
-              <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className='' src={brand} alt="Brand" width={303} height={58} />
+              <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className='' 
+              src={brand} 
+              alt="Brand" width={303} height={58} />
             </div>
             <button onClick={()=>setNavbar(false)} className='flex lg:hidden' >
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
