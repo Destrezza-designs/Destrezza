@@ -1,3 +1,4 @@
+'use client'
 import Header from '@/components/product/Header'
 import UtilsHeader from '@/components/utils/Header'
 import RedirectButton from '@/components/utils/RedirectButton'
@@ -7,10 +8,14 @@ import I1 from '@/public/About/Img.png'
 import I2 from '@/public/About/Approch.png'
 import I3 from '@/public/About/Imageback.jpg'
 import Footor from '@/components/Footor'
-
+import { useRouter } from 'next/navigation'
 
 
 const page = () => {
+
+
+    const router = useRouter();
+
   return (
     <div className='text-[#141414] overflow-x-hidden' >
 
@@ -27,7 +32,7 @@ const page = () => {
                 <p className='text-[36px] lg:text-[58px] font-[500] uppercase leading-[36px] lg:leading-[68px] mt-[0px] lg:mt-[14px]' >Crafting Elegance in <br /> Every Detail.</p>
                 <p className='text-[15px] hidden lg:flex lg:text-[18px] font-[400] leading-[28px] w-full lg:w-[70%] mt-[19px] lg:mt-[24px] mb-[32px] lg:mb-[53px]' >We are a bespoke furniture studio dedicated to timeless design and masterful craftsmanship. With a deep respect for materials and form, we create pieces that embody sophistication, comfort, and enduring beauty — tailored for spaces that deserve nothing less.</p>
                 <div className='lg:flex hidden flex-1 w-full justify-center items-center lg:justify-start lg:items-start' >
-                    <RedirectButton text='View our products' />
+                    <RedirectButton  onClick={() =>{router.push('/product')}}  text='View our products' />
                 </div>
             </div>
         </div>
@@ -44,7 +49,7 @@ const page = () => {
         </div>
         <p className='mx-[5%] text-[15px] lg:hidden lg:text-[18px] font-[400] leading-[28px] w-[90%] lg:w-[70%] mt-[19px] lg:mt-[24px] mb-[32px] lg:mb-[53px]' >We are a bespoke furniture studio dedicated to timeless design and masterful craftsmanship. With a deep respect for materials and form, we create pieces that embody sophistication, comfort, and enduring beauty — tailored for spaces that deserve nothing less.</p>
         <div className='flex lg:hidden flex-1 w-full justify-center items-center lg:justify-start lg:items-start' >
-            <RedirectButton text='View our products' />
+            <RedirectButton onClick={() =>{router.push('/product')}} text='View our products' />
         </div>
         <div className="relative hidden lg:flex lg:w-screen  lg:mx-0 mx-4 h-[80vh] mt-[31px] lg:mt-[74px] overflow-hidden">
             <Image

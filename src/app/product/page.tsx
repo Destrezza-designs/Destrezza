@@ -209,7 +209,7 @@ const Page = () => {
             <div className='mt-[30px] lg:mt-[80px]' >
                 <p className='text-[#868684] hidden  text-[14px] uppercase text-center ' >products</p>
                 <div className='flex flex-col justify-center items-center' >
-                    <h1 className="text-[36px] lg:text-[80px] leading-[40px] lg:leading-[68px] mt-[19px] font-[600] uppercase text-left lg:text-center bg-[url('https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FutilityImage%2FImg.jpg?alt=media&token=5b02ec17-3f7a-4075-9556-e474e1ff9dc3')] bg-cover bg-center text-transparent bg-clip-text">
+                    <h1 className="text-[36px] lg:text-[80px] leading-[40px] lg:leading-[68px] mt-[19px] font-[600] uppercase text-left lg:text-center bg-[url('/12.jpeg')] bg-cover bg-center text-transparent bg-clip-text">
                         Designed to Define, Built <br className='hidden lg:flex' /> to Last
                     </h1>
                 </div>
@@ -224,7 +224,7 @@ const Page = () => {
                                 <ImageLoader  />
                             </div>
                             <Image 
-                                blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
+                                
                                 src={item.mainImage} 
                                 alt={item.name} 
                                 width={340} 

@@ -163,16 +163,49 @@ const Main = () => {
 
       {/* mobile view */}
       <div className="relative lg:hidden">
-        <div className="flex flex-1 pt-[0px] lg:pt-[40px]">
+        <div className="flex flex-1 mt-[-22px] pt-[0px] lg:pt-[40px]">
           <Header />
         </div>
-        <div 
-          className="relative w-full h-[400px] bg-cover bg-center"
-          style={{ backgroundImage: "url('/bg.png')", backgroundPosition: "left", backgroundSize: "cover" }}
-        >
-          <div className="absolute bottom-4 left-[16px] text-white  py-2 rounded-lg">
-            <p className={`${inter.className} inter font-[100] text-[24px] leading-[22px]`}  >TRANSFORM YOUR SPACE WITH OUR EXQUSITE</p>
-            <p className='inter font-[600] text-[24px] mt-[-5px]' >FURNITURE COLLECTION</p>
+        <div className="relative w-full h-[400px] overflow-hidden">
+          {/* Slider only for images */}
+          <Slider 
+            {...{
+              dots: false,
+              infinite: true,
+              speed: 1000,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 3000,
+              fade: false, // sliding effect
+              cssEase: 'ease-in-out',
+              arrows: false,
+              pauseOnHover: false
+            }}
+            className="h-full w-full"
+          >
+            {['/bg.png', '/home-page-1.jpeg', '/home-page-2.jpeg'].map((image, index) => (
+              <div key={index} className="h-[400px] w-full">
+                <div 
+                  className="h-full w-full bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${image})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover'
+                  }}
+                />
+              </div>
+            ))}
+          </Slider>
+
+          {/* Text overlay (independent of slides) */}
+          <div className="absolute bottom-4 left-[16px] text-white py-2 rounded-lg max-w-[90%]">
+            <p className={`${inter.className} inter font-[100] text-[20px] md:text-[24px] leading-[22px]`}>
+              TRANSFORM YOUR SPACE WITH OUR EXQUISITE
+            </p>
+            <p className="inter font-[600] text-[20px] md:text-[24px] mt-[-5px]">
+              FURNITURE COLLECTION
+            </p>
           </div>
         </div>
 
@@ -290,56 +323,13 @@ const Main = () => {
           </div>
         </div>
 
-        <div className=' z-[50] relative shadow-2xl bg-black rounded-[24px] mt-[-90px] p-[8px] pb-[30px] flex gap-[5px]  flex-col justify-between items-center' >
-            <div className='flex gap-[4px] mt-[30px] justify-center items-center' >
-              <Image 
-                  
-                alt='chair' 
-                src={about_3} 
-                width={150} height={500}
-                className='rounded-[12px] w-[150px] h-[305px] object-cover' />
-              <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
-                <Image   
-                  alt='chair' 
-                  src={about_1} 
-                  width={150} height={150}
-                  className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
-                <Image   
-                  alt='chair' 
-                  src={about_2} 
-                  width={150} height={150}
-                  className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
-                
-              </div>
-              
-            </div>
-            <div className='flex flex-row-reverse gap-[4px] mt-[5px] justify-center items-center' >
-              <Image 
-                  
-                alt='chair' 
-                src={about_3} 
-                width={150} height={500}
-                className='rounded-[12px] w-[150px] h-[305px] object-cover' />
-              <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
-                <Image   
-                  alt='chair' 
-                  src={about_1} 
-                  width={150} height={150}
-                  className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
-                <Image   
-                  alt='chair' 
-                  src={about_2} 
-                  width={150} height={150}
-                  className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
-                
-              </div>
-              
-            </div>
+        <div className='z-[50] relative mt-[-90px]' >
+          <div className='w-full flex justify-center items-center' >
             <button 
                 data-aos="fade-up"
-                onClick={() => router.push('/gallery')}
-                className='text-[16px] mt-[30px] border border-[#F8F8F5] border-solid rounded-[48px] w-fit px-[20px] py-[12px] flex gap-[16px] uppercase font-[600] hover:bg-[#F8F8F5] hover:text-[#141414] hover:transition-all duration-300' >
-                See What We’ve Created
+                onClick={() => router.push('/product')}
+                className='  text-[12px] border border-[#F8F8F5] border-solid rounded-[48px] w-fit px-[16px] py-[6px] flex justify-between items-center gap-[16px] uppercase font-[600] bg-[#F8F8F5] text-[#141414] hover:transition-all duration-300' >
+                ALL PRODUCTS
                 <div className='bg-white w-[24px] h-[24px] rounded-[24px] flex justify-center items-center ' >
                     <svg  width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.22353 1L8.90588 1.09412M8.90588 1.09412L9 7.77647M8.90588 1.09412L1 9" stroke="#141414" strokeLinecap="round" strokeLinejoin="round"/>
@@ -347,6 +337,65 @@ const Main = () => {
                 </div>
                 
             </button>
+          </div>
+          <div className='mt-[20px]  shadow-2xl bg-black rounded-[24px]  p-[8px] pb-[30px] flex gap-[5px]  flex-col justify-between items-center' >
+              <div className='flex gap-[4px] mt-[30px] justify-center items-center' >
+                <Image 
+                    
+                  alt='chair' 
+                  src={about_3} 
+                  width={150} height={500}
+                  className='rounded-[12px] w-[150px] h-[305px] object-cover' />
+                <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
+                  <Image   
+                    alt='chair' 
+                    src={about_1} 
+                    width={150} height={150}
+                    className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
+                  <Image   
+                    alt='chair' 
+                    src={about_2} 
+                    width={150} height={150}
+                    className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
+                  
+                </div>
+                
+              </div>
+              <div className='flex flex-row-reverse gap-[4px] mt-[5px] justify-center items-center' >
+                <Image 
+                    
+                  alt='chair' 
+                  src={about_3} 
+                  width={150} height={500}
+                  className='rounded-[12px] w-[150px] h-[305px] object-cover' />
+                <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
+                  <Image   
+                    alt='chair' 
+                    src={about_1} 
+                    width={150} height={150}
+                    className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
+                  <Image   
+                    alt='chair' 
+                    src={about_2} 
+                    width={150} height={150}
+                    className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
+                  
+                </div>
+                
+              </div>
+              <button 
+                  data-aos="fade-up"
+                  onClick={() => router.push('/gallery')}
+                  className='text-[16px] mt-[30px] border border-[#F8F8F5] border-solid rounded-[48px] w-fit px-[20px] py-[12px] flex gap-[16px] uppercase font-[600] hover:bg-[#F8F8F5] hover:text-[#141414] hover:transition-all duration-300' >
+                  See What We’ve Created
+                  <div className='bg-white w-[24px] h-[24px] rounded-[24px] flex justify-center items-center ' >
+                      <svg  width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.22353 1L8.90588 1.09412M8.90588 1.09412L9 7.77647M8.90588 1.09412L1 9" stroke="#141414" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                  </div>
+                  
+              </button>
+          </div>
         </div>
 
         
