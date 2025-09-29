@@ -229,7 +229,7 @@ const Page = () => {
                                 alt={item.name} 
                                 width={340} 
                                 height={500} 
-                                className="popup !w-full h-full object-cover" 
+                                className="popup !w-full h-full object-cover rounded-[16px]" 
                             />
                         </div>
                         <p className="popup text-left w-full text-[#141414] text-[18px] font-[600] leading-[28px] mt-[14px]">{item.name}</p>

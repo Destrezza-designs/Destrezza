@@ -45,6 +45,9 @@ const Header = () => {
               <button onClick={() => router.push('/product')} >PRODUCTS</button>
             </li>
             <li className="cursor-pointer hover:text-yellow-400">
+              <button onClick={() => router.push('/gallery')} >GALLERY</button>
+            </li>
+            <li className="cursor-pointer hover:text-yellow-400">
               <button onClick={handleScroll} >OUR LOGO</button>
             </li>
             <li className="cursor-pointer hover:text-yellow-400">

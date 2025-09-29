@@ -223,14 +223,14 @@ const page = () => {
                         alt={data[0].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
                         src={image2} 
                         alt={data[1].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                 </div>
                 <div className='flex flex-col gap-[14px]'>
@@ -239,21 +239,21 @@ const page = () => {
                         alt={data[2].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
                         src={image4} 
                         alt={data[3].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
                         src={image5} 
                         alt={data[4].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden object-bottom' 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden object-bottom' 
                     />
                 </div>
                 <div className='flex flex-col gap-[14px]'>
@@ -262,14 +262,14 @@ const page = () => {
                         alt={data[5].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
                         src={image6} 
                         alt={data[6].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                 </div>
             </div>
@@ -280,14 +280,14 @@ const page = () => {
                         alt={data[7].name} 
                         width={665} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
                         src={image8} 
                         alt={data[8].name} 
                         width={665} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                 </div>
                 <div className='flex gap-[14px]'>
@@ -296,14 +296,14 @@ const page = () => {
                         alt={data[9].name} 
                         width={665} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
                         src={image10} 
                         alt={data[10].name} 
                         width={665} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                 </div>
             </div>
@@ -314,14 +314,14 @@ const page = () => {
                         alt={data[0].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
                         src={image12} 
                         alt={data[1].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                 </div>
                 <div className='flex flex-col gap-[14px]'>
@@ -330,21 +330,21 @@ const page = () => {
                         alt={data[2].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
                         src={image14} 
                         alt={data[3].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
                         src={image15} 
                         alt={data[4].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                 </div>
                 <div className='flex flex-col gap-[14px]'>
@@ -353,14 +353,14 @@ const page = () => {
                         alt={data[5].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
                         src={image17} 
                         alt={data[6].name} 
                         width={438} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                 </div>
             </div>
@@ -370,7 +370,7 @@ const page = () => {
                     alt={data[5].name} 
                     width={1344} 
                     height={600} 
-                    className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden object-[50%_70%]' 
+                    className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden object-[50%_70%]' 
                 />
             </div>
         </div>
