@@ -61,21 +61,21 @@ const Products = () => {
             <div data-aos="fade-up" className='flex lg:flex-row flex-col gap-[20px] lg:gap-[48px] mt-[48px]' >
                 <Image  
                       
-                    src={"/32.jpeg"} 
+                    src={"/Cosmos1.png"} 
                     alt='products Image' 
                     height={718} width={682}
                     style={{ width: '682px', height: '618px' }}
                     className='popup w-[45%] h-fit object-cover hidden lg:flex border-2 border-white rounded-[32px]' />
                 <Image  
                       
-                    src={"/32.jpeg"} 
+                    src={"/Cosmos1.png"} 
                     alt='products Image' 
                     height={718} width={682}
                     style={{ width: '682px', height: '383px' }}
                     className='w-[45%] h-fit object-cover border-2 lg:hidden border-white rounded-[32px]' />
                 <div className='w-full lg:w-[55%] ' >
-                    <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Arvionc Console</p>
-                    <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >The Arvionc Console is a celebration of fine craftsmanship and thoughtful design. Defined by its clean form, layered shelving, and subtle detailing, it offers both utility and aesthetic presence. The warm wooden finish brings natural character, while the spacious shelves and drawers provide versatile storage for everyday essentials or curated displays.</p>
+                    <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Cosmos Console</p>
+                    <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >The Cosmos Console embodies refined minimalism with a striking modern twist. Its natural wood frame is paired with a bold, deep blue fluted panel that adds depth and texture to the design. The open shelving provides versatile display space, while the sliding door conceals storage with elegance.</p>
                 </div>
             </div>
 
