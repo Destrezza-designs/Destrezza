@@ -20,7 +20,6 @@ import image14 from '@/public/gallery-images/gallery-images14.jpeg'
 import image15 from '@/public/gallery-images/gallery-images15.jpeg'
 import image16 from '@/public/gallery-images/gallery-images16.jpeg'
 import image17 from '@/public/gallery-images/gallery-images17.jpeg'
-import image18 from '@/public/gallery-images/gallery-images18.jpeg'
 
 
 const data = [
@@ -215,7 +214,7 @@ const page = () => {
         <div className='flex lg:hidden mt-[-22px]' >
             <UtilsHeader />
         </div>
-        <div className='my-[80px] mx-[48px] hidden lg:flex flex-col gap-[14px] justify-center items-center'>
+        <div className='my-[80px] mx-[48px] hidden lg:flex flex-col  gap-[14px] justify-center items-center overflow-hidden'>
             <div className='flex gap-[14px]'>
                 <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
                     <Image   
@@ -364,49 +363,40 @@ const page = () => {
                     />
                 </div>
             </div>
-            <div className='flex flex-col gap-[14px]'>
-                <Image   
-                    src={image18} 
-                    alt={data[5].name} 
-                    width={1344} 
-                    height={600} 
-                    className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden object-[50%_70%]' 
-                />
-            </div>
+            
         </div>
 
         <div className='lg:hidden  mx-[12px] my-[24px] flex flex-col gap-[12px]' >
             <div className='flex gap-[12px]' >
-                <Image src={image1} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
-                <Image src={image2} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image1} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image2} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
             </div>
-            <Image src={image3} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[230px] rounded-[16px]'  />
+            <Image src={image3} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[230px] rounded-[16px]'  />
             <div className='flex gap-[12px]' >
-                <Image src={image4} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
-                <Image src={image5} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
-            </div>
-            <div className='flex gap-[12px]' >
-                <Image src={image6} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
-                <Image src={image7} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
-            </div>
-            <Image src={image8} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[230px] rounded-[16px]'  />
-            <div className='flex gap-[12px]' >
-                <Image src={image9} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
-                <Image src={image10} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
-            </div>
-            <Image src={image11} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[230px] rounded-[16px]'  />
-            <div className='flex gap-[12px]' >
-                <Image src={image12} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
-                <Image src={image13} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image4} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image5} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
             </div>
             <div className='flex gap-[12px]' >
-                <Image src={image15} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
-                <Image src={image16} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image6} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image7} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
             </div>
-            <Image src={image14} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[230px] rounded-[16px]'  />
+            <Image src={image8} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[230px] rounded-[16px]'  />
             <div className='flex gap-[12px]' >
-                <Image src={image17} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
-                <Image src={image18} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image9} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image10} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+            </div>
+            <Image src={image11} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[230px] rounded-[16px]'  />
+            <div className='flex gap-[12px]' >
+                <Image src={image12} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image13} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+            </div>
+            <div className='flex gap-[12px]' >
+                <Image src={image15} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image16} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+            </div>
+            <div className='flex gap-[12px]' >
+                <Image src={image14} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image17} alt='gallery iamge 1' width={500} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
             </div>
 
         </div>

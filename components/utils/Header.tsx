@@ -26,7 +26,7 @@ const Header = () => {
 
 
   return (
-    <header className="w-full flex flex-1 bg-[#1A1F26] pr-[16px] lg:pr-[48px] lg:pl-[48px] py-[0px] pt-[20px] lg:py-[13px]">
+    <header className="w-full flex flex-1 bg-[#1A1F26] pr-[16px] lg:pr-[48px] lg:pl-[48px] py-[0px] pt-[20px] lg:py-[0px]">
       <div className="flex flex-1 items-center justify-between">
         
         <div className='lg:block hidden sm:hidden md:block w-[303px] cursor-pointer' >
