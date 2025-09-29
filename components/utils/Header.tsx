@@ -30,7 +30,7 @@ const Header = () => {
       <div className="flex flex-1 items-center justify-between">
         
         <div className='lg:block hidden sm:hidden md:block w-[303px] cursor-pointer' >
-            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className=' bg-red' width={101} height={58} src={logo} alt='logo' />
+            <Image   className=' bg-red' width={70} height={43} src={logo} alt='logo' />
         </div>
         
         <nav className=' lg:flex md:hidden sm:hidden justify-center items-center ' >

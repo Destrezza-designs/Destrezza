@@ -3,6 +3,25 @@ import UtilsHeader from '@/components/utils/Header'
 import Image from 'next/image'
 import React from 'react'
 import Footor from '@/components/Footor'
+import image1 from '@/public/gallery-images/gallery-images1.jpeg'
+import image2 from '@/public/gallery-images/gallery-images2.jpeg'
+import image3 from '@/public/gallery-images/gallery-images3.jpeg'
+import image4 from '@/public/gallery-images/gallery-images4.jpeg'
+import image5 from '@/public/gallery-images/gallery-images5.jpeg'
+import image6 from '@/public/gallery-images/gallery-images6.jpeg'
+import image7 from '@/public/gallery-images/gallery-images7.jpeg'
+import image8 from '@/public/gallery-images/gallery-images8.jpeg'
+import image9 from '@/public/gallery-images/gallery-images9.jpeg'
+import image10 from '@/public/gallery-images/gallery-images10.jpg'
+import image11 from '@/public/gallery-images/gallery-images11.jpg'
+import image12 from '@/public/gallery-images/gallery-images12.jpeg'
+import image13 from '@/public/gallery-images/gallery-images13.png'
+import image14 from '@/public/gallery-images/gallery-images14.jpeg'
+import image15 from '@/public/gallery-images/gallery-images15.jpeg'
+import image16 from '@/public/gallery-images/gallery-images16.jpeg'
+import image17 from '@/public/gallery-images/gallery-images17.jpeg'
+import image18 from '@/public/gallery-images/gallery-images18.jpeg'
+
 
 const data = [
     {
@@ -199,15 +218,15 @@ const page = () => {
         <div className='my-[80px] mx-[48px] hidden lg:flex flex-col gap-[14px] justify-center items-center'>
             <div className='flex gap-[14px]'>
                 <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery1.jpg?alt=media&token=7daf5234-6e48-4c0d-b3e9-e1592b63ee20"} 
+                    <Image   
+                        src={image1} 
                         alt={data[0].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
                     />
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery2.png?alt=media&token=01d9c86b-ed74-4516-b970-2c8937893d0c"} 
+                    <Image   
+                        src={image2} 
                         alt={data[1].name} 
                         width={438} 
                         height={600} 
@@ -215,22 +234,22 @@ const page = () => {
                     />
                 </div>
                 <div className='flex flex-col gap-[14px]'>
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FMeridian1.png?alt=media&token=e30c0f29-7f21-4a17-988d-ab0ff04e6b78"} 
+                    <Image   
+                        src={image3} 
                         alt={data[2].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
                     />
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery3.jpg?alt=media&token=927a415d-3600-4f13-b0de-ffdf4c1cdd62"} 
+                    <Image   
+                        src={image4} 
                         alt={data[3].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
                     />
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery4.jpeg?alt=media&token=d84e0d75-3320-468d-abf2-959e57808680"} 
+                    <Image   
+                        src={image5} 
                         alt={data[4].name} 
                         width={438} 
                         height={600} 
@@ -238,15 +257,15 @@ const page = () => {
                     />
                 </div>
                 <div className='flex flex-col gap-[14px]'>
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery5.jpg?alt=media&token=65580a94-b680-4312-8012-b8974c3d8548"} 
+                    <Image   
+                        src={image5} 
                         alt={data[5].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
                     />
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery6.jpeg?alt=media&token=c979f299-bc5a-49d9-b185-847441e45afa"} 
+                    <Image   
+                        src={image6} 
                         alt={data[6].name} 
                         width={438} 
                         height={600} 
@@ -256,15 +275,15 @@ const page = () => {
             </div>
             <div className='flex flex-col gap-[14px]'>  
                 <div className='flex gap-[14px]'>
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery1.jpg?alt=media&token=7daf5234-6e48-4c0d-b3e9-e1592b63ee20"} 
+                    <Image   
+                        src={image7} 
                         alt={data[7].name} 
                         width={665} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
                     />
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery5.jpg?alt=media&token=65580a94-b680-4312-8012-b8974c3d8548"} 
+                    <Image   
+                        src={image8} 
                         alt={data[8].name} 
                         width={665} 
                         height={600} 
@@ -272,15 +291,15 @@ const page = () => {
                     />
                 </div>
                 <div className='flex gap-[14px]'>
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery2.png?alt=media&token=01d9c86b-ed74-4516-b970-2c8937893d0c"} 
+                    <Image   
+                        src={image9} 
                         alt={data[9].name} 
                         width={665} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
                     />
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery6.jpeg?alt=media&token=c979f299-bc5a-49d9-b185-847441e45afa"} 
+                    <Image   
+                        src={image10} 
                         alt={data[10].name} 
                         width={665} 
                         height={600} 
@@ -290,15 +309,15 @@ const page = () => {
             </div>
             <div className='flex gap-[14px]'>
                 <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery1.jpg?alt=media&token=7daf5234-6e48-4c0d-b3e9-e1592b63ee20"} 
+                    <Image   
+                        src={image11} 
                         alt={data[0].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
                     />
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery2.png?alt=media&token=01d9c86b-ed74-4516-b970-2c8937893d0c"} 
+                    <Image   
+                        src={image12} 
                         alt={data[1].name} 
                         width={438} 
                         height={600} 
@@ -306,22 +325,22 @@ const page = () => {
                     />
                 </div>
                 <div className='flex flex-col gap-[14px]'>
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FMeridian1.png?alt=media&token=e30c0f29-7f21-4a17-988d-ab0ff04e6b78"} 
+                    <Image   
+                        src={image13} 
                         alt={data[2].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
                     />
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery3.jpg?alt=media&token=927a415d-3600-4f13-b0de-ffdf4c1cdd62"} 
+                    <Image   
+                        src={image14} 
                         alt={data[3].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 overflow-hidden' 
                     />
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery4.jpeg?alt=media&token=d84e0d75-3320-468d-abf2-959e57808680"} 
+                    <Image   
+                        src={image15} 
                         alt={data[4].name} 
                         width={438} 
                         height={600} 
@@ -329,15 +348,15 @@ const page = () => {
                     />
                 </div>
                 <div className='flex flex-col gap-[14px]'>
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery5.jpg?alt=media&token=65580a94-b680-4312-8012-b8974c3d8548"} 
+                    <Image   
+                        src={image16} 
                         alt={data[5].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden' 
                     />
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                        src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fgallery6.jpeg?alt=media&token=c979f299-bc5a-49d9-b185-847441e45afa"} 
+                    <Image   
+                        src={image17} 
                         alt={data[6].name} 
                         width={438} 
                         height={600} 
@@ -346,27 +365,50 @@ const page = () => {
                 </div>
             </div>
             <div className='flex flex-col gap-[14px]'>
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery1.jpg?alt=media&token=7daf5234-6e48-4c0d-b3e9-e1592b63ee20"} 
+                <Image   
+                    src={image18} 
                     alt={data[5].name} 
                     width={1344} 
                     height={600} 
                     className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden object-[50%_70%]' 
-                />
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGallery2.png?alt=media&token=01d9c86b-ed74-4516-b970-2c8937893d0c"} 
-                    alt={data[6].name} 
-                    width={1344} 
-                    height={600} 
-                    className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 overflow-hidden object-[50%_65%]' 
                 />
             </div>
         </div>
 
         <div className='lg:hidden  mx-[12px] my-[24px] flex flex-col gap-[12px]' >
             <div className='flex gap-[12px]' >
-                <Image  />
+                <Image src={image1} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image2} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
             </div>
+            <Image src={image3} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[230px] rounded-[16px]'  />
+            <div className='flex gap-[12px]' >
+                <Image src={image4} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image5} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+            </div>
+            <div className='flex gap-[12px]' >
+                <Image src={image6} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image7} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+            </div>
+            <Image src={image8} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[230px] rounded-[16px]'  />
+            <div className='flex gap-[12px]' >
+                <Image src={image9} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image10} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+            </div>
+            <Image src={image11} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[230px] rounded-[16px]'  />
+            <div className='flex gap-[12px]' >
+                <Image src={image12} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image13} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+            </div>
+            <div className='flex gap-[12px]' >
+                <Image src={image15} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image16} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+            </div>
+            <Image src={image14} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[230px] rounded-[16px]'  />
+            <div className='flex gap-[12px]' >
+                <Image src={image17} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+                <Image src={image18} alt='gallery iamge 1' width={1000} height={500} className='object-cover w-[100%] h-[300px] rounded-[16px]'  />
+            </div>
+
         </div>
         <Footor />
     </div>
