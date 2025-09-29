@@ -367,62 +367,191 @@ const page = () => {
         </div>
 
         <div className='lg:hidden mx-[12px] my-[24px] flex flex-col gap-[12px]'>
+            {/* Row 1 */}
             <div className='flex gap-[12px]'>
-                <Image src={image1} alt='gallery image 1' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
-                <Image src={image2} alt='gallery image 2' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image1} 
+                    alt='gallery image 1' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image2} 
+                    alt='gallery image 2' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
             </div>
 
-            <Image src={image3} alt='gallery image 3' width={500} height={500}
-                className='object-cover w-full h-[230px] rounded-[16px]' />
-
-            <div className='flex gap-[12px]'>
-                <Image src={image4} alt='gallery image 4' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
-                <Image src={image5} alt='gallery image 5' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
+            {/* Row 2 - Full width */}
+            <div className='aspect-video'>
+                <Image 
+                src={image3} 
+                alt='gallery image 3' 
+                width={500} 
+                height={500}
+                className='object-cover w-full h-full rounded-[16px]' 
+                />
             </div>
 
+            {/* Row 3 */}
             <div className='flex gap-[12px]'>
-                <Image src={image6} alt='gallery image 6' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
-                <Image src={image7} alt='gallery image 7' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image4} 
+                    alt='gallery image 4' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image5} 
+                    alt='gallery image 5' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
             </div>
 
-            <Image src={image8} alt='gallery image 8' width={500} height={500}
-                className='object-cover w-full h-[230px] rounded-[16px]' />
-
+            {/* Row 4 */}
             <div className='flex gap-[12px]'>
-                <Image src={image9} alt='gallery image 9' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
-                <Image src={image10} alt='gallery image 10' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image6} 
+                    alt='gallery image 6' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image7} 
+                    alt='gallery image 7' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
             </div>
 
-            <Image src={image11} alt='gallery image 11' width={500} height={500}
-                className='object-cover w-full h-[230px] rounded-[16px]' />
-
-            <div className='flex gap-[12px]'>
-                <Image src={image12} alt='gallery image 12' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
-                <Image src={image13} alt='gallery image 13' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
+            {/* Row 5 - Full width */}
+            <div className='aspect-video'>
+                <Image 
+                src={image8} 
+                alt='gallery image 8' 
+                width={500} 
+                height={500}
+                className='object-cover w-full h-full rounded-[16px]' 
+                />
             </div>
 
+            {/* Row 6 */}
             <div className='flex gap-[12px]'>
-                <Image src={image15} alt='gallery image 15' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
-                <Image src={image16} alt='gallery image 16' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image9} 
+                    alt='gallery image 9' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image10} 
+                    alt='gallery image 10' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
             </div>
 
+            {/* Row 7 - Full width */}
+            <div className='aspect-video'>
+                <Image 
+                src={image11} 
+                alt='gallery image 11' 
+                width={500} 
+                height={500}
+                className='object-cover w-full h-full rounded-[16px]' 
+                />
+            </div>
+
+            {/* Row 8 */}
             <div className='flex gap-[12px]'>
-                <Image src={image14} alt='gallery image 14' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
-                <Image src={image17} alt='gallery image 17' width={500} height={500}
-                className='object-cover w-1/2 h-[300px] rounded-[16px]' />
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image12} 
+                    alt='gallery image 12' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image13} 
+                    alt='gallery image 13' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
+            </div>
+
+            {/* Row 9 */}
+            <div className='flex gap-[12px]'>
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image15} 
+                    alt='gallery image 15' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image16} 
+                    alt='gallery image 16' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
+            </div>
+
+            {/* Row 10 */}
+            <div className='flex gap-[12px]'>
+                <div className='flex-1 aspect-[3/4]'>
+                <Image 
+                    src={image14} 
+                    alt='gallery image 14' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
+                <div className='flex-1 aspect-square'>
+                <Image 
+                    src={image17} 
+                    alt='gallery image 17' 
+                    width={500} 
+                    height={500}
+                    className='object-cover w-full h-full rounded-[16px]' 
+                />
+                </div>
             </div>
         </div>
 
