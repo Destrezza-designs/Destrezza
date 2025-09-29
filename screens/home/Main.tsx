@@ -108,7 +108,7 @@ const Main = () => {
                 This dedication is why our customers return time and again: they know they can trust us to deliver pieces that elevate their spaces, enrich their everyday lives, and stand the test of time.</p>
                 
               </div>
-              <div className='flex gap-[14px] mt-[14px] lg:mt-[0px] lg:gap-[24px] justify-center items-center' >
+              {/* <div className='flex gap-[14px] mt-[14px] lg:mt-[0px] lg:gap-[24px] justify-center items-center' >
                 <Image 
                     
                   alt='chair' 
@@ -127,7 +127,30 @@ const Main = () => {
                   src={'/36.jpeg'} 
                   width={338} height={338}
                   className='h-auto !w-[338px] rounded-[18px] lg:rounded-[32px]' />
-                  <Image   alt='chair' src={Img3} className='h-auto w-[338px] rounded-[18px] lg:rounded-[32px]' />
+                  <Image 
+                    alt='chair' 
+                    src={Img3} className='h-auto w-[338px] rounded-[18px] lg:rounded-[32px]' />
+                </div>
+              </div> */}
+              <div className='flex gap-[20px] mt-[14px] justify-center items-center' >
+                <Image 
+                    
+                  alt='chair' 
+                  src={about_3} 
+                  width={150} height={500}
+                  className='rounded-[12px] w-[300px] h-[592px] object-cover' />
+                <div className='flex flex-col gap-[4px] lg:gap-[20px]' >
+                  <Image   
+                    alt='chair' 
+                    src={about_1} 
+                    width={150} height={150}
+                    className=' rounded-[12px] w-[300px] h-[285px] object-cover' />
+                  <Image   
+                    alt='chair' 
+                    src={about_2} 
+                    width={150} height={150}
+                    className=' rounded-[12px] w-[300px] h-[285px] object-cover' />
+                  
                 </div>
               </div>
               

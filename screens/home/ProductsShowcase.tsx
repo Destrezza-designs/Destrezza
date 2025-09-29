@@ -2,42 +2,45 @@
 
 import Image from 'next/image'
 import React from 'react'
-import P1 from '@/public/home/products/Frame1.png'
-import P2 from '@/public/home/products/Frame2.png'
-import P3 from '@/public/home/products/Frame3.png'
-import P4 from '@/public/home/products/Frame4.png'
-import P5 from '@/public/home/products/Frame5.png'
-import P6 from '@/public/home/products/Frame6.png'
-import P7 from '@/public/home/products/Frame7.png'
+import P1 from '@/public/productsShowcase/58.jpeg'
+import P2 from '@/public/productsShowcase/54.jpeg'
+import P3 from '@/public/productsShowcase/PP2-34.jpeg'
+import P4 from '@/public/productsShowcase/home-page-2.jpeg'
+import P5 from '@/public/productsShowcase/one.jpeg'
+import P6 from '@/public/productsShowcase/48.jpeg'
+import P7 from '@/public/productsShowcase/21.jpeg'
 import { useRouter } from 'next/navigation'
 
 const ProductsShowcase = () => {
     const router = useRouter();
   return (
-    <div className='bg-[#141414] hidden lg:flex p-[0px] py-[40px] lg:py-[48px] lg:px-[48px] w-screen  flex-col gap-[48px] justify-center items-center mt-[80px]' > 
-        <div  className='hidden lg:grid grid-cols-3 gap-[24px] w-[100%] ' >
+    <div className="relative bg-[url('/home-page-2.jpeg')] bg-cover bg-center hidden lg:flex p-[0px] py-[40px] lg:py-[48px] lg:px-[48px] w-screen  flex-col gap-[48px] justify-center items-center mt-[80px]" > 
+
+        <div className="absolute inset-0 bg-white/10 backdrop-blur-md rounded-xl z-0"></div>
+        <div  
+            className="relative hidden lg:grid grid-cols-3 gap-[24px] w-[100%] ">
+            
 
             <div data-aos="fade-up" className='flex flex-col gap-[24px]' >
                 <Image   
-                src={P1} alt='Product Image' className='popup w-auto h-[600px]' />
+                src={P1} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px]' />
                 <Image   
-                src={P2} alt='Product Image' className='popup w-auto h-[600px]' />
+                src={P2} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px]' />
             </div>
 
             <div data-aos="fade-up" className='flex flex-col gap-[24px]' >
                 <Image   
-                src={P3} alt='Product Image' className='popup w-auto h-[288px]' />
+                src={P6} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px]' />
                 <Image   
-                src={P4} alt='Product Image' className='popup w-auto h-[600px]' />
-                <Image   
-                src={P5} alt='Product Image' className='popup w-auto h-[288px]' />
+                src={P7} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px]' />
             </div>
-
             <div data-aos="fade-up" className='flex flex-col gap-[24px]' >
                 <Image   
-                src={P6} alt='Product Image' className='popup w-auto h-[600px]' />
+                src={P3} alt='Product Image' className='popup rounded-[16px] w-auto h-[393px] object-cover' />
                 <Image   
-                src={P7} alt='Product Image' className='popup w-auto h-[600px]' />
+                src={P4} alt='Product Image' className='popup rounded-[16px] w-auto h-[393px] object-cover' />
+                <Image   
+                src={P5} alt='Product Image' className='popup rounded-[16px] w-auto h-[393px] object-cover object-bottom' />
             </div>
 
         </div>

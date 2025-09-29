@@ -10,25 +10,25 @@ const Visit = () => {
                 <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Visit Us, Feel the Craft</p>
                 <p className='hidden lg:flex mt-[24px] text-[18px] font-[400]' >Discover the beauty of furniture you can see, touch, and truly feel. Our studio is more than a showroom — it's where design, craftsmanship, and comfort come together. From carefully selected materials to intricate finishes, you’ll experience the process and passion behind every piece.</p>
             </div>
-            <div className='hidden lg:flex' >
+            {/* <div className='hidden lg:flex' >
               <RedirectButton text='Place your Visit' />
-            </div>
+            </div> */}
 
         </div>
         <Image 
             
-          src={"/home-page-2.jpeg"} alt='Image' 
+          src={"/home/Ashcaen2.png"} alt='Image' 
           height={718} width={682}
           style={{ width: '682px', height: '618px' }}
           data-aos="fade-up"
-          className=' w-[628px] h-[594px] hidden lg:flex  object-cover border-2 border-white rounded-[32px]' />
+          className=' w-[628px] h-[594px] hidden lg:flex  object-cover object-bottom border-2 border-white rounded-[32px]' />
         <Image 
             
-          src={"/home-page-2.jpeg"} alt='Image' 
+          src={"/home/Ashcaen2.png"} alt='Image' 
           height={718} width={682}
           style={{ width: '682px', height: '317px' }}
           data-aos="fade-up"
-          className='w-[628px] h-[594px]  object-cover border-2 lg:hidden border-white rounded-[32px]' />
+          className='w-[628px] h-[594px]  object-cover object-bottom border-2 lg:hidden border-white rounded-[32px]' />
         <div data-aos="fade-up" className='lg:hidden flex' >
           <p className='mt-[12px] text-[14px] font-[400]' >Discover the beauty of furniture you can see, touch, and truly feel. Our studio is more than a showroom — it's where design, craftsmanship, and comfort come together. From carefully selected materials to intricate finishes, you’ll experience the process and passion behind every piece.</p>
         </div>
