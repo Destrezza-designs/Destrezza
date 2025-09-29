@@ -250,7 +250,7 @@ const Page = () => {
                                 src={item.mainImage} 
                                 alt={item.name} 
                                 fill
-                                className="object-cover w-full h-full"
+                                className="object-cover w-full h-full rounded-[16px]"
                                 sizes="(max-width: 768px) 50vw, 100vw"
                             />
                         </div>
