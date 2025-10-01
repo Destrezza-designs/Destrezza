@@ -85,7 +85,7 @@ const Main = () => {
         </div>
 
         <div className='relative z-10 w-full lg:min-h-screen lg:mt-[-20px]'>
-          <div className="flex flex-1 pt-[0px] lg:pt-[40px]">
+          <div className="flex flex-1 pt-[0px] lg:pt-[40px] ">
             <Header />
           </div>
           <div data-aos="fade-up" className={`min-h-[218px] px-[16px] lg:px-[0px] flex flex-1 flex-col justify-center items-center gap-[24px] text-center mt-[0px] lg:mt-[48px]`}>
