@@ -100,56 +100,32 @@ const Main = () => {
               <Image   src={paper} className='w-screen h-fit' alt='paper' />
             </div>
             <div data-aos="fade-up" className='block lg:flex gap-[48px] flex-1 mt-[14px] lg:mt-[-103px] bg-white px-[16px] lg:px-[48px]' >
-              <div className='w-full lg:w-[50%]' >
-                <p className='uppercase text-[28px] lg:text-[58px] font-[800] text-[#141414BF]' >About Us</p>
-                <p className='hidden lg:block text-[18px] font-[400] leading-[28px] mt-[33px]' >We don’t just make furniture — we create experiences that last a lifetime. Every piece we design is more than just a functional item; it’s a reflection of expert craftsmanship, thoughtful innovation, and an unwavering commitment to quality. <br />
+              <div className='w-full lg:w-[50%]  lg:flex lg:flex-col lg:justify-center lg:items-start' >
+                <p className='uppercase text-[28px] lg:text-[58px] font-[800] lg:font-light text-[#141414BF]' >About Us</p>
+                <p className='hidden lg:block text-[14px] lg:text-[18px] font-[400] lg:font-light leading-[28px] mt-[33px] lg:mt-[10px]' >We don’t just make furniture — we create experiences that last a lifetime. Every piece we design is more than just a functional item; it’s a reflection of expert craftsmanship, thoughtful innovation, and an unwavering commitment to quality. <br />
                 From the careful selection of premium, sustainable materials to the precision and artistry that goes into every detail, we ensure that each product is not only visually stunning but also built with durability in mind. Our furniture is designed to harmonize with your lifestyle, offering comfort, style, and reliability in equal measure. <br />
                 What truly sets us apart is the passion we pour into every creation. Each design carries a unique story — one of tradition, innovation, and care — making our furniture not just something you own, but something you cherish. <br />
                 This dedication is why our customers return time and again: they know they can trust us to deliver pieces that elevate their spaces, enrich their everyday lives, and stand the test of time.</p>
                 
               </div>
-              {/* <div className='flex gap-[14px] mt-[14px] lg:mt-[0px] lg:gap-[24px] justify-center items-center' >
-                <Image 
-                    
-                  alt='chair' 
-                  src={'/60.jpeg'} 
-                  width={150} height={100}
-                  className='!h-fit !w-[338px] lg:hidden rounded-[18px] lg:rounded-[32px]' />
-                <Image 
-                    
-                  alt='chair' 
-                  src={"/32.jpeg"} 
-                  width={1000} height={100}
-                  className='!h-fit !w-[338px] hidden lg:flex rounded-[18px] lg:rounded-[32px]' />
-                <div className='flex flex-col gap-[14px] lg:gap-[24px]' >
-                  <Image   
-                  alt='chair' 
-                  src={'/36.jpeg'} 
-                  width={338} height={338}
-                  className='h-auto !w-[338px] rounded-[18px] lg:rounded-[32px]' />
-                  <Image 
-                    alt='chair' 
-                    src={Img3} className='h-auto w-[338px] rounded-[18px] lg:rounded-[32px]' />
-                </div>
-              </div> */}
-              <div className='flex gap-[20px] mt-[14px] justify-center items-center' >
+              <div className='flex gap-[10px] mt-[14px] justify-center items-center' >
                 <Image 
                     
                   alt='chair' 
                   src={about_3} 
                   width={150} height={500}
-                  className='rounded-[12px] w-[300px] h-[592px] object-cover' />
-                <div className='flex flex-col gap-[4px] lg:gap-[20px]' >
+                  className='rounded-[12px] w-[300px] h-[600px] object-cover ' />
+                <div className='flex flex-col gap-[4px] lg:gap-[10px]' >
                   <Image   
                     alt='chair' 
                     src={about_1} 
                     width={150} height={150}
-                    className=' rounded-[12px] w-[300px] h-[285px] object-cover' />
+                    className=' rounded-[12px] w-[300px] h-[295px] object-cover' />
                   <Image   
                     alt='chair' 
                     src={about_2} 
                     width={150} height={150}
-                    className=' rounded-[12px] w-[300px] h-[285px] object-cover' />
+                    className=' rounded-[12px] w-[300px] h-[295px] object-cover' />
                   
                 </div>
               </div>
@@ -254,12 +230,12 @@ const Main = () => {
                     alt='chair' 
                     src={about_1} 
                     width={150} height={150}
-                    className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
+                    className=' rounded-[12px] w-[150px] h-[148px] object-cover' />
                   <Image   
                     alt='chair' 
                     src={about_2} 
                     width={150} height={150}
-                    className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
+                    className=' rounded-[12px] w-[150px] h-[148px] object-cover' />
                   
                 </div>
               </div>
