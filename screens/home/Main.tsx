@@ -88,9 +88,10 @@ const Main = () => {
           <div className="flex flex-1 pt-[0px] lg:pt-[40px] ">
             <Header />
           </div>
-          <div data-aos="fade-up" className={`min-h-[218px] px-[16px] lg:px-[0px] flex flex-1 flex-col justify-center items-center gap-[24px] text-center mt-[0px] lg:mt-[48px]`}>
-            <p className='text-[25px] lg:text-[58px] font-[500] uppercase leading-[30px] lg:leading-[74px] text-white'>Transform your space with our <br className='hidden lg:flex' /> exquisite furniture collection</p>
-            <p className='hidden lg:block px-[20%] text-[18px] font-[400] leading-[28px] text-white'>Experience the art of fine furniture. Where craftsmanship meets passion. Each piece is thoughtfully designed, precisely built, and elegantly finished to bring luxury and function into your space.</p>
+          <div data-aos="fade-up" className={`relative bottom-0 left-[80px] pl-[100px]  bg-red-500 px-[16px] lg:px-[0px]   mt-[0px] lg:mt-[70vh] `}>
+            <p className='hidden lg:flex flex-col  uppercase text-white absolute bottom-0 left-0 border-l-[5px] border-solid border-white pl-[15px]'><span className='text-[47px] font-thin leading-[47px]' >Transform your space with our  exquisite</span> <br/> <span className='text-[57px] font-normal leading-[54px]' >furniture collection</span></p>
+            <p className='lg:hidden text-[25px] lg:text-[58px] font-[500] uppercase leading-[30px] lg:leading-[74px] text-white absolute bottom-0 left-0 border-l-[5px] border-solid border-white pl-[15px]'>Transform your space with our   <br className='hidden lg:flex' />exquisite furniture collection</p>
+            {/* <p className='hidden lg:block px-[20%] text-[18px] font-[400] leading-[28px] text-white'>Experience the art of fine furniture. Where craftsmanship meets passion. Each piece is thoughtfully designed, precisely built, and elegantly finished to bring luxury and function into your space.</p> */}
           </div>
         </div>
 

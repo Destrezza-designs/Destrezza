@@ -30,7 +30,7 @@ const Header = () => {
       <header className="w-full fixed z-50  flex flex-1 bg-[#1A1F26] pl-[16px] pr-[16px] lg:pr-[48px] lg:pl-[48px] py-[10px] pt-[30px] lg:py-[10px]  ">
         <div className="flex flex-1 items-center justify-between">
           
-          <div className='lg:block hidden sm:hidden md:block w-[303px] cursor-pointer' >
+          <div className=' lg:block hidden sm:hidden md:block w-[10vw] cursor-pointer' >
               <Image   className=' bg-red' width={70} height={43} src={logo} alt='logo' />
           </div>
           

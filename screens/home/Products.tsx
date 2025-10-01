@@ -10,12 +10,12 @@ const Products = () => {
   return (
 
     <div className='relative hidden lg:block text-[#141414] mt-[40px] overflow-hidden' >
-        <div className='hidden lg:flex absolute top-0 left-0 z-[-1]' >
+        {/* <div className='hidden lg:hidden absolute top-0 left-0 z-[-1]' >
             <svg width="1440" height="2230" viewBox="0 0 1440 2230" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1440 2230L1331.04 756.711L0 0L146.048 1826.72L1440 2230Z" fill="#CEB578"/>
             </svg>
-        </div>
-        <div className='px-[18px] lg:px-[48px]' >
+        </div> */}
+        {/* <div className='px-[18px] lg:px-[48px]' >
             <p data-aos="fade-up" className='text-[#868684] text-[14px] uppercase' >Designed to be loved</p>
             <p data-aos="fade-up" className='text-[36px] font-[500] uppercase' >Our Products</p>
             <div data-aos="fade-up" className='flex lg:flex-row flex-col gap-[20px] lg:gap-[48px] mt-[20px]' >
@@ -79,28 +79,12 @@ const Products = () => {
                 </div>
             </div>
 
-            {/* <div className='flex flex-col-reverse lg:flex-row  gap-[20px] lg:gap-[48px] mt-[48px]' >
-                <div className='w-full lg:w-[55%] ' >
-                    <p className='text-[28px] lg:text-[36px] font-[500] uppercase' >Wellash chair</p>
-                    <p className='text-[14px] lg:text-[18px] font-[400] mt-[14px] lg:mt-[20px]' >The Wellash Chair is a celebration of gentle curves, detailed craftsmanship, and serene comfort. With its cushioned seated, ergonomic backrest, and sculptural wooden frame. It brings a sense of warmth and elegance to any space - whether used as a dining chair, lounge accent, or work chair. 
-                    Designed to be both functional and stylish, the Wellash Chair pairs effortlessly with modern, minimal, or earthy interior themes.</p>
-                </div>
-                <Image 
-                      
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FWellash1.png?alt=media&token=2d733f2c-3912-4cba-ad87-45d394c8ebc5"} 
-                    alt='products Image' 
-                    height={718} width={682}
-                    style={{ width: '682px', height: '618px' }}
-                    className='object-cover border-2 hidden lg:flex border-white rounded-[32px]' />
-                <Image 
-                      
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FWellash1.png?alt=media&token=2d733f2c-3912-4cba-ad87-45d394c8ebc5"} 
-                    alt='products Image' 
-                    height={718} width={682}
-                    style={{ width: '682px', height: '383px' }}
-                    className='object-cover border-2 lg:hidden border-white rounded-[32px]' />
-            </div> */}
-
+        </div> */}
+        
+        <div className='grid grid-cols-2 gap-10'>
+            <div className='grid grid-cols-3 gap-10'>
+                
+            </div>
         </div>
 
         <button data-aos="fade-up" onClick={() => router.push('/product')} className='flex justify-end lg:justify-normal items-center text-[14px] font-[600]  w-full flex-1 gap-[12px] uppercase mx-[0px] mr-[20px] lg:mx-[48px] px-[20px] lg:px-[16px] py-[16px] mt-[24px]' >All Products
