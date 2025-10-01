@@ -19,8 +19,7 @@ const ProductsShowcase = () => {
         <div className="absolute inset-0 bg-white/10 backdrop-blur-md rounded-xl z-0"></div>
         <div  
             className="relative hidden lg:grid grid-cols-3 gap-[24px] w-[100%] ">
-            
-
+        
             <div data-aos="fade-up" className='flex flex-col gap-[24px]' >
                 <Image   
                 src={P1} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px]' />

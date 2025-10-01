@@ -33,7 +33,8 @@ const Main = () => {
     arrows: false,
     pauseOnHover: false,
     ltr: true,
-    waitForAnimate: true
+    waitForAnimate: true,
+    
   };
 
   const carouselImages = [
@@ -323,7 +324,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div className='z-[50] relative mt-[-90px]' >
+        <div className='z-[20] relative mt-[-90px]' >
           <div className='w-full flex justify-center items-center' >
             <button 
                 data-aos="fade-up"

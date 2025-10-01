@@ -10,12 +10,12 @@ const Products = () => {
   return (
 
     <div className='relative hidden lg:block text-[#141414] mt-[40px] overflow-hidden' >
-        {/* <div className='hidden lg:hidden absolute top-0 left-0 z-[-1]' >
+        <div className='hidden lg:hidden absolute top-0 left-0 z-[-1]' >
             <svg width="1440" height="2230" viewBox="0 0 1440 2230" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1440 2230L1331.04 756.711L0 0L146.048 1826.72L1440 2230Z" fill="#CEB578"/>
             </svg>
-        </div> */}
-        {/* <div className='px-[18px] lg:px-[48px]' >
+        </div>
+        <div className='px-[18px] lg:px-[48px]' >
             <p data-aos="fade-up" className='text-[#868684] text-[14px] uppercase' >Designed to be loved</p>
             <p data-aos="fade-up" className='text-[36px] font-[500] uppercase' >Our Products</p>
             <div data-aos="fade-up" className='flex lg:flex-row flex-col gap-[20px] lg:gap-[48px] mt-[20px]' >
@@ -79,7 +79,7 @@ const Products = () => {
                 </div>
             </div>
 
-        </div> */}
+        </div>
         
         <div className='grid grid-cols-2 gap-10'>
             <div className='grid grid-cols-3 gap-10'>
