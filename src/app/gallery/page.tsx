@@ -540,7 +540,7 @@ const page = () => {
                     className='object-cover w-full h-full rounded-[16px]' 
                 />
                 </div>
-                <div className='flex-1 aspect-square'>
+                <div className='flex-1 aspect-[3/4]'>
                 <Image 
                     src={image17} 
                     alt='gallery image 17' 

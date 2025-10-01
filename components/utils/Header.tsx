@@ -26,7 +26,7 @@ const Header = () => {
 
 
   return (
-    <header className="w-full flex flex-1 bg-[#1A1F26] pr-[16px] lg:pr-[48px] lg:pl-[48px] py-[0px] pt-[20px] lg:py-[0px]">
+    <header className="w-full flex flex-1 bg-[#1A1F26] pl-[16px] pr-[16px] lg:pr-[48px] lg:pl-[48px] py-[10px] pt-[30px] lg:py-[10px]  ">
       <div className="flex flex-1 items-center justify-between">
         
         <div className='lg:block hidden sm:hidden md:block w-[303px] cursor-pointer' >
@@ -59,7 +59,8 @@ const Header = () => {
         
         <div className='w-full lg:w-fit flex justify-between items-center' >
           <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
-            <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className='cover' 
+            <Image 
+            className='cover' 
             src={brand} 
             alt="Brand" width={303} height={58} />
           </div>
