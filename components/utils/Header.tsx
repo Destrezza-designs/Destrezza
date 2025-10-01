@@ -1,7 +1,7 @@
 'use client'
 import React,{useState} from 'react'
 import Image from 'next/image'
-import logo from '@/public/header/Vector86.png'
+import logo from '@/public/header/Icon.png'
 import brand from '@/public/header/Brand.png'
 import { useRouter } from 'next/navigation'
 
@@ -27,32 +27,32 @@ const Header = () => {
 
   return (
     <div className='mb-[80px]' >
-      <header className="w-full fixed z-50  flex flex-1 bg-[#1A1F26] pl-[16px] pr-[16px] lg:pr-[48px] lg:pl-[48px] py-[10px] pt-[30px] lg:py-[10px]  ">
-        <div className="flex flex-1 items-center justify-between">
+      <header className="w-full border-b-[0px] border-white  fixed z-50 shadow-md  shadow-slate-500/10 backdrop-filter backdrop-blur-[10px] bg-[rgba(0,0,0,0.2)]  flex flex-1 pl-[16px] pr-[16px] lg:pr-[48px] lg:pl-[48px] py-[10px] pt-[30px] lg:py-[10px] " >
+        <div className="flex flex-1 items-center justify-between ">
           
           <div className=' lg:block hidden sm:hidden md:block w-[10vw] cursor-pointer' >
               <Image   className=' bg-red' width={70} height={43} src={logo} alt='logo' />
           </div>
           
-          <nav className=' lg:flex md:hidden sm:hidden justify-center items-center ' >
+          <nav className=' lg:flex md:hidden sm:hidden justify-center items-center text-[14px]' >
             <ul className="hidden md:flex gap-8 text-sm text-white tracking-widest">
               <li className="cursor-pointer hover:text-yellow-400">
-                <button>HOME</button>
+                <button className='text-[12px]' >HOME</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button onClick={() => router.push('/about')} >ABOUT US</button>
+                <button className='text-[12px]'  onClick={() => router.push('/about')} >ABOUT US</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button onClick={() => router.push('/product')} >PRODUCTS</button>
+                <button className='text-[12px]'  onClick={() => router.push('/product')} >PRODUCTS</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button onClick={() => router.push('/gallery')} >GALLERY</button>
+                <button className='text-[12px]'  onClick={() => router.push('/gallery')} >GALLERY</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button onClick={handleScroll} >OUR LOGO</button>
+                <button className='text-[12px]'  onClick={handleScroll} >OUR LOGO</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button onClick={() => router.push('/contact')} >CONTACT</button>
+                <button className='text-[12px]'  onClick={() => router.push('/contact')} >CONTACT</button>
               </li>
             </ul>
           </nav>

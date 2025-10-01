@@ -40,7 +40,7 @@ const Main = () => {
   const carouselImages = [
     '/12.jpeg',
     '/14.jpeg',
-    '/32.jpeg',
+    '/home/bg-sm-landing.jpg',
     '/36.jpeg',
     '/60.jpeg'
   ];
@@ -71,7 +71,7 @@ const Main = () => {
           <div className='hidden lg:block ' > 
               <Slider {...sliderSettings} className="hidden lg:block h-screen">
                   {carouselImages.map((image, index) => (
-                      <div key={index} className="w-full h-[90vh]">
+                      <div key={index} className="w-full h-[95vh]">
                       <div
                           className="w-full h-full bg-cover bg-center bg-no-repeat"
                           style={{
@@ -85,11 +85,11 @@ const Main = () => {
           <div className="absolute inset-0 " />
         </div>
 
-        <div className='relative z-10 w-full lg:min-h-screen lg:mt-[-20px]'>
-          <div className="flex flex-1 pt-[0px] lg:pt-[40px] ">
+        <div className='bg-gradient-to-t from-[#14141430] to-transparent relative z-10 w-full lg:min-h-[95vh] lg:mt-[-20px]'>
+          <div className="flex flex-1 pt-[0px] lg:pt-[20px] ">
             <Header />
           </div>
-          <div data-aos="fade-up" className={`relative bottom-0 left-[80px] pl-[100px]  bg-red-500 px-[16px] lg:px-[0px]   mt-[0px] lg:mt-[70vh] `}>
+          <div  className={`relative bottom-0 left-[80px] pl-[100px]  b px-[16px] lg:px-[0px]   mt-[0px] lg:mt-[75vh] `}>
             <p className='hidden lg:flex flex-col  uppercase text-white absolute bottom-0 left-0 border-l-[5px] border-solid border-white pl-[15px]'><span className='text-[47px] font-thin leading-[47px]' >Transform your space with our  exquisite</span> <br/> <span className='text-[57px] font-normal leading-[54px]' >furniture collection</span></p>
             <p className='lg:hidden text-[25px] lg:text-[58px] font-[500] uppercase leading-[30px] lg:leading-[74px] text-white absolute bottom-0 left-0 border-l-[5px] border-solid border-white pl-[15px]'>Transform your space with our   <br className='hidden lg:flex' />exquisite furniture collection</p>
             {/* <p className='hidden lg:block px-[20%] text-[18px] font-[400] leading-[28px] text-white'>Experience the art of fine furniture. Where craftsmanship meets passion. Each piece is thoughtfully designed, precisely built, and elegantly finished to bring luxury and function into your space.</p> */}
@@ -97,7 +97,7 @@ const Main = () => {
         </div>
 
         <div>
-          <div className=' text-[#141414] mt-[50px] lg:mt-[-103px]' >
+          <div className=' text-[#141414] mt-[50px] lg:mt-[-50px]' >
             <div className='hidden lg:block' >
               <Image   src={paper} className='w-screen h-fit' alt='paper' />
             </div>
