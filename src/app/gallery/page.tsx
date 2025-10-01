@@ -218,14 +218,14 @@ const page = () => {
             <div className='flex gap-[14px]'>
                 <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
                     <Image   
-                        src={image1} 
+                        src={image8} 
                         alt={data[0].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
-                        src={image2} 
+                        src={image7} 
                         alt={data[1].name} 
                         width={438} 
                         height={600} 
@@ -234,21 +234,21 @@ const page = () => {
                 </div>
                 <div className='flex flex-col gap-[14px]'>
                     <Image   
-                        src={image3} 
+                        src={image15} 
                         alt={data[2].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
-                        src={image4} 
+                        src={image12} 
                         alt={data[3].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
-                        src={image5} 
+                        src={image14} 
                         alt={data[4].name} 
                         width={438} 
                         height={600} 
@@ -257,14 +257,14 @@ const page = () => {
                 </div>
                 <div className='flex flex-col gap-[14px]'>
                     <Image   
-                        src={image5} 
+                        src={image6} 
                         alt={data[5].name} 
                         width={438} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
-                        src={image6} 
+                        src={image3} 
                         alt={data[6].name} 
                         width={438} 
                         height={600} 
@@ -272,24 +272,18 @@ const page = () => {
                     />
                 </div>
             </div>
-            <div className='flex flex-col gap-[14px]'>  
-                <div className='flex gap-[14px]'>
+            <div className='flex flex-row-reverse gap-[14px]'>  
+                <div className='flex flex-col gap-[14px]'>
                     <Image   
                         src={image7} 
                         alt={data[7].name} 
                         width={665} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-full object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
-                    <Image   
-                        src={image8} 
-                        alt={data[8].name} 
-                        width={665} 
-                        height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
-                    />
+                    
                 </div>
-                <div className='flex gap-[14px]'>
+                <div className='flex flex-col gap-[14px]'>
                     <Image   
                         src={image9} 
                         alt={data[9].name} 
@@ -305,69 +299,72 @@ const page = () => {
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                 </div>
+                
             </div>
-            <div className='flex gap-[14px]'>
-                <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
+            <div className='flex flex-row gap-[14px]'>  
+                <div className='flex flex-col gap-[14px]'>
                     <Image   
-                        src={image11} 
-                        alt={data[0].name} 
-                        width={438} 
+                        src={'/gallery-images/gallery-images1-dv.jpeg'} 
+                        alt={data[7].name} 
+                        width={665} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-full object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
-                    <Image   
-                        src={image12} 
-                        alt={data[1].name} 
-                        width={438} 
-                        height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
-                    />
+                    
                 </div>
                 <div className='flex flex-col gap-[14px]'>
                     <Image   
-                        src={image13} 
-                        alt={data[2].name} 
-                        width={438} 
+                        src={'/gallery-images/gallery-images2-dv.jpeg'} 
+                        alt={data[9].name} 
+                        width={665} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
-                        src={image14} 
-                        alt={data[3].name} 
-                        width={438} 
+                        src={'/gallery-images/gallery-images3-dv.jpeg'} 
+                        alt={data[10].name} 
+                        width={665} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
+                </div>
+                
+            </div>
+            <div className='flex flex-row-reverse gap-[14px]'>  
+                <div className='flex flex-col gap-[14px]'>
                     <Image   
-                        src={image15} 
-                        alt={data[4].name} 
-                        width={438} 
+                        src={'/gallery-images/gallery-images5-dv.jpeg'} 
+                        alt={data[7].name} 
+                        width={665} 
                         height={600} 
-                        className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
+                        className='!w-[calc(100vw - 256px)] !h-full object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
+                    
                 </div>
                 <div className='flex flex-col gap-[14px]'>
                     <Image   
-                        src={image16} 
-                        alt={data[5].name} 
-                        width={438} 
+                        src={'/gallery-images/gallery-images4-dv.jpeg'} 
+                        alt={data[9].name} 
+                        width={665} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                     <Image   
-                        src={image17} 
-                        alt={data[6].name} 
-                        width={438} 
+                        src={'/gallery-images/gallery-images6-dv.jpeg'} 
+                        alt={data[10].name} 
+                        width={665} 
                         height={600} 
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                 </div>
+                
             </div>
+            
             
         </div>
 
         <div className='lg:hidden mx-[12px] my-[24px] flex flex-col gap-[12px]'>
-            {/* Row 1 */}
+           
             <div className='flex gap-[12px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
@@ -389,7 +386,7 @@ const page = () => {
                 </div>
             </div>
 
-            {/* Row 2 - Full width */}
+            
             <div className='aspect-video'>
                 <Image 
                 src={image3} 
@@ -400,7 +397,7 @@ const page = () => {
                 />
             </div>
 
-            {/* Row 3 */}
+            
             <div className='flex gap-[12px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
@@ -422,7 +419,7 @@ const page = () => {
                 </div>
             </div>
 
-            {/* Row 4 */}
+            
             <div className='flex gap-[12px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
@@ -444,7 +441,7 @@ const page = () => {
                 </div>
             </div>
 
-            {/* Row 5 - Full width */}
+            
             <div className='aspect-video'>
                 <Image 
                 src={image8} 
@@ -455,7 +452,7 @@ const page = () => {
                 />
             </div>
 
-            {/* Row 6 */}
+            
             <div className='flex gap-[12px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
@@ -477,7 +474,7 @@ const page = () => {
                 </div>
             </div>
 
-            {/* Row 7 - Full width */}
+            
             <div className='aspect-video'>
                 <Image 
                 src={image11} 
@@ -488,7 +485,7 @@ const page = () => {
                 />
             </div>
 
-            {/* Row 8 */}
+            
             <div className='flex gap-[12px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
@@ -510,7 +507,7 @@ const page = () => {
                 </div>
             </div>
 
-            {/* Row 9 */}
+            
             <div className='flex gap-[12px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
@@ -532,7 +529,7 @@ const page = () => {
                 </div>
             </div>
 
-            {/* Row 10 */}
+            
             <div className='flex gap-[12px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
