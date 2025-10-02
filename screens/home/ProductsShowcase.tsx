@@ -14,11 +14,14 @@ import { useRouter } from 'next/navigation'
 const ProductsShowcase = () => {
     const router = useRouter();
   return (
-    <div className="relative bg-[url('/home-page-2.jpeg')] bg-cover bg-center hidden lg:flex p-[0px] py-[40px] lg:py-[48px] lg:px-[48px] w-screen  flex-col gap-[48px] justify-center items-center mt-[80px]" > 
+    <div
+        style={{boxShadow: "0px -16px 16px rgba(0,0,0,0.25)"}}
+        
+        className="hidden lg:flex mt-[0px] rounded-[48px]  relative bg-gradient-to-b from-black to-[#666666] p-[0px] py-[40px] lg:py-[48px] lg:px-[48px] w-screen  flex-col gap-[48px] justify-center items-center " > 
 
-        <div className="absolute inset-0 bg-white/10 backdrop-blur-md rounded-xl z-0"></div>
+        <div className="absolute inset-0 rounded-[48px]  bg-white/10  z-0"></div>
         <div  
-            className="relative hidden lg:grid grid-cols-3 gap-[24px] w-[100%] ">
+            className="relative hidden rounded-[48px] lg:grid grid-cols-3 gap-[24px] w-[100%] ">
         
             <div data-aos="fade-up" className='flex flex-col gap-[24px]' >
                 <Image   

@@ -17,18 +17,18 @@ const Visit = () => {
         </div>
         <Image 
             
-          src={"/home/Ashcaen2.png"} alt='Image' 
+          src={"/gallery-images/gallery-images6.jpeg"} alt='Image' 
           height={718} width={682}
           style={{ width: '682px', height: '618px' }}
           data-aos="fade-up"
-          className=' w-[628px] h-[594px] hidden lg:flex  object-cover object-bottom border-2 border-white rounded-[32px]' />
+          className=' w-[628px] h-[594px] hidden lg:flex  object-cover  border-2 border-white rounded-[32px]' />
         <Image 
             
-          src={"/home/Ashcaen2.png"} alt='Image' 
+          src={"/gallery-images/gallery-images6.jpeg"} alt='Image' 
           height={718} width={682}
           style={{ width: '682px', height: '317px' }}
           data-aos="fade-up"
-          className='w-[628px] h-[594px]  object-cover object-bottom border-2 lg:hidden border-white rounded-[32px]' />
+          className='w-[628px] h-[594px]  object-cover  border-2 lg:hidden border-white rounded-[32px]' />
         <div data-aos="fade-up" className='lg:hidden flex' >
           <p className='mt-[12px] text-[14px] font-[400]' >Discover the beauty of furniture you can see, touch, and truly feel. Our studio is more than a showroom — it's where design, craftsmanship, and comfort come together. From carefully selected materials to intricate finishes, you’ll experience the process and passion behind every piece.</p>
         </div>
