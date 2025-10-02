@@ -80,6 +80,10 @@ const Products = () => {
             </div>
 
         </div> */}
+        <div className='hidden lg:block mx-[48px] my-[40px]' >  
+          <p data-aos="fade-up" className='text-[#868684] text-[14px] uppercase' >Designed to be loved</p>
+          <p data-aos="fade-up" className='text-black text-[36px] font-[500] uppercase' >Our Products</p>
+        </div>
         
         <div className='hidden lg:flex justify-center items-center '>
             <div className='grid grid-cols-2 gap-[5px] w-full mx-[138px] justify-center items-center place-items-center '>

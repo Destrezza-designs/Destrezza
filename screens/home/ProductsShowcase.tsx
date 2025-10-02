@@ -17,7 +17,7 @@ const ProductsShowcase = () => {
     <div
         style={{boxShadow: "0px -16px 16px rgba(0,0,0,0.25)"}}
         
-        className="hidden lg:flex mt-[0px] rounded-[48px]  relative bg-gradient-to-b from-black to-[#666666] p-[0px] py-[40px] lg:py-[48px] lg:px-[48px] w-screen  flex-col gap-[48px] justify-center items-center " > 
+        className="hidden lg:flex mt-[0px] rounded-[48px]  relative bg-black p-[0px] py-[40px] lg:py-[48px] lg:px-[48px] w-screen  flex-col gap-[48px] justify-center items-center " > 
 
         <div className="absolute inset-0 rounded-[48px]  bg-white/10  z-0"></div>
         <div  
