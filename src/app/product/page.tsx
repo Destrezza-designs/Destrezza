@@ -229,7 +229,7 @@ const categories = {
     name: string;
     title: string;
     disc: string;
-    [key: string]: any;
+    [key: string]: string | number | boolean;
   };
   
   type Categories = Record<string, string[]>;
