@@ -212,8 +212,9 @@ const Page = () => {
             <UtilsHeader />
         </div>
         
-        <div className='lg:hidden text-black flex mt-[30px] mx-[20px]' >
-            <p className='text-[36px] leading-[40px] font-[500] uppercase' >{data[idNum-1].name} <br /> {data[idNum-1].title}</p>
+        <div className='lg:hidden text-black flex flex-col mt-[40px] mx-[20px] ' >
+            <p className='text-[36px] leading-[40px] font-[500] uppercase  bg-red-5 ' >{data[idNum-1].name}  </p>
+            <p className='text-[15px] font-thin' >{data[idNum-1].title}</p>
         </div>
 
         <div className='hidden lg:flex flex-col m-[48px]' >
@@ -293,22 +294,29 @@ const Page = () => {
         </div>
 
         <div className=' lg:hidden mx-[0px] lg:mx-[48px] mt-[20px] lg:mt-[48px] text-black' >
-            <div className='my-[40px] flex lg:flex-row flex-col lg:gap-[14px] gap-y-[5px] lg:gap-y-0 h-[500px] overflow-hidden' >
-                <div className='w-full lg:w-[60%] h-auto relative' >
-                    <div className='hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
-                        <ImageLoader />
+            <div className='my-[40px] flex lg:flex-row flex-col lg:gap-[14px] gap-y-[5px] lg:gap-y-0  overflow-hidden' >
+                <div className='flex flex-col gap-[4px] ' >
+                    <Image 
+                        unoptimized  src={currentImage} width={1000} height={1000} className='w-full h-[414px] object-cover' alt='Main Image' />
+                    <div className='flex  gap-[4px] ' >
+                        {[data[idNum-1].mainImage, data[idNum-1].image, data[idNum-1].image2].map((imgSrc, index) => (
+                            <button 
+                                key={index}
+                                onClick={() => setCurrentImage(imgSrc)}
+                                className={`w-full h-full overflow-hidden `}
+                            >
+                                <Image 
+                                    unoptimized  
+                                    src={imgSrc} 
+                                    width={1000} 
+                                    height={1000} 
+                                    className='w-full h-full object-cover bg-black aspect-square' 
+                                    alt={`Thumbnail ${index + 1}`} 
+                                />
+                            </button>
+                        ))}
                     </div>
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  unoptimized  src={data[idNum-1].mainImage} width={600} height={100} className='w-full h-full object-cover' alt='Main Image' />
                 </div>
-                <div className='w-full lg:w-[40%] h-auto relative' >
-                    <div className='hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
-                        <ImageLoader />
-                    </div>
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  unoptimized  src={data[idNum-1].image} width={400} height={100}  className='w-full h-full object-cover' alt='Main Image' />
-                </div>
-            </div>
-            <div className='hidden lg:flex' >
-                <p className='text-[58px] leading-[68px] uppercase' >{data[idNum-1].name} <br /> {data[idNum-1].title}</p>
             </div>
             <div className='mt-[24px] mx-[16px] lg:mt-[64px]' >
                 <div className='flex lg:flex-row flex-col justify-between items-start my-[12px]' >
@@ -339,13 +347,13 @@ const Page = () => {
                 </div>
 
             </div>
-            <div className='flex flex-col gap-[8px] mt-[64px]' >
+            {/* <div className='flex flex-col gap-[8px] mt-[64px]' >
                 <div className='hidden lg:flex gap-[8px]' >
                     <div className='w-full h-auto relative' >
                         <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
                             <ImageLoader />
                         </div>
-                        <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
+                        <Image  
                             src={data[idNum-1].image}
                             className='w-full h-[570px] object-cover'
                             alt='Main Image'
@@ -357,7 +365,7 @@ const Page = () => {
                         <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
                             <ImageLoader />
                         </div>
-                        <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
+                        <Image  
                             src={data[idNum-1].image}
                             className='w-full h-[570px] object-cover scaleX(-1)'
                             alt='Main Image'
@@ -373,7 +381,7 @@ const Page = () => {
                         <ImageLoader />
                     </div>
                 
-                    <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
+                    <Image  
                         src={data[idNum-1].mainImage}
                         className='w-full h-auto lg:h-[570px] object-cover'
                         alt='Main Image'
@@ -386,7 +394,7 @@ const Page = () => {
                         <div className='hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
                             <ImageLoader />
                         </div>
-                        <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
+                        <Image  
                             src={data[idNum-1].image2}
                             className='w-full lg:h-[570px] object-cover'
                             alt='Main Image'
@@ -398,7 +406,7 @@ const Page = () => {
                         <div className=' hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
                             <ImageLoader />
                         </div>
-                        <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600' 
+                        <Image  
                             src={data[idNum-1].image2}
                             className='w-full lg:h-[570px] object-cover scaleX(-1)'
                             alt='Main Image'
@@ -408,8 +416,8 @@ const Page = () => {
                         />
                     </div>
                 </div>
-            </div>
-            <div className='mt-[64px] hidden lg:block' >
+            </div> */}
+            {/* <div className='mt-[64px] hidden lg:block' >
                 <p className='text-[36px] font-[500] uppercase' >Other Collections</p>
                 <div className="flex flex-wrap justify-center gap-[14px] mt-[24px]">
                     {data.slice(idNum, idNum + 3).map((item, index) => (
@@ -432,30 +440,35 @@ const Page = () => {
                     ))}
                 </div>
 
-            </div>
-            <div className='mt-[40px] lg:hidden mx-[5px]' >
-                <p className='text-[24px] font-[500] uppercase mb-[16px]' >Other Collections</p>
-                <div className="grid grid-cols-2 gap-[10px]">
-                    {data.slice(0, 4).map((item, index) => (
-                        <div key={`mobile-${index}`} className="flex flex-col">
-                            <div 
-                                onClick={()=>router.push(`/product/${index + 1}`)} 
-                                className="h-[259px] w-full relative"
-                            >
+            </div> */}
+            <div className='mt-[64px]  lg:hidden mx-[20px]' >
+                <p className='text-[24px] font-[500] uppercase text-black'  >Other Collections</p>
+                <div className="flex flex-row justify-start gap-[14px] mt-[24px] overflow-x-scroll">
+
+                    {data.slice(idNum, idNum + 10).map((item, index) => (
+                        <button 
+                            key={`desktop-${index}`} 
+                            onClick={() => router.push(`/product/${idNum+1+index}`)}
+                            className="h-fit relative group bg-white"
+                        >
+                            <div className="h-[300px] w-[300px] rounded-[20px] overflow-hidden">
                                 <Image 
                                     src={item.mainImage} 
                                     alt={item.name} 
-                                    fill
-                                    className="popup object-cover w-full h-full"
-                                    sizes="(max-width: 768px) 50vw, 100vw"
+                                    width={1000} 
+                                    height={1000} 
+                                    className="h-full object-cover"
                                 />
+                                <div className="absolute rounded-[20px] bottom-0 left-0 bg-gradient-to-t from-[#00000040] to-transparent h-1/2 w-full"></div>
+                                <div className="absolute bottom-0 left-0 p-[20px] text-white group-hover:text-black text-left">
+                                    <p className="text-[36px] font-medium uppercase">{item.name}</p>
+                                    <p className="text-[20px] mt-[-10px] font-extralight uppercase">{item.title}</p>
+                                </div>
                             </div>
-                            <p className="text-[14px] font-[600] leading-[20px] mt-[8px] text-left">
-                                {item.name}
-                            </p>
-                        </div>
+                        </button>
                     ))}
                 </div>
+
             </div>
         </div>
         <Footor />
