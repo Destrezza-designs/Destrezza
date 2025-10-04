@@ -393,14 +393,14 @@ const Page = () => {
                 <button onClick={()=>setMobileViewNavbar(true)} className='border border-[#868684] px-[24px] py-[4px] rounded-[24px]' >
                     <p className='text-[14px] tracking-[1px] text-[#868684]' >Filter</p>
                 </button>
-                <div className="lg:hidden grid grid-cols-2 gap-[10px] gap-y-[25px] mt-[14px] w-full">
+                <div className="lg:hidden grid grid-cols-2 gap-[4px] gap-y-[4px] mt-[14px] w-full">
                     {filteredData.map((item, index) => (
                         <button 
                             key={`mobile-${index}`} 
                             onClick={() => router.push(`/product/${index + 1}`)}
                             className="flex flex-col h-fit"
                             >
-                            <div className="relative h-[259px] w-full rounded-[16px] overflow-hidden">
+                            <div className="relative h-[259px] w-full rounded-[4px] overflow-hidden">
                                 {/* Gradient overlay */}
                                 <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent"></div>
 
