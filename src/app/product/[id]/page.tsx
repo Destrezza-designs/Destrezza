@@ -10,8 +10,8 @@ import ImageLoader from '@/components/utils/ImageLoader';
 
 const data = [
     {
-        "mainImage" : "/kizuki.png",
-        "image" : "/kizuki.png",
+        "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFLY09099%20Large.png?alt=media&token=a819db1c-2d9f-4124-a150-3a5b8e3c8fb0",
+        "image" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFLY09123%20Large.png?alt=media&token=cc13fea2-6a8b-4de3-aefc-de0f610b711b",
         "image2":"/kizuki.png",
         "name" : "KIzuki",
         "title" : "Study table and chair",
