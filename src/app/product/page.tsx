@@ -5,7 +5,7 @@ import UtilsHeader from '@/components/utils/Header'
 import Image from 'next/image'
 import React,{useState} from 'react'
 import { useRouter } from 'next/navigation'
-import ImageLoader from '@/components/utils/ImageLoader'
+import { GiSettingsKnobs } from "react-icons/gi";
 
 const data = [
     {
@@ -358,49 +358,60 @@ const Page = () => {
 
             {/* Mobile View */}
             <div className='lg:hidden mt-[28px]  overflow-hidden' >
-                <div className={`${mobileViewNavbar ? 'block' : 'hidden'}  fixed left-0 top-0 z-50 bg-[#ffffff80] backdrop-blur-[8px] w-screen h-screen`} >
-                    <div className='flex justify-between items-center ' >
-                        <p className='mt-[48px] mx-[48px] text-[24px] w-full  flex justify-between' >Filter
-                        <button onClick={()=>setMobileViewNavbar(false)} className='text-[14px] bg-white w-[36px] h-[36px] rounded-full shadow-lg shadow-black/10' >X</button></p>
-                        
+            <div
+                className={`${mobileViewNavbar ? 'block' : 'hidden'} fixed left-0 top-0 z-50  bg-[#ffffff80] backdrop-blur-[8px] w-screen h-screen`}
+                >
+                    <div className="flex justify-between items-center">
+                        <p className="mt-[48px] mx-[48px] text-[24px] w-full flex justify-between">
+                        Filter
+                        <button
+                            onClick={() => setMobileViewNavbar(false)}
+                            className="text-[14px] bg-white w-[36px] h-[36px] rounded-full shadow-lg shadow-black/10"
+                        >
+                            X
+                        </button>
+                        </p>
                     </div>
-                    <div className=' mx-[48px] flex flex-col gap-[24px] mt-[14px]' >
-                        {Object.entries(categories).map(([category, items], idx) => (
-                            <div key={idx} className="space-y-3 border-t-[1px] border-[#CCCCCC] pt-[24px]">
-                                
-                                <h3 className="text-[14px] font-medium text-black">{category}</h3>
 
-                                
-                                <div className="flex flex-col space-y-2">
-                                    {items.map((item, i) => (
-                                    <label
-                                        key={i}
-                                        className="flex items-center space-x-2 text-[14px] text-black"
-                                    >
-                                        <input
-                                        type="checkbox"
-                                        onChange={() => handleFilterChange(item)}
-                                        className="h-4 w-4 rounded border-gray-400 text-black focus:ring-0"
-                                        />
-                                        <span>{item}</span>
-                                    </label>
-                                    ))}
-                                </div>
+                    {/* 👇 Scrollable content */}
+                    <div className="mx-[48px] flex flex-col gap-[24px] mt-[14px] overflow-y-auto  h-[calc(100vh-120px)] pb-[24px]">
+                        {Object.entries(categories).map(([category, items], idx) => (
+                        <div key={idx} className="space-y-3 border-t-[1px] border-[#CCCCCC] pt-[24px]">
+                            <h3 className="text-[14px] font-medium text-black">{category}</h3>
+
+                            <div className="flex flex-col space-y-2">
+                            {items.map((item, i) => (
+                                <label
+                                key={i}
+                                className="flex items-center space-x-2 text-[14px] text-black"
+                                >
+                                <input
+                                    type="checkbox"
+                                    onChange={() => handleFilterChange(item)}
+                                    className="h-4 w-4 rounded border-gray-400 text-black focus:ring-0"
+                                />
+                                <span>{item}</span>
+                                </label>
+                            ))}
                             </div>
+                        </div>
                         ))}
                     </div>
                 </div>
-                <button onClick={()=>setMobileViewNavbar(true)} className='border border-[#868684] px-[24px] py-[4px] rounded-[24px]' >
-                    <p className='text-[14px] tracking-[1px] text-[#868684]' >Filter</p>
-                </button>
-                <div className="lg:hidden grid grid-cols-2 gap-[4px] gap-y-[4px] mt-[14px] w-full">
+
+                <div className='w-full flex justify-end' >
+                    <button onClick={()=>setMobileViewNavbar(true)} className='flex  py-[4px] rounded-[24px] ' >
+                        <p className='text-[14px]   flex justify-center items-center gap-[10px] ' >Filter <GiSettingsKnobs size={20} className='transform rotate-90' /></p>
+                    </button>
+                </div>
+                <div className="lg:hidden grid grid-cols-2 gap-[10px] gap-y-[10px] mt-[14px] w-full">
                     {filteredData.map((item, index) => (
                         <button 
                             key={`mobile-${index}`} 
                             onClick={() => router.push(`/product/${index + 1}`)}
                             className="flex flex-col h-fit"
                             >
-                            <div className="relative h-[259px] w-full rounded-[4px] overflow-hidden">
+                            <div className="relative h-[45vw] w-full rounded-[16px] overflow-hidden">
                                 {/* Gradient overlay */}
                                 <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent"></div>
 

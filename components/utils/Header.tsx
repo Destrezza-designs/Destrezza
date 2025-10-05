@@ -87,7 +87,7 @@ const Header = () => {
 
 
         <div 
-          className={`fixed z-50 top-0 left-0 bg-[#1A1F26] w-screen h-screen pt-[40px] px-[16px] transition-all duration-300 ease-in-out transform ${
+          className={`fixed z-50 top-0 left-0 bg-[#00000050]  backdrop-blur-[10px] shadow-[10px_0px_10px_0px_rgba(0,0,0,0.25)] w-[85vw] h-screen pt-[40px] px-[16px] transition-all duration-300 ease-in-out transform ${
             navbar ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full pointer-events-none'
           }`}
         >

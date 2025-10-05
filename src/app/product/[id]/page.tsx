@@ -247,10 +247,15 @@ const Page = () => {
                     <p className='text-[14px] font-light mt-[10px]' >{data[idNum-1].disc}</p>
                     <div className='mt-[25px] gap-[10px]' >
                         <div className='flex text-[14px] font-normal gap-[10px]' >
-                            <button onClick={()=>setCurrentDisc('Material')} >Material</button>
-                            <button onClick={()=>setCurrentDisc('Designer')} >Designer</button>
-                            <button onClick={()=>setCurrentDisc('Type')} >Type</button>
-                            <button onClick={()=>setCurrentDisc('Year')} >Year</button>
+                            {['Material', 'Designer', 'Type', 'Year'].map((disc) => (
+                                <button 
+                                    key={disc}
+                                    onClick={() => setCurrentDisc(disc)}
+                                    className={`border-b ${currentDisc === disc ? 'border-b-black' : 'border-b-transparent'}`}
+                                >
+                                    {disc}
+                                </button>
+                            ))}
                         </div>
                         <p className='mt-[10px] text-[13px] font-light' >{
                             currentDisc == 'Material' ? data[idNum-1].disc :  
@@ -321,126 +326,32 @@ const Page = () => {
             <div className='mt-[24px] mx-[16px] lg:mt-[64px]' >
                 <div className='flex lg:flex-row flex-col justify-between items-start my-[12px]' >
                     <p className='text-[18px] font-[500] uppercase' >Description</p>
-                    <p className='mt-[10px] lg:mt-[0px] text-[15px] lg:text-[24px] w-full lg:w-[70%] font-[400] lg:font-[300]' >{data[idNum-1].disc}</p>
+                    <p className='mt-[10px] lg:mt-[0px] text-[15px] lg:text-[24px] w-full lg:w-[70%] font-light lg:font-[300]' >{data[idNum-1].disc}</p>
                 </div>
 
-                <div className='flex lg:flex-row flex-col justify-between items-start mt-[38px] lg:mt-[64px] ' >
-                    <p className='text-[18px] font-[500] uppercase mb-[13px] lg:mb-[0px]' >Technical <br className='hidden lg:flex' /> Specification</p>
-                    <div className='w-full lg:w-[70%]' >
-                        <div className='flex lg:flex-row flex-col justify-between items-start border-t-[1px] border-[#00000040] py-[24px]' >
-                            <p className='text-[18px] leading-[27px] font-[400]' >MATERIAL</p>
-                            <p className='text-[15px] lg:text-[18px] leading-[27px] font-[400] w-full lg:w-[80%] mt-[20px] lg:mt-[0px]' >{data[idNum-1].disc}</p>
-                        </div>
-                        <div className='flex lg:flex-row flex-col justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
-                            <p className='text-[18px] leading-[27px] font-[400]' >COLOR</p>
-                            <p className='text-[15px] lg:text-[18px] leading-[27px] font-[400] w-full lg:w-[80%] mt-[20px] lg:mt-[0px]' >{data[idNum-1].color}</p>
-                        </div>
-                        <div className='flex lg:flex-row flex-col justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
-                            <p className='text-[18px] leading-[27px] font-[400]' >CARE INSTRUCTION</p>
-                            <p className='text-[15px] lg:text-[18px] leading-[27px] font-[400] w-full lg:w-[80%] mt-[20px] lg:mt-[0px]' >{data[idNum-1].care}</p>
-                        </div>
-                        <div className='flex lg:flex-row flex-col justify-between items-start border-t-[1px] border-[#00000040] py-[24px] mt-[48px]' >
-                            <p className='text-[18px] leading-[27px] font-[400]' >YEAR</p>
-                            <p className='text-[15px] lg:text-[18px] leading-[27px] font-[400] w-full lg:w-[80%] mt-[20px] lg:mt-[0px]' >{data[idNum-1].year}</p>
-                        </div>
+                
+                <div className='mt-[25px] gap-[10px]' >
+                    <div className='flex text-[14px] font-normal gap-[10px]' >
+                        {['Material', 'Designer', 'Type', 'Year'].map((disc) => (
+                            <button 
+                                key={disc}
+                                onClick={() => setCurrentDisc(disc)}
+                                className={`border-b ${currentDisc === disc ? 'border-b-black' : 'border-b-transparent'}`}
+                            >
+                                {disc}
+                            </button>
+                        ))}
                     </div>
+                    <p className='mt-[10px] text-[13px] font-light' >{
+                        currentDisc == 'Material' ? data[idNum-1].disc :  
+                        currentDisc == 'Designer' ? data[idNum-1].color :  
+                        currentDisc == 'Type' ? data[idNum-1].care :  
+                        currentDisc == 'Year' ? data[idNum-1].year :  ''}</p>
                 </div>
+                
 
             </div>
-            {/* <div className='flex flex-col gap-[8px] mt-[64px]' >
-                <div className='hidden lg:flex gap-[8px]' >
-                    <div className='w-full h-auto relative' >
-                        <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
-                            <ImageLoader />
-                        </div>
-                        <Image  
-                            src={data[idNum-1].image}
-                            className='w-full h-[570px] object-cover'
-                            alt='Main Image'
-                            width={1024}
-                            height={576}
-                        />
-                    </div>
-                    <div className='w-full h-auto relative' >
-                        <div className='absolute top-0 left-0 z-[-1] w-full h-full' >
-                            <ImageLoader />
-                        </div>
-                        <Image  
-                            src={data[idNum-1].image}
-                            className='w-full h-[570px] object-cover scaleX(-1)'
-                            alt='Main Image'
-                            width={1024}
-                            height={576}
-                            style={{transform: 'scaleX(-1)'}}
-                        />
-                    </div>
-                </div>
-                
-                <div className='w-full h-auto relative' >
-                    <div className='hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
-                        <ImageLoader />
-                    </div>
-                
-                    <Image  
-                        src={data[idNum-1].mainImage}
-                        className='w-full h-auto lg:h-[570px] object-cover'
-                        alt='Main Image'
-                        width={1024}
-                        height={576}
-                    />
-                </div>
-                <div className='flex gap-[8px]' >
-                    <div className='w-full h-auto relative' >
-                        <div className='hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
-                            <ImageLoader />
-                        </div>
-                        <Image  
-                            src={data[idNum-1].image2}
-                            className='w-full lg:h-[570px] object-cover'
-                            alt='Main Image'
-                            width={1024}
-                            height={576}
-                        />
-                    </div>
-                    <div className='w-full h-auto relative' >
-                        <div className=' hidden lg:flex absolute top-0 left-0 z-[-1] w-full h-full' >
-                            <ImageLoader />
-                        </div>
-                        <Image  
-                            src={data[idNum-1].image2}
-                            className='w-full lg:h-[570px] object-cover scaleX(-1)'
-                            alt='Main Image'
-                            width={1024}
-                            height={576}
-                            style={{transform: 'scaleX(-1)'}}
-                        />
-                    </div>
-                </div>
-            </div> */}
-            {/* <div className='mt-[64px] hidden lg:block' >
-                <p className='text-[36px] font-[500] uppercase' >Other Collections</p>
-                <div className="flex flex-wrap justify-center gap-[14px] mt-[24px]">
-                    {data.slice(idNum, idNum + 3).map((item, index) => (
-                        <button key={`desktop-${index}`} className="flex flex-col justify-center items-center">
-                            <div onClick={()=>router.push(`/product/${idNum+1+index}`)} className="h-[614px] w-[30vw] relative">
-                                <div>
-                                    <div className='absolute top-0 left-0 w-[30vw] h-[614px] z-[-1]' >
-                                        <ImageLoader  />
-                                    </div>
-                                    <Image 
-                                        src={item.mainImage} 
-                                        alt={item.name} 
-                                        fill 
-                                        className="popup !w-full h-full object-cover" 
-                                    />
-                                </div>
-                            </div>
-                            <p className="text-left w-full text-[#141414] text-[18px] font-[600] leading-[28px] mt-[14px]">{item.name}</p>
-                        </button>
-                    ))}
-                </div>
 
-            </div> */}
             <div className='mt-[64px]  lg:hidden mx-[20px]' >
                 <p className='text-[24px] font-[500] uppercase text-black'  >Other Collections</p>
                 <div className="flex flex-row justify-start gap-[14px] mt-[24px] overflow-x-scroll">
