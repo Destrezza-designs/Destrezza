@@ -266,10 +266,9 @@ const Page = () => {
                 </div>
                 
             </div>
-            <div className='mt-[64px] hidden lg:block' >
-                <p className='text-[36px] font-[500] uppercase text-black'  >Other Collections</p>
+            <div className='mt-[64px] hidden lg:block'>
+                <p className='text-[36px] font-[500] uppercase text-black'>Other Collections</p>
                 <div className="flex flex-row justify-start gap-[14px] mt-[24px] overflow-x-scroll">
-
                     {data.slice(idNum, idNum + 10).map((item, index) => (
                         <button 
                             key={`desktop-${index}`} 
@@ -277,15 +276,17 @@ const Page = () => {
                             className="h-fit relative group bg-white"
                         >
                             <div className="h-[300px] w-[300px] rounded-[20px] overflow-hidden">
-                                <Image 
-                                    src={item.mainImage} 
-                                    alt={item.name} 
-                                    width={1000} 
-                                    height={1000} 
-                                    className="h-full object-cover"
-                                />
+                                <div className="transition duration-300 ease-in-out group-hover:scale-110 h-full"> {/* Scale container instead */}
+                                    <Image 
+                                        src={item.mainImage} 
+                                        alt={item.name} 
+                                        width={1000} 
+                                        height={1000} 
+                                        className="h-full object-cover"
+                                    />
+                                </div>
                                 <div className="absolute rounded-[20px] bottom-0 left-0 bg-gradient-to-t from-[#00000040] to-transparent h-1/2 w-full"></div>
-                                <div className="absolute bottom-0 left-0 p-[20px] text-white group-hover:text-black text-left">
+                                <div className="absolute bottom-0 left-0 p-[20px] text-white text-left">
                                     <p className="text-[36px] font-medium uppercase">{item.name}</p>
                                     <p className="text-[20px] mt-[-10px] font-extralight uppercase">{item.title}</p>
                                 </div>
@@ -293,7 +294,6 @@ const Page = () => {
                         </button>
                     ))}
                 </div>
-
             </div>
 
         </div>
