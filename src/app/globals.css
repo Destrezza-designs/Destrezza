@@ -28,6 +28,11 @@ button{
 .premadeBorder{
   border: 1px solid black;
 }
+@supports not (backdrop-filter: blur(10px)) {
+  .backdrop-fallback {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
 
 
 /* @media screen and (max-width: 600px) {

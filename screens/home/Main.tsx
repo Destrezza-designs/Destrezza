@@ -164,10 +164,10 @@ const Main = () => {
 
       {/* mobile view */}
       <div className="relative lg:hidden">
-        <div className="flex flex-1 mt-[-22px] pt-[0px] lg:pt-[40px]">
+        <div className="flex flex-1 mt-[-22px] pt-[0px] lg:pt-[40px] mb-[-80px]">
           <Header />
         </div>
-        <div className="relative w-full h-[400px] overflow-hidden">
+        <div className="relative w-full h-[500px] overflow-hidden">
           {/* Slider only for images */}
           <Slider 
             {...{
@@ -186,7 +186,7 @@ const Main = () => {
             className="h-full w-full"
           >
             {['/bg.png', '/home-page-1.jpeg', '/home-page-2.jpeg'].map((image, index) => (
-              <div key={index} className="h-[400px] w-full">
+              <div key={index} className="h-[500px] w-full">
                 <div 
                   className="h-full w-full bg-cover bg-center"
                   style={{
@@ -362,22 +362,22 @@ const Main = () => {
                 </div>
                 
               </div>
-              <div className='flex flex-row-reverse gap-[4px] mt-[5px] justify-center items-center' >
+              <div className='flex flex-row-reverse gap-[4px] mt-[0px] justify-center items-center' >
                 <Image 
                     
                   alt='chair' 
-                  src={about_3} 
+                  src={'/gallery-images/gallery-images4.jpeg'} 
                   width={150} height={500}
-                  className='rounded-[12px] w-[150px] h-[305px] object-cover' />
+                  className='rounded-[12px] w-[150px] h-[305px] object-cover object-left' />
                 <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
                   <Image   
                     alt='chair' 
-                    src={about_1} 
+                    src={'/gallery-images/gallery-images3-dv.jpeg'} 
                     width={150} height={150}
                     className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
                   <Image   
                     alt='chair' 
-                    src={about_2} 
+                    src={'/gallery-images/gallery-images6-dv.jpeg'} 
                     width={150} height={150}
                     className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
                   

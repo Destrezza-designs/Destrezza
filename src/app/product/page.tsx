@@ -358,9 +358,11 @@ const Page = () => {
 
             {/* Mobile View */}
             <div className='lg:hidden mt-[28px]  overflow-hidden' >
-            <div
-                className={`${mobileViewNavbar ? 'block' : 'hidden'} fixed left-0 top-0 z-50  bg-[#ffffff80] backdrop-blur-[8px] w-screen h-screen`}
-                >
+                <div
+                    className={`fixed left-0 top-0 z-50 bg-[#ffffff80] backdrop-blur-[8px] w-screen h-screen transition-transform duration-250 ease-in-out ${
+                        mobileViewNavbar ? 'translate-x-0' : '-translate-x-full'
+                    }`}
+                    >
                     <div className="flex justify-between items-center">
                         <p className="mt-[48px] mx-[48px] text-[24px] w-full flex justify-between">
                         Filter

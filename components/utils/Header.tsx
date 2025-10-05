@@ -1,5 +1,5 @@
 'use client'
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Image from 'next/image'
 import logo from '@/public/header/Icon.png'
 import brand from '@/public/header/Brand.png'
@@ -23,6 +23,8 @@ const Header = () => {
       target.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+
 
 
   return (
@@ -87,13 +89,18 @@ const Header = () => {
 
 
         <div 
-          className={`fixed z-50 top-0 left-0 bg-[#00000050]  backdrop-blur-[10px] shadow-[10px_0px_10px_0px_rgba(0,0,0,0.25)] w-[85vw] h-screen pt-[40px] px-[16px] transition-all duration-300 ease-in-out transform ${
-            navbar ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full pointer-events-none'
-          }`}
+          className={`
+            fixed z-50 top-0 left-0 shadow-md shadow-slate-500/10 
+            bg-[#1A1F26]
+            w-[85vw] h-[100dvh] pt-[40px] px-[16px] 
+            transition-all duration-300 ease-in-out transform 
+            ${navbar ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full pointer-events-none'}
+          `}
+          
         >
-          <div className='w-full lg:w-fit flex justify-between items-center' >
+          <div className='w-full lg:w-fit flex justify-between items-center ' >
               <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  className='' 
+                <Image   className='' 
                 src={brand} 
                 alt="Brand" width={303} height={58} />
               </div>
