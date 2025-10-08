@@ -88,48 +88,50 @@ const Header = () => {
         </div>
 
 
-        <div 
-          className={`
-            fixed z-50 top-0 left-0 shadow-md shadow-slate-500/10 
-            bg-[#1A1F26]
-            w-[85vw] h-[100dvh] pt-[40px] px-[16px] 
-            transition-all duration-300 ease-in-out transform 
-            ${navbar ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full pointer-events-none'}
-          `}
-          
-        >
-          <div className='w-full lg:w-fit flex justify-between items-center ' >
-              <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
-                <Image   className='' 
-                src={brand} 
-                alt="Brand" width={303} height={58} />
+        <div>
+          <div 
+            className={`
+              fixed z-50 top-0 left-0 shadow-md shadow-slate-500/10 
+              
+              w-screen h-[100dvh] 
+              transition-all duration-300 ease-in-out transform 
+              ${navbar ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full pointer-events-none'}
+            `}
+            
+          >
+              <div className='w-full lg:w-fit flex justify-between items-center bg-[#1A1A1A] pt-[30px] pb-[10px] px-[16px] ' >
+                <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
+                  <Image   className='' 
+                  src={brand} 
+                  alt="Brand" width={303} height={58} />
+                </div>
+                <button onClick={()=>setNavbar(false)} className='flex lg:hidden' >
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.98589 17.5L0.285889 15.8L7.08589 9L0.285889 2.2L1.98589 0.5L8.78589 7.3L15.5859 0.5L17.2859 2.2L10.4859 9L17.2859 15.8L15.5859 17.5L8.78589 10.7L1.98589 17.5Z" fill="white"/>
+                  </svg>
+                </button>
               </div>
-              <button onClick={()=>setNavbar(false)} className='flex lg:hidden' >
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.98589 17.5L0.285889 15.8L7.08589 9L0.285889 2.2L1.98589 0.5L8.78589 7.3L15.5859 0.5L17.2859 2.2L10.4859 9L17.2859 15.8L15.5859 17.5L8.78589 10.7L1.98589 17.5Z" fill="white"/>
-                </svg>
-              </button>
-            </div>
-            <nav className=' flex flex-col justify-start items-start mt-[60px]' >
-              <ul className="flex flex-col gap-[18px] text-[32px] font-[400] text-white tracking-widest">
-                <li className="cursor-pointer hover:text-yellow-400">
-                  <button onClick={() => router.push('/')} >HOME</button>
-                </li>
-                <li className="cursor-pointer hover:text-yellow-400">
-                  <button onClick={() => router.push('/about')} >ABOUT US</button>
-                </li>
-                <li className="cursor-pointer hover:text-yellow-400">
-                  <button onClick={() => router.push('/product')} >PRODUCTS</button>
-                </li>
-                <li className="cursor-pointer hover:text-yellow-400">
-                  <button  onClick={() => router.push('/gallery')} >GALLERY</button>
-                </li>
-                <li className="cursor-pointer hover:text-yellow-400">
-                  <button onClick={() => router.push('/contact')} >CONTACT</button>
-                </li>
-              </ul>
-            </nav>
+              <nav className='h-screen w-[85vw] flex flex-col justify-start items-start pt-[60px] bg-[#00000090] backdrop-blur-[10px]  px-[16px] ' >
+                <ul className="flex flex-col gap-[18px] text-[32px] font-[400] text-white tracking-widest">
+                  <li className="cursor-pointer hover:text-yellow-400">
+                    <button onClick={() => router.push('/')} >HOME</button>
+                  </li>
+                  <li className="cursor-pointer hover:text-yellow-400">
+                    <button onClick={() => router.push('/about')} >ABOUT US</button>
+                  </li>
+                  <li className="cursor-pointer hover:text-yellow-400">
+                    <button onClick={() => router.push('/product')} >PRODUCTS</button>
+                  </li>
+                  <li className="cursor-pointer hover:text-yellow-400">
+                    <button  onClick={() => router.push('/gallery')} >GALLERY</button>
+                  </li>
+                  <li className="cursor-pointer hover:text-yellow-400">
+                    <button onClick={() => router.push('/contact')} >CONTACT</button>
+                  </li>
+                </ul>
+              </nav>
 
+          </div>
         </div>
       </header>
     </div>
