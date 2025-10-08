@@ -3,8 +3,8 @@ import Footor from '@/components/Footor'
 import Header from '@/components/product/Header'
 import UtilsHeader from '@/components/utils/Header'
 import Image from 'next/image'
-import React,{useState} from 'react'
-import { useRouter } from 'next/navigation'
+import React,{useState,useEffect} from 'react'
+import { useRouter,useSearchParams } from 'next/navigation'
 import { GiSettingsKnobs } from "react-icons/gi";
 
 const data = [
@@ -232,8 +232,9 @@ const categories = {
     [key: string]: string | number | boolean;
   };
   
-  type Categories = Record<string, string[]>;
   
+  type Categories = Record<string, string[]>;
+
   interface Props {
     data: DataItem[];
     categories: Categories;
@@ -242,8 +243,16 @@ const categories = {
 const Page = () => {
 
     const router = useRouter();
+    const searchParams = useSearchParams();
+
+    
+    
+
     const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
     const [mobileViewNavbar,setMobileViewNavbar] = useState(false);
+    const [filteredDataState, setFilteredDataState] = useState<DataItem[]>(data);
+
+    
 
   // Toggle checkbox
     const handleFilterChange = (item: string) => {
@@ -263,6 +272,14 @@ const Page = () => {
             return w;
           })
           .filter(Boolean);
+
+    const arraysEqual = (a: string[], b: string[]) => {
+        if (a.length !== b.length) return false;
+            const sa = [...a].sort();
+            const sb = [...b].sort();
+        return sa.every((v, i) => v === sb[i]);
+    };
+        
       
 
     // Filter data
@@ -276,6 +293,57 @@ const Page = () => {
         return words.some((word) => text.includes(word));
         });
     });
+
+    useEffect(() => {
+        // read cat every effect run
+        const catParam = searchParams.get('cat');
+
+    
+        // build filters derived from the top-level category (if any)
+        let catFilters: string[] = [];
+        if (catParam) {
+
+          const matchedKey = Object.keys(categories).find(
+            (k) => k.toLowerCase() === catParam.toLowerCase()
+          );
+          console.log(catParam)
+          if (matchedKey) {
+                catFilters = categories[matchedKey as keyof typeof categories] ?? [];
+          }
+          console.log(matchedKey)
+        }
+    
+        // If catFilters exist and differ from current selectedFilters, replace selectedFilters
+        if (catFilters.length > 0 && !arraysEqual(catFilters, selectedFilters)) {
+          // when url has cat=..., we set the selected filters to match that category
+          setSelectedFilters(catFilters);
+          // Continue — don't return; we'll compute filtered data below. Note: setSelectedFilters is async, but we still compute using catFilters immediately.
+        }
+    
+        // Decide which filters to use for actual filtering:
+        // - If there are selectedFilters (manual or set by cat), use them.
+        // - If none, show all items.
+        const activeFilters = (selectedFilters.length > 0) ? selectedFilters : catFilters;
+    
+        // Perform filtering based on activeFilters
+        if (activeFilters.length === 0) {
+          setFilteredDataState(data);
+        } else {
+          const newFiltered = data.filter((item) => {
+            const text = (item.name + " " + item.disc + " " + item.title).toLowerCase();
+    
+            return activeFilters.some((filter) => {
+              const words = splitFilterWords(filter);
+              return words.some((word) => text.includes(word));
+            });
+          });
+          setFilteredDataState(newFiltered);
+        }
+    
+        // Re-run when query changes (searchParams) or when user toggles selectedFilters
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+      }, [searchParams?.toString(), selectedFilters]);
+    
 
   return (
     <div className='text-black' >
@@ -330,7 +398,7 @@ const Page = () => {
                     ))}
                 </div>
                 <div className="hidden lg:grid grid-cols-2 h-fit justify-start gap-[14px] gap-x-[14px] ">
-                    {filteredData.map((item, index) => (
+                    {filteredDataState.map((item, index) => (
                         <button 
                             onClick={() => {
                                 router.push(`/product/${index+1}`)
@@ -407,7 +475,7 @@ const Page = () => {
                     </button>
                 </div>
                 <div className="lg:hidden grid grid-cols-2 gap-[10px] gap-y-[10px] mt-[14px] w-full">
-                    {filteredData.map((item, index) => (
+                    {filteredDataState.map((item, index) => (
                         <button 
                             key={`mobile-${index}`} 
                             onClick={() => router.push(`/product/${index + 1}`)}

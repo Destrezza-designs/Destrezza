@@ -214,6 +214,7 @@ const page = () => {
         <div className='flex lg:hidden mt-[-22px]' >
             <UtilsHeader />
         </div>
+
         <div className='my-[80px] mx-[48px] hidden lg:flex flex-col  gap-[14px] justify-center items-center overflow-hidden'>
             <div className='flex gap-[14px]'>
                 <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
@@ -362,17 +363,18 @@ const page = () => {
             
             
         </div>
+        
 
-        <div className='lg:hidden mx-[12px] my-[24px] flex flex-col gap-[12px]'>
+        <div className='lg:hidden mx-[12px] my-[24px] flex flex-col gap-[3px]'>
            
-            <div className='flex gap-[12px]'>
+            <div className='flex gap-[3px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
                     src={image1} 
                     alt='gallery image 1' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
                 <div className='flex-1 aspect-[3/4]'>
@@ -381,7 +383,7 @@ const page = () => {
                     alt='gallery image 2' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
             </div>
@@ -393,19 +395,19 @@ const page = () => {
                 alt='gallery image 3' 
                 width={500} 
                 height={500}
-                className='object-cover w-full h-full rounded-[16px]' 
+                className='object-cover w-full h-full rounded-[8px]' 
                 />
             </div>
 
             
-            <div className='flex gap-[12px]'>
+            <div className='flex gap-[3px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
                     src={image4} 
                     alt='gallery image 4' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
                 <div className='flex-1 aspect-[3/4]'>
@@ -414,20 +416,20 @@ const page = () => {
                     alt='gallery image 5' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
             </div>
 
             
-            <div className='flex gap-[12px]'>
+            <div className='flex gap-[3px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
                     src={image6} 
                     alt='gallery image 6' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
                 <div className='flex-1 aspect-[3/4]'>
@@ -436,7 +438,7 @@ const page = () => {
                     alt='gallery image 7' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
             </div>
@@ -448,19 +450,19 @@ const page = () => {
                 alt='gallery image 8' 
                 width={500} 
                 height={500}
-                className='object-cover w-full h-full rounded-[16px]' 
+                className='object-cover w-full h-full rounded-[8px]' 
                 />
             </div>
 
             
-            <div className='flex gap-[12px]'>
+            <div className='flex gap-[3px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
                     src={image9} 
                     alt='gallery image 9' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
                 <div className='flex-1 aspect-[3/4]'>
@@ -469,7 +471,7 @@ const page = () => {
                     alt='gallery image 10' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
             </div>
@@ -481,19 +483,19 @@ const page = () => {
                 alt='gallery image 11' 
                 width={500} 
                 height={500}
-                className='object-cover w-full h-full rounded-[16px]' 
+                className='object-cover w-full h-full rounded-[8px]' 
                 />
             </div>
 
             
-            <div className='flex gap-[12px]'>
+            <div className='flex gap-[3px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
                     src={image12} 
                     alt='gallery image 12' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
                 <div className='flex-1 aspect-[3/4]'>
@@ -502,20 +504,20 @@ const page = () => {
                     alt='gallery image 13' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
             </div>
 
             
-            <div className='flex gap-[12px]'>
+            <div className='flex gap-[3px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
                     src={image15} 
                     alt='gallery image 15' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
                 <div className='flex-1 aspect-[3/4]'>
@@ -524,20 +526,20 @@ const page = () => {
                     alt='gallery image 16' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
             </div>
 
             
-            <div className='flex gap-[12px]'>
+            <div className='flex gap-[3px]'>
                 <div className='flex-1 aspect-[3/4]'>
                 <Image 
                     src={image14} 
                     alt='gallery image 14' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
                 <div className='flex-1 aspect-[3/4]'>
@@ -546,7 +548,7 @@ const page = () => {
                     alt='gallery image 17' 
                     width={500} 
                     height={500}
-                    className='object-cover w-full h-full rounded-[16px]' 
+                    className='object-cover w-full h-full rounded-[8px]' 
                 />
                 </div>
             </div>

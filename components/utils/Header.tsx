@@ -4,7 +4,7 @@ import Image from 'next/image'
 import logo from '@/public/header/Icon.png'
 import brand from '@/public/header/Brand.png'
 import { useRouter } from 'next/navigation'
-
+import { FaAngleDown } from "react-icons/fa6";
 
   /**
    * A header component that includes a logo, navigation menu a
@@ -15,7 +15,8 @@ const Header = () => {
 
   const router = useRouter()
 
-  const [navbar,setNavbar] = useState(true);
+  const [navbar,setNavbar] = useState(false);
+  const [navbarMenu,setNavbarMenu] = useState(false);
 
   const handleScroll = () => {
     const target = document.getElementById("target-section");
@@ -50,7 +51,7 @@ const Header = () => {
                 <button className='text-[12px]'  onClick={() => router.push('/about')} >ABOUT US</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button className='text-[12px]'  onClick={() => router.push('/product')} >PRODUCTS</button>
+                <button className='text-[12px]'  onClick={() => router.push('/product')} >PRODUCTS </button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
                 <button className='text-[12px]'  onClick={() => router.push('/gallery')} >GALLERY</button>
@@ -104,7 +105,7 @@ const Header = () => {
             `}
             
           >
-              <div className='w-full lg:w-fit flex justify-between items-center bg-[#1A1A1A] pt-[30px] pb-[10px] px-[16px] ' >
+              <div className='w-full lg:hidden lg:w-fit flex justify-between items-center bg-[#1A1A1A] pt-[30px] pb-[10px] px-[16px] ' >
                 <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
                   <Image   className='' 
                   src={brand} 
@@ -116,16 +117,33 @@ const Header = () => {
                   </svg>
                 </button>
               </div>
-              <nav className='h-screen w-[85vw] flex flex-col justify-start items-start pt-[60px] bg-[#464646f0] backdrop-blur-[10px]  px-[16px] ' >
-                <ul className="flex flex-col gap-[18px] text-[32px] font-[400] text-white tracking-widest">
+              <nav className='lg:hidden h-screen w-[85vw] flex flex-col justify-start items-start pt-[60px] bg-[#464646f0] backdrop-blur-[10px]  px-[36px] ' >
+                <ul className="flex flex-col gap-[18px] text-[22px] font-light text-white tracking-widest">
                   <li className="cursor-pointer hover:text-yellow-400">
                     <button onClick={() => router.push('/')} >HOME</button>
                   </li>
                   <li className="cursor-pointer hover:text-yellow-400">
                     <button onClick={() => router.push('/about')} >ABOUT US</button>
                   </li>
-                  <li className="cursor-pointer hover:text-yellow-400">
-                    <button onClick={() => router.push('/product')} >PRODUCTS</button>
+                  <li className="cursor-pointer hover:text-yellow-400 ">
+                    <div 
+                      
+                      className=' w-[65vw] text-left flex justify-between items-center'
+                       ><button onClick={() => router.push('/product')} >PRODUCTS</button> 
+                      <button onClick={() => setNavbarMenu(!navbarMenu)} ><FaAngleDown size={18} className={`${navbarMenu ? 'rotate-360' : 'rotate-270'}`} /></button>
+                    </div>
+                      <div 
+                        className={`transition-all duration-300 ${navbarMenu ? 'h-fit mt-[12px]' : 'h-0 mt-[0px]'} 
+                        ml-[20px] text-[18px]  flex flex-col text-left justify-start items-start gap-[8px] font-extralight`}
+                        style={{ opacity: navbarMenu ? 1 : 0 }}
+                        
+                      >
+                        <button onClick={() => router.push('/product?cat=entryway')} >Entryway</button>
+                        <button onClick={() => router.push('/product?cat=living')} >Living</button>
+                        <button onClick={() => router.push('/product?cat=dining')} >Dining</button>
+                        <button onClick={() => router.push('/product?cat=bedroom')} >Bedroom</button>
+                        <button onClick={() => router.push('/product?cat=Office')} >Home Office</button>
+                      </div>
                   </li>
                   <li className="cursor-pointer hover:text-yellow-400">
                     <button  onClick={() => router.push('/gallery')} >GALLERY</button>
