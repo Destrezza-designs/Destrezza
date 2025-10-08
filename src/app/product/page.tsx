@@ -7,7 +7,7 @@ type PageProps = {
 
 export default function Page({ searchParams }: PageProps) {
   // searchParams comes from Next server router. Could be string or string[]; normalize to string|null
-  let rawCat =  searchParams?.cat;
+  const rawCat =  searchParams?.cat;
   let cat: string | null = null;
   if (Array.isArray(rawCat)) {
     cat = rawCat[0] ?? null;
