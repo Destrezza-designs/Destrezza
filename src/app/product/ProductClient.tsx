@@ -428,7 +428,7 @@ const ProductClient = ({ initialCat }: Props) => {
                         </div>
                     ))}
                 </div>
-                <div className="hidden lg:grid grid-cols-2 h-fit justify-start gap-[14px] gap-x-[14px] ">
+                <div className="hidden lg:grid grid-cols-2 h-fit justify-start gap-[8px] gap-x-[8px] ">
                     {filteredDataState.map((item, index) => (
                         <button 
                             onClick={() => {
@@ -436,7 +436,7 @@ const ProductClient = ({ initialCat }: Props) => {
                             }}
 
                             key={`desktop-${index}`} className=" h-fit">
-                            <div className='relative h-[428px] rounded-[20px] overflow-hidden'>
+                            <div className='relative h-[428px] rounded-[8px] overflow-hidden'>
                                 <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent'></div>
                                 <Image 
                                     src={item.mainImage} 
@@ -505,14 +505,14 @@ const ProductClient = ({ initialCat }: Props) => {
                         <p className='text-[14px]   flex justify-center items-center gap-[10px] ' >Filter <GiSettingsKnobs size={20} className='transform rotate-90' /></p>
                     </button>
                 </div>
-                <div className="lg:hidden grid grid-cols-2 gap-[10px] gap-y-[10px] mt-[14px] w-full">
+                <div className="lg:hidden grid grid-cols-2 gap-[3px] gap-y-[3px] mt-[14px] w-full">
                     {filteredDataState.map((item, index) => (
                         <button 
                             key={`mobile-${index}`} 
                             onClick={() => router.push(`/product/${index + 1}`)}
                             className="flex flex-col h-fit"
                             >
-                            <div className="relative h-[45vw] w-full rounded-[16px] overflow-hidden">
+                            <div className="relative h-[45vw] w-full rounded-[8px] overflow-hidden">
                                 {/* Gradient overlay */}
                                 <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent"></div>
 
