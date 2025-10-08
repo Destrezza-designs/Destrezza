@@ -53,12 +53,12 @@ const Page = () => {
          <div className='mx-[16px] lg:mx-[48px] mt-[43px] lg:mt-[48px] ' >
             <div className='mt-[43px] lg:mt-[80px]' >
               <p className='text-[48px] lg:text-[58px] leading-[68px] lg:leading-[68px] uppercase font-[500]' >Find Us Here</p>
-              <p className='text-[18px] font-[400] mt-[24px] w-full lg:w-[70%]' >Come visit us and experience Destrezza up close. Whether you&lsquo;re seeking inspiration, exploring our latest designs, or just dropping by — we’re here. Step into our space and see where creativity meets craftsmanship.</p>
+              <p className='text-[14px] font-light mt-[24px] w-full lg:w-[70%]' >Come visit us and experience Destrezza up close. Whether you&lsquo;re seeking inspiration, exploring our latest designs, or just dropping by — we’re here. Step into our space and see where creativity meets craftsmanship.</p>
               <div className='flex lg:flex-row flex-col gap-[22px] lg:gap-[68px] mt-[25px] lg:mt-[80px]' >
                 <div>
                   <p className='text-[18px] font-[500] uppercase' >PHONE NUMBER</p>
-                  <p className='text-[16px] font-[400] mt-[18px]' >+91 9765438781</p>
-                  <p className='text-[16px] font-[400]' >+91 9865487981</p>
+                  <p className='text-[16px] font-[400] mt-[18px]' >+91 8129501494</p>
+                  <p className='text-[16px] font-[400]' >+91 7994317246</p>
                 </div>
                 <div >
                   <p className='text-[18px] font-[500] uppercase' >ADDRESS</p>
@@ -103,9 +103,9 @@ const Page = () => {
                 </div>
                 <div className='hidden lg:flex flex-col ' >
                   <p className='text-[16px] font-[400] uppercase' >looking for experienced assistance?</p>
-                  <p className='text-[16px] font-[400] uppercase mt-[18px]' >+91 9765438781</p>
-                  <p className='text-[16px] font-[400] uppercase' >+91 9865487981</p>
-                  <p className='text-[16px] font-[400] uppercase mt-[24px]' >hello@destrezzzaarthouse.com</p>
+                  <p className='text-[16px] font-[400] uppercase mt-[18px]' >+91 8129501494</p>
+                  <p className='text-[16px] font-[400] uppercase' >+91 7994317246</p>
+                  <p className='text-[16px] font-[400] uppercase mt-[24px]' >destrezzzaarthouse@gmail.com</p>
                 </div>
               </div>
               <div className='w-full mt-[29px] lg:mt-[0px] lg:w-[50%]' >

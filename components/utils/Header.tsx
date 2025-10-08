@@ -11,27 +11,57 @@ import { FaAngleDown } from "react-icons/fa6";
    * nd a brand
    * @returns A JSX element representing the header component
    */
+
+  const categories = {
+    "Entryway": ["Shoe Racks", "Console Tables", "Benches", "Swing"],
+    "Living": [
+      "Sofas & Sectionals",
+      "Chairs & Loveseats",
+      "Accent | Lounge Chairs",
+      "Daybeds & Diwans",
+      "Coffee Tables",
+      "End Tables",
+      "Ottomans | Stools & Benches",
+      "Loungers",
+      "Consoles",
+      "Media Consoles",
+    ],
+    "Dining": [
+      "Dining Collections",
+      "Dining Tables",
+      "Dining Chairs",
+      "Dining Benches",
+      "Bar & Counter Stools",
+      "Buffet Consoles",
+      "Bar Cabinets",
+    ],
+    "Bedroom": [
+      "Beds",
+      "Nightstands",
+      "Dressers",
+      "Armoires | Wardrobes",
+      "Ottomans & Benches",
+    ],
+    "Home Office": ["Writing Desk", "Writing Chair", "Book Shelves"],
+  };
 const Header = () => {
 
   const router = useRouter()
 
   const [navbar,setNavbar] = useState(false);
   const [navbarMenu,setNavbarMenu] = useState(false);
-
+  const [openCategory, setOpenCategory] = useState<string | null>(null);
   const handleScroll = () => {
     const target = document.getElementById("target-section");
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }
   };
-  // useEffect(()=>{
-  //   setTimeout(() => {
-  //     setNavbar(false);
-  //   }, 250);
-  // },[])
 
 
-
+  const handleCategoryToggle = (category: string | null) => {
+    setOpenCategory(openCategory === category ? null : category);
+  };
 
   return (
     <div className='mb-[80px]' >
@@ -125,26 +155,76 @@ const Header = () => {
                   <li className="cursor-pointer hover:text-yellow-400">
                     <button onClick={() => router.push('/about')} >ABOUT US</button>
                   </li>
-                  <li className="cursor-pointer hover:text-yellow-400 ">
-                    <div 
-                      
-                      className=' w-[65vw] text-left flex justify-between items-center'
-                       ><button onClick={() => router.push('/product')} >PRODUCTS</button> 
-                      <button onClick={() => setNavbarMenu(!navbarMenu)} ><FaAngleDown size={18} className={`${navbarMenu ? 'rotate-360' : 'rotate-270'}`} /></button>
+                  <li className="cursor-pointer hover:text-yellow-400">
+                    <div className="w-[65vw] text-left flex justify-between items-center">
+                      <button onClick={() => router.push("/product")}>PRODUCTS</button>
+                      <button onClick={() => setNavbarMenu(!navbarMenu)}>
+                        <FaAngleDown
+                          size={18}
+                          className={`${navbarMenu ? "rotate-360" : "rotate-270"}`}
+                        />
+                      </button>
                     </div>
-                      <div 
-                        className={`transition-all duration-300 ${navbarMenu ? 'h-fit mt-[12px]' : 'h-0 mt-[0px]'} 
-                        ml-[20px] text-[18px]  flex flex-col text-left justify-start items-start gap-[8px] font-extralight`}
-                        style={{ opacity: navbarMenu ? 1 : 0 }}
-                        
-                      >
-                        <button onClick={() => {router.push('/product?cat=entryway');setNavbar(false)}} >Entryway</button>
-                        <button onClick={() => {router.push('/product?cat=living');setNavbar(false)}} >Living</button>
-                        <button onClick={() => {router.push('/product?cat=dining');setNavbar(false)}} >Dining</button>
-                        <button onClick={() => {router.push('/product?cat=bedroom');setNavbar(false)}} >Bedroom</button>
-                        <button onClick={() => {router.push('/product?cat=Office');setNavbar(false)}} >Home Office</button>
-                      </div>
+
+                    {/* Dropdown content */}
+                    <div
+                      className={`transition-all duration-300 ${
+                        navbarMenu ? "h-fit mt-[12px]" : "h-0 mt-[0px]"
+                      } ml-[20px] text-[18px] flex flex-col text-left justify-start items-start gap-[8px] font-extralight`}
+                      style={{ opacity: navbarMenu ? 1 : 0 }}
+                    >
+                      {Object.entries(categories).map(([category, items], idx) => (
+                        <div key={idx} className="w-full">
+                          {/* Category row */}
+                          <button
+                            onClick={() => handleCategoryToggle(category)}
+                            className="flex justify-between items-center w-full">
+                            <div
+                              
+                              className="w-full text-left"
+                            >
+                              {category}
+                            </div>
+                            <FaAngleDown
+                              size={14}
+                              className={`transition-transform duration-300 ${
+                                openCategory === category ? "rotate-180" : "rotate-0"
+                              }`}
+                            />
+                          </button>
+
+                          {/* Sub-items */}
+                          <div
+                            className={`transition-all duration-300 overflow-hidden ${
+                              openCategory === category
+                                ? "max-h-[500px] opacity-100 mt-[6px]"
+                                : "max-h-0 opacity-0 mt-0"
+                            }`}
+                          >
+                            <div className="ml-[16px] flex flex-col gap-[8px] text-[14px] font-extralight ">
+                              {items.map((item, i) => (
+                                <button
+                                  key={i}
+                                  onClick={() => {
+                                    router.push(
+                                      `/product?cat=${category.toLowerCase()}&type=${item
+                                        .toLowerCase()
+                                        .replace(/\s+/g, "-")}`
+                                    );
+                                    setNavbar(false);
+                                  }}
+                                  className="text-left hover:text-yellow-500 transition-all duration-200"
+                                >
+                                  {item}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </li>
+
                   <li className="cursor-pointer hover:text-yellow-400">
                     <button  onClick={() => router.push('/gallery')} >GALLERY</button>
                   </li>

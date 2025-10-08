@@ -235,17 +235,21 @@ const categories = {
   
   type Categories = Record<string, string[]>;
 
+ 
   interface Props {
     initialCat?: string | null;
+    initialType?: string | null;
   }
   
-const ProductClient = ({ initialCat }: Props) => {
+  
+const ProductClient = ({ initialCat,initialType }: Props) => {
 
     const router = useRouter();
 
     
     
     const [catParam, setCatParam] = useState<string | null>(initialCat ?? null);
+    const [typeParam, setTypeParam] = useState<string | null>(initialType ?? null);
     const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
     const [mobileViewNavbar,setMobileViewNavbar] = useState(false);
     const [filteredDataState, setFilteredDataState] = useState<DataItem[]>(data);
@@ -281,42 +285,46 @@ const ProductClient = ({ initialCat }: Props) => {
       
 
     // Filter data
-    const filteredData = data.filter((item) => {
-        if (selectedFilters.length === 0) return true;
-
-        const text = (item.name + " " + item.disc).toLowerCase();
-
-        return selectedFilters.some((filter) => {
-        const words = splitFilterWords(filter);
-        return words.some((word) => text.includes(word));
+    const filterDataByFilters = (activeFilters: string[]) => {
+        if (activeFilters.length === 0) return data;
+        return data.filter((item) => {
+            const text = (item.name + " " + item.disc + " " + item.title).toLowerCase();
+            return activeFilters.some((filter) => {
+            const words = splitFilterWords(filter);
+            return words.some((word) => text.includes(word));
+            });
         });
-    });
-
+    };
     useEffect(() => {
-        // If the server gave us a cat, use it right away (initial render already used it)
+        // initialize from props
         setCatParam(initialCat ?? null);
+        setTypeParam(initialType ?? null);
     
         if (typeof window === 'undefined') return;
     
-        // read from current URL
-        const readCatFromLocation = () => {
+        const readParams = () => {
           const params = new URLSearchParams(window.location.search);
           setCatParam(params.get('cat'));
+          setTypeParam(params.get('type'));
         };
     
-        // patch pushState to emit a custom event so we can catch client navigations
+        // patch pushState once to emit event
         const originalPush = history.pushState;
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (history as any).pushState = function (...args: [data: any, unused: string, url?: string | URL | null | undefined]) {          const res = originalPush.apply(this, args);
+        (history as any).pushState = function (...args: [data: any, unused: string, url?: string | URL | null | undefined]) {
+          const res = originalPush.apply(this, args);
           window.dispatchEvent(new Event('locationchange'));
           return res;
         };
     
-        const onPop = () => readCatFromLocation();
-        const onLoc = () => readCatFromLocation();
+        const onPop = () => readParams();
+        const onLoc = () => readParams();
     
         window.addEventListener('popstate', onPop);
         window.addEventListener('locationchange', onLoc);
+    
+        // read once
+        readParams();
     
         return () => {
           window.removeEventListener('popstate', onPop);
@@ -325,55 +333,50 @@ const ProductClient = ({ initialCat }: Props) => {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           (history as any).pushState = originalPush;
         };
-      }, [initialCat]);
+        // initialCat/initialType intentionally not in deps; they are used only for first paint
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+      }, []);
+    
     
 
-    useEffect(() => {
-    
-        // build filters derived from the top-level category (if any)
+      useEffect(() => {
+        // Build category filters
         let catFilters: string[] = [];
         if (catParam) {
-
           const matchedKey = Object.keys(categories).find(
             (k) => k.toLowerCase() === catParam.toLowerCase()
           );
-          console.log(catParam)
           if (matchedKey) {
-                catFilters = categories[matchedKey as keyof typeof categories] ?? [];
+            catFilters = categories[matchedKey as keyof typeof categories] ?? [];
           }
-          console.log(matchedKey)
         }
     
-        // If catFilters exist and differ from current selectedFilters, replace selectedFilters
+        // If typeParam exists, prefer it as the single active filter
+        if (typeParam) {
+          if (!arraysEqual([typeParam], selectedFilters)) {
+            setSelectedFilters([typeParam]);
+          }
+          // compute filtered immediately using typeParam (don't wait for setSelectedFilters)
+          setFilteredDataState(filterDataByFilters([typeParam]));
+          return;
+        }
+    
+        // No typeParam — if there are catFilters and they differ from current selectedFilters we set them
         if (catFilters.length > 0 && !arraysEqual(catFilters, selectedFilters)) {
-          // when url has cat=..., we set the selected filters to match that category
           setSelectedFilters(catFilters);
-          // Continue — don't return; we'll compute filtered data below. Note: setSelectedFilters is async, but we still compute using catFilters immediately.
+          setFilteredDataState(filterDataByFilters(catFilters));
+          return;
         }
     
-        // Decide which filters to use for actual filtering:
-        // - If there are selectedFilters (manual or set by cat), use them.
-        // - If none, show all items.
-        const activeFilters = (selectedFilters.length > 0) ? selectedFilters : catFilters;
-    
-        // Perform filtering based on activeFilters
-        if (activeFilters.length === 0) {
+        // If no cat/type derived filters, then use whatever the user has selected (selectedFilters)
+        if (selectedFilters.length === 0) {
           setFilteredDataState(data);
         } else {
-          const newFiltered = data.filter((item) => {
-            const text = (item.name + " " + item.disc + " " + item.title).toLowerCase();
-    
-            return activeFilters.some((filter) => {
-              const words = splitFilterWords(filter);
-              return words.some((word) => text.includes(word));
-            });
-          });
-          setFilteredDataState(newFiltered);
+          setFilteredDataState(filterDataByFilters(selectedFilters));
         }
-    
-        // Re-run when query changes (searchParams) or when user toggles selectedFilters
         // eslint-disable-next-line react-hooks/exhaustive-deps
-      }, [catParam, selectedFilters]);
+      }, [catParam, typeParam, selectedFilters]);
+    
     
 
   return (

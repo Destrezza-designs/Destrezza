@@ -6,10 +6,10 @@ type PageProps = {
 };
 
 export default async function Page({ searchParams }: PageProps) {
-  // searchParams is now async in Next.js 15
+  // searchParams is async in Next.js 15
   const resolvedSearchParams = await searchParams;
-  
-  // searchParams comes from Next server router. Could be string or string[]; normalize to string|null
+
+  // normalize cat param (string | null)
   const rawCat = resolvedSearchParams?.cat;
   let cat: string | null = null;
   if (Array.isArray(rawCat)) {
@@ -18,6 +18,15 @@ export default async function Page({ searchParams }: PageProps) {
     cat = rawCat;
   }
 
-  // Pass the single cat string down to client component.
-  return <ProductClient initialCat={cat} />;
+  // normalize type param (string | null)
+  const rawType = resolvedSearchParams?.type;
+  let typeParam: string | null = null;
+  if (Array.isArray(rawType)) {
+    typeParam = rawType[0] ?? null;
+  } else if (typeof rawType === 'string') {
+    typeParam = rawType;
+  }
+
+  // Pass both down to client component
+  return <ProductClient initialCat={cat} initialType={typeParam} />;
 }
