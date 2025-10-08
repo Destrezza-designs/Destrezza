@@ -73,7 +73,7 @@ const Header = () => {
               src={brand} 
               alt="Brand" width={303} height={58} />
             </div>
-            <button onClick={()=>setNavbar(true)} className='flex lg:hidden' >
+            <button onClick={()=>setNavbar(true)} className={` ${navbar ? 'hidden' : 'flex'} lg:hidden`} >
               <svg
                 width="22"
                 height="14"
@@ -99,13 +99,13 @@ const Header = () => {
             className={`
               fixed z-50 top-0 left-0 shadow-md shadow-slate-500/10 
               
-              w-screen h-[100dvh] 
+              w-[85vw] h-[100dvh] 
               transition-all duration-300 ease-in-out transform 
               ${navbar ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full pointer-events-none'}
             `}
             
           >
-              <div className='w-full lg:hidden lg:w-fit flex justify-between items-center bg-[#1A1A1A] pt-[30px] pb-[10px] px-[16px] ' >
+              <div className='w-[85vw] lg:hidden lg:w-fit flex justify-between items-center bg-[#1A1A1A] pt-[30px] pb-[10px] px-[16px] ' >
                 <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
                   <Image   className='' 
                   src={brand} 
