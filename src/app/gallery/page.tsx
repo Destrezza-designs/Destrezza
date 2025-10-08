@@ -215,9 +215,9 @@ const page = () => {
             <UtilsHeader />
         </div>
 
-        <div className='my-[80px] mx-[48px] hidden lg:flex flex-col  gap-[14px] justify-center items-center overflow-hidden'>
-            <div className='flex gap-[14px]'>
-                <div className='flex flex-col gap-[14px] w-[w-[calc((100vw - 256px)/3)]]'>
+        <div className='my-[80px] mx-[48px] hidden lg:flex flex-col  gap-[8px] justify-center items-center overflow-hidden'>
+            <div className='flex gap-[8px]'>
+                <div className='flex flex-col gap-[8px] w-[w-[calc((100vw - 256px)/3)]]'>
                     <Image   
                         src={image8} 
                         alt={data[0].name} 
@@ -233,7 +233,7 @@ const page = () => {
                         className='!w-[calc(100vw - 256px)] !h-[605px] object-cover bg-slate-500 rounded-[16px] overflow-hidden' 
                     />
                 </div>
-                <div className='flex flex-col gap-[14px]'>
+                <div className='flex flex-col gap-[8px]'>
                     <Image   
                         src={image15} 
                         alt={data[2].name} 
@@ -256,7 +256,7 @@ const page = () => {
                         className='!w-[calc(100vw - 256px)] !h-[398px] object-cover bg-slate-500 rounded-[16px] overflow-hidden object-bottom' 
                     />
                 </div>
-                <div className='flex flex-col gap-[14px]'>
+                <div className='flex flex-col gap-[8px]'>
                     <Image   
                         src={image6} 
                         alt={data[5].name} 
@@ -273,8 +273,8 @@ const page = () => {
                     />
                 </div>
             </div>
-            <div className='flex flex-row-reverse gap-[14px]'>  
-                <div className='flex flex-col gap-[14px]'>
+            <div className='flex flex-row-reverse gap-[8px]'>  
+                <div className='flex flex-col gap-[8px]'>
                     <Image   
                         src={image7} 
                         alt={data[7].name} 
@@ -284,7 +284,7 @@ const page = () => {
                     />
                     
                 </div>
-                <div className='flex flex-col gap-[14px]'>
+                <div className='flex flex-col gap-[8px]'>
                     <Image   
                         src={image9} 
                         alt={data[9].name} 
@@ -302,8 +302,8 @@ const page = () => {
                 </div>
                 
             </div>
-            <div className='flex flex-row gap-[14px]'>  
-                <div className='flex flex-col gap-[14px]'>
+            <div className='flex flex-row gap-[8px]'>  
+                <div className='flex flex-col gap-[8px]'>
                     <Image   
                         src={'/gallery-images/gallery-images1-dv.jpeg'} 
                         alt={data[7].name} 
@@ -313,7 +313,7 @@ const page = () => {
                     />
                     
                 </div>
-                <div className='flex flex-col gap-[14px]'>
+                <div className='flex flex-col gap-[8px]'>
                     <Image   
                         src={'/gallery-images/gallery-images2-dv.jpeg'} 
                         alt={data[9].name} 
@@ -331,8 +331,8 @@ const page = () => {
                 </div>
                 
             </div>
-            <div className='flex flex-row-reverse gap-[14px]'>  
-                <div className='flex flex-col gap-[14px]'>
+            <div className='flex flex-row-reverse gap-[8px]'>  
+                <div className='flex flex-col gap-[8px]'>
                     <Image   
                         src={'/gallery-images/gallery-images5-dv.jpeg'} 
                         alt={data[7].name} 
@@ -342,7 +342,7 @@ const page = () => {
                     />
                     
                 </div>
-                <div className='flex flex-col gap-[14px]'>
+                <div className='flex flex-col gap-[8px]'>
                     <Image   
                         src={'/gallery-images/gallery-images4-dv.jpeg'} 
                         alt={data[9].name} 
@@ -364,7 +364,6 @@ const page = () => {
             
         </div>
         
-
         <div className='lg:hidden mx-[12px] my-[24px] flex flex-col gap-[3px]'>
            
             <div className='flex gap-[3px]'>
@@ -553,6 +552,7 @@ const page = () => {
                 </div>
             </div>
         </div>
+        
 
         <Footor />
     </div>
