@@ -23,11 +23,11 @@ const Header = () => {
       target.scrollIntoView({ behavior: "smooth" });
     }
   };
-  useEffect(()=>{
-    setTimeout(() => {
-      setNavbar(false);
-    }, 250);
-  },[])
+  // useEffect(()=>{
+  //   setTimeout(() => {
+  //     setNavbar(false);
+  //   }, 250);
+  // },[])
 
 
 
@@ -94,62 +94,49 @@ const Header = () => {
 
 
         <div>
-        <div 
-  className={`
-    fixed z-50 top-0 left-0 shadow-md shadow-slate-500/10 
-    w-screen h-[100dvh] 
-    transition-all duration-300 ease-in-out transform 
-    ${navbar ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full pointer-events-none'}
-  `}
->
-  <div className='w-full lg:w-fit flex justify-between items-center bg-[#1A1A1A] pt-[30px] pb-[10px] px-[16px]'>
-    <div className='overflow-hidden !w-[180px] !lg:w-[303px]'>
-      <Image   
-        className='' 
-        src={brand} 
-        alt="Brand" 
-        width={303} 
-        height={58} 
-      />
-    </div>
-    <button onClick={() => setNavbar(false)} className='flex lg:hidden'>
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.98589 17.5L0.285889 15.8L7.08589 9L0.285889 2.2L1.98589 0.5L8.78589 7.3L15.5859 0.5L17.2859 2.2L10.4859 9L17.2859 15.8L15.5859 17.5L8.78589 10.7L1.98589 17.5Z" fill="white"/>
-      </svg>
-    </button>
-  </div>
-  
-  {/* Enhanced glass morphism with better mobile support */}
-  <nav className='
-    h-screen w-[85vw] flex flex-col justify-start items-start pt-[60px] 
-    px-[16px] 
-    bg-[#00000080] 
-    backdrop-blur-[20px]
-    backdrop-filter
-    -webkit-backdrop-blur-[20px]
-    supports-backdrop-blur:bg-[#00000040]
-    backdrop-saturate-150
-    border-r border-white/10
-  '>
-    <ul className="flex flex-col gap-[18px] text-[32px] font-[400] text-white tracking-widest">
-      <li className="cursor-pointer hover:text-yellow-400 transition-colors duration-200">
-        <button onClick={() => router.push('/')}>HOME</button>
-      </li>
-      <li className="cursor-pointer hover:text-yellow-400 transition-colors duration-200">
-        <button onClick={() => router.push('/about')}>ABOUT US</button>
-      </li>
-      <li className="cursor-pointer hover:text-yellow-400 transition-colors duration-200">
-        <button onClick={() => router.push('/product')}>PRODUCTS</button>
-      </li>
-      <li className="cursor-pointer hover:text-yellow-400 transition-colors duration-200">
-        <button onClick={() => router.push('/gallery')}>GALLERY</button>
-      </li>
-      <li className="cursor-pointer hover:text-yellow-400 transition-colors duration-200">
-        <button onClick={() => router.push('/contact')}>CONTACT</button>
-      </li>
-    </ul>
-  </nav>
-</div>
+          <div 
+            className={`
+              fixed z-50 top-0 left-0 shadow-md shadow-slate-500/10 
+              
+              w-screen h-[100dvh] 
+              transition-all duration-300 ease-in-out transform 
+              ${navbar ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full pointer-events-none'}
+            `}
+            
+          >
+              <div className='w-full lg:w-fit flex justify-between items-center bg-[#1A1A1A] pt-[30px] pb-[10px] px-[16px] ' >
+                <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
+                  <Image   className='' 
+                  src={brand} 
+                  alt="Brand" width={303} height={58} />
+                </div>
+                <button onClick={()=>setNavbar(false)} className='flex lg:hidden' >
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.98589 17.5L0.285889 15.8L7.08589 9L0.285889 2.2L1.98589 0.5L8.78589 7.3L15.5859 0.5L17.2859 2.2L10.4859 9L17.2859 15.8L15.5859 17.5L8.78589 10.7L1.98589 17.5Z" fill="white"/>
+                  </svg>
+                </button>
+              </div>
+              <nav className='h-screen w-[85vw] flex flex-col justify-start items-start pt-[60px] bg-[#464646f0] backdrop-blur-[10px]  px-[16px] ' >
+                <ul className="flex flex-col gap-[18px] text-[32px] font-[400] text-white tracking-widest">
+                  <li className="cursor-pointer hover:text-yellow-400">
+                    <button onClick={() => router.push('/')} >HOME</button>
+                  </li>
+                  <li className="cursor-pointer hover:text-yellow-400">
+                    <button onClick={() => router.push('/about')} >ABOUT US</button>
+                  </li>
+                  <li className="cursor-pointer hover:text-yellow-400">
+                    <button onClick={() => router.push('/product')} >PRODUCTS</button>
+                  </li>
+                  <li className="cursor-pointer hover:text-yellow-400">
+                    <button  onClick={() => router.push('/gallery')} >GALLERY</button>
+                  </li>
+                  <li className="cursor-pointer hover:text-yellow-400">
+                    <button onClick={() => router.push('/contact')} >CONTACT</button>
+                  </li>
+                </ul>
+              </nav>
+
+          </div>
         </div>
       </header>
     </div>
