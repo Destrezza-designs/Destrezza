@@ -138,11 +138,11 @@ const Header = () => {
                         style={{ opacity: navbarMenu ? 1 : 0 }}
                         
                       >
-                        <button onClick={() => router.push('/product?cat=entryway')} >Entryway</button>
-                        <button onClick={() => router.push('/product?cat=living')} >Living</button>
-                        <button onClick={() => router.push('/product?cat=dining')} >Dining</button>
-                        <button onClick={() => router.push('/product?cat=bedroom')} >Bedroom</button>
-                        <button onClick={() => router.push('/product?cat=Office')} >Home Office</button>
+                        <button onClick={() => {router.push('/product?cat=entryway');setNavbar(false)}} >Entryway</button>
+                        <button onClick={() => {router.push('/product?cat=living');setNavbar(false)}} >Living</button>
+                        <button onClick={() => {router.push('/product?cat=dining');setNavbar(false)}} >Dining</button>
+                        <button onClick={() => {router.push('/product?cat=bedroom');setNavbar(false)}} >Bedroom</button>
+                        <button onClick={() => {router.push('/product?cat=Office');setNavbar(false)}} >Home Office</button>
                       </div>
                   </li>
                   <li className="cursor-pointer hover:text-yellow-400">
