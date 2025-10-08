@@ -2,12 +2,15 @@
 import ProductClient from './ProductClient';
 
 type PageProps = {
-  searchParams?: { [key: string]: string | string[] | undefined };
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page({ searchParams }: PageProps) {
+  // searchParams is now async in Next.js 15
+  const resolvedSearchParams = await searchParams;
+  
   // searchParams comes from Next server router. Could be string or string[]; normalize to string|null
-  const rawCat =  searchParams?.cat;
+  const rawCat = resolvedSearchParams?.cat;
   let cat: string | null = null;
   if (Array.isArray(rawCat)) {
     cat = rawCat[0] ?? null;
