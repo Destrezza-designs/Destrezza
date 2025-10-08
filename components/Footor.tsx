@@ -26,7 +26,7 @@ const Footor = () => {
                 </div>
             </div>
             <div className='mt-[111px]' >
-                <p className='text-[24px] font-[400] ' >hello@destrezzzaarthouse.com</p>
+                <p className='text-[24px] font-[400] ' >destrezzzaarthouse@gmail.com</p>
                 <div className='flex gap-[68px] mt-[48px]' >
                     <div>
                         <p className='text-[18px] uppercase font-[500]' >PHONE NUMBER</p>
@@ -62,14 +62,16 @@ const Footor = () => {
                 </div>
             </div>
 
-            <div className='flex justify-center items-center' >
+            {/* <div className='flex justify-center items-center' >
                 <p className='text-[17vw] font-[600] flex justify-center items-center' >DESTRE
                     <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={logo} alt='logo' className='h-[12vw] w-auto '  />A</p>
-            </div>
-            <p className='text-center font-[600] text-[5vw] mt-[-12vh] mb-[40px] w-[90%] mx-auto '>
+            </div> */}
+            {/* <p className='text-center font-[600] text-[5vw] mt-[-12vh] mb-[40px] w-[90%] mx-auto '>
                 ART HOUSE
-            </p>
-            <div className='flex justify-between items-center mt-[-35px]' >
+            </p> */}
+            <Image alt='logo' src={'/logo-bottom.png'} width={1440} height={900} className='w-[100%] h-auto' />
+
+            <div className='flex justify-between items-center ' >
                 <p className='text-[12px] font-[300] uppercase text-[#FFFFFF80]' >© 2025. Destrezzza Art House. All Rights Reserved</p>
                 <p className='text-[12px] font-[300] uppercase text-[#FFFFFF80]' >Designed with intent by Dosense Creative Co.</p>
             </div>
