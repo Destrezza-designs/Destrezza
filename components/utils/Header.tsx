@@ -15,7 +15,7 @@ const Header = () => {
 
   const router = useRouter()
 
-  const [navbar,setNavbar] = useState(false);
+  const [navbar,setNavbar] = useState(true);
 
   const handleScroll = () => {
     const target = document.getElementById("target-section");
@@ -23,6 +23,11 @@ const Header = () => {
       target.scrollIntoView({ behavior: "smooth" });
     }
   };
+  useEffect(()=>{
+    setTimeout(() => {
+      setNavbar(false);
+    }, 250);
+  },[])
 
 
 
@@ -111,7 +116,7 @@ const Header = () => {
                   </svg>
                 </button>
               </div>
-              <nav className='h-screen w-[85vw] flex flex-col justify-start items-start pt-[60px] bg-[#00000090] backdrop-blur-[10px]  px-[16px] ' >
+              <nav className='h-screen w-[85vw] flex flex-col justify-start items-start pt-[60px] bg-[#00000050] backdrop-blur-[10px]  px-[16px] ' >
                 <ul className="flex flex-col gap-[18px] text-[32px] font-[400] text-white tracking-widest">
                   <li className="cursor-pointer hover:text-yellow-400">
                     <button onClick={() => router.push('/')} >HOME</button>
