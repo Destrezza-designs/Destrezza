@@ -222,12 +222,12 @@ const Page = () => {
                 <div className='flex gap-[4px] h-[614px] w-[50vw] ' >
                     <Image 
                         unoptimized  src={currentImage} width={1000} height={1000} className='w-full h-full object-cover' alt='Main Image' />
-                    <div className='flex flex-col gap-[4px] w-[240px]' >
+                    <div className='flex flex-col gap-[4px] w-[250px] ' >
                         {[data[idNum-1].mainImage, data[idNum-1].image, data[idNum-1].image2].map((imgSrc, index) => (
                             <button 
                                 key={index}
                                 onClick={() => setCurrentImage(imgSrc)}
-                                className={`w-full h-full overflow-hidden `}
+                                className={`w-[205px] h-full overflow-hidden `}
                             >
                                 <Image 
                                     unoptimized  
