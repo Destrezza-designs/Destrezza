@@ -326,7 +326,7 @@ const Page = () => {
             <div className='mt-[24px] mx-[16px] lg:mt-[64px]' >
                 <div className='flex lg:flex-row flex-col justify-between items-start my-[12px]' >
                     <p className='text-[18px] font-[500] uppercase' >Description</p>
-                    <p className='mt-[10px] lg:mt-[0px] text-[15px] lg:text-[24px] w-full lg:w-[70%] font-light lg:font-[300]' >{data[idNum-1].disc}</p>
+                    <p className='mt-[10px] lg:mt-[0px] text-[13px] lg:text-[24px] w-full lg:w-[70%] font-light lg:font-[300]' >{data[idNum-1].disc}</p>
                 </div>
 
                 

@@ -97,12 +97,12 @@ const Header = () => {
 
           
           <div className='w-full lg:w-fit flex justify-between items-center' >
-            <div className='overflow-hidden !w-[180px] !lg:w-[303px]' >
+            <button onClick={() => router.push('/')} className='overflow-hidden !w-[180px] !lg:w-[303px]' >
               <Image 
               className='cover' 
               src={brand} 
               alt="Brand" width={303} height={58} />
-            </div>
+            </button>
             <button onClick={()=>setNavbar(true)} className={` ${navbar ? 'hidden' : 'flex'} lg:hidden`} >
               <svg
                 width="22"
@@ -166,7 +166,7 @@ const Header = () => {
                       </button>
                     </div>
 
-                    {/* Dropdown content */}
+                    
                     <div
                       className={`transition-all duration-300 ${
                         navbarMenu ? "h-fit mt-[12px]" : "h-0 mt-[0px]"
@@ -229,7 +229,7 @@ const Header = () => {
                     <button  onClick={() => router.push('/gallery')} >GALLERY</button>
                   </li>
                   <li className="cursor-pointer hover:text-yellow-400">
-                    <button onClick={() => router.push('/contact')} >CONTACT</button>
+                    <button   onClick={() => router.push('/contact')} >CONTACT</button>
                   </li>
                 </ul>
               </nav>

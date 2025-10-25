@@ -167,7 +167,7 @@ const Main = () => {
         <div className="flex flex-1 mt-[-22px] pt-[0px] lg:pt-[40px] mb-[-80px]">
           <Header />
         </div>
-        <div className="relative w-full h-[500px] overflow-hidden">
+        <div className="relative w-full h-[500px] overflow-hidden bg-black">
           {/* Slider only for images */}
           <Slider 
             {...{
