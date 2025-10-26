@@ -149,13 +149,13 @@ const Header = () => {
               </div>
               <nav className='lg:hidden h-screen w-[85vw] flex flex-col justify-start items-start pt-[60px] bg-[#464646f0] backdrop-blur-[10px]  px-[36px] ' >
                 <ul className="flex flex-col gap-[18px] text-[22px] font-light text-white tracking-widest">
-                  <li className="cursor-pointer hover:text-yellow-400">
+                  <li className="cursor-pointer ">
                     <button onClick={() => router.push('/')} >HOME</button>
                   </li>
-                  <li className="cursor-pointer hover:text-yellow-400">
+                  <li className="cursor-pointer ">
                     <button onClick={() => router.push('/about')} >ABOUT US</button>
                   </li>
-                  <li className="cursor-pointer hover:text-yellow-400">
+                  <li className="cursor-pointer ">
                     <div className="w-[65vw] text-left flex justify-between items-center">
                       <button onClick={() => router.push("/product")}>PRODUCTS</button>
                       <button onClick={() => setNavbarMenu(!navbarMenu)}>
@@ -225,10 +225,10 @@ const Header = () => {
                     </div>
                   </li>
 
-                  <li className="cursor-pointer hover:text-yellow-400">
+                  <li className="cursor-pointer ">
                     <button  onClick={() => router.push('/gallery')} >GALLERY</button>
                   </li>
-                  <li className="cursor-pointer hover:text-yellow-400">
+                  <li className="cursor-pointer ">
                     <button   onClick={() => router.push('/contact')} >CONTACT</button>
                   </li>
                 </ul>

@@ -3,8 +3,8 @@ import Footor from '@/components/Footor'
 import Header from '@/components/product/Header'
 import UtilsHeader from '@/components/utils/Header'
 import Image from 'next/image'
-import React,{useState,useEffect} from 'react'
-import { useRouter } from 'next/navigation'
+import React,{useState,useEffect, useMemo} from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { GiSettingsKnobs } from "react-icons/gi";
 
 const data = [
@@ -245,22 +245,30 @@ const categories = {
 const ProductClient = ({ initialCat,initialType }: Props) => {
 
     const router = useRouter();
+    const searchParams = useSearchParams();
 
-    
-    
-    const [catParam, setCatParam] = useState<string | null>(initialCat ?? null);
-    const [typeParam, setTypeParam] = useState<string | null>(initialType ?? null);
+    // URL params (reactive to navigation)
+    const catParam = useMemo(() => searchParams?.get('cat') ?? initialCat ?? null, [searchParams, initialCat]);
+    const typeParam = useMemo(() => searchParams?.get('type') ?? initialType ?? null, [searchParams, initialType]);
+
     const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
     const [mobileViewNavbar,setMobileViewNavbar] = useState(false);
     const [filteredDataState, setFilteredDataState] = useState<DataItem[]>(data);
+    const [matchItems,setMatchItems] = useState(true);
 
-    
-
-  // Toggle checkbox
+  // Toggle checkbox (user-driven)
     const handleFilterChange = (item: string) => {
-        setSelectedFilters((prev) =>
-        prev.includes(item) ? prev.filter((f) => f !== item) : [...prev, item]
-        );
+        const newSelected = selectedFilters.includes(item) ? selectedFilters.filter(f => f !== item) : [...selectedFilters, item];
+        setSelectedFilters(newSelected);
+        const filtered = filterDataByFilters(newSelected);
+        if (filtered.length === 0) {
+          console.log('⚠️ Filtered data is empty for selected filters:', newSelected);
+          setFilteredDataState(data);
+          setMatchItems(false);
+        } else {
+          setFilteredDataState(filtered);
+          setMatchItems(true);
+        }
     };
 
     // Split a filter label into meaningful words
@@ -295,52 +303,12 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
             });
         });
     };
-    useEffect(() => {
-        // initialize from props
-        setCatParam(initialCat ?? null);
-        setTypeParam(initialType ?? null);
-    
-        if (typeof window === 'undefined') return;
-    
-        const readParams = () => {
-          const params = new URLSearchParams(window.location.search);
-          setCatParam(params.get('cat'));
-          setTypeParam(params.get('type'));
-        };
-    
-        // patch pushState once to emit event
-        const originalPush = history.pushState;
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (history as any).pushState = function (...args: [data: any, unused: string, url?: string | URL | null | undefined]) {
-          const res = originalPush.apply(this, args);
-          window.dispatchEvent(new Event('locationchange'));
-          return res;
-        };
-    
-        const onPop = () => readParams();
-        const onLoc = () => readParams();
-    
-        window.addEventListener('popstate', onPop);
-        window.addEventListener('locationchange', onLoc);
-    
-        // read once
-        readParams();
-    
-        return () => {
-          window.removeEventListener('popstate', onPop);
-          window.removeEventListener('locationchange', onLoc);
-          // restore
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          (history as any).pushState = originalPush;
-        };
-        // initialCat/initialType intentionally not in deps; they are used only for first paint
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-      }, []);
+    // No manual history patching needed; we rely on useSearchParams above.
     
     
 
       useEffect(() => {
-        // Build category filters
+        // Build category filters (derived, no state updates for selection)
         let catFilters: string[] = [];
         if (catParam) {
           const matchedKey = Object.keys(categories).find(
@@ -350,31 +318,49 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
             catFilters = categories[matchedKey as keyof typeof categories] ?? [];
           }
         }
-    
-        // If typeParam exists, prefer it as the single active filter
+
+        // Prefer URL-driven filters when present
         if (typeParam) {
-          if (!arraysEqual([typeParam], selectedFilters)) {
-            setSelectedFilters([typeParam]);
+          const filteredByType = filterDataByFilters([typeParam]);
+          if (filteredByType.length === 0) {
+            setMatchItems(false);
+            console.log('Filtered data is empty for typeParam:', typeParam, 'catParam:', catParam, 'selectedFilters:', selectedFilters);
+            setFilteredDataState(data);
+          } else {
+            setMatchItems(true);
+            setFilteredDataState(filteredByType);
           }
-          // compute filtered immediately using typeParam (don't wait for setSelectedFilters)
-          setFilteredDataState(filterDataByFilters([typeParam]));
           return;
         }
-    
-        // No typeParam — if there are catFilters and they differ from current selectedFilters we set them
-        if (catFilters.length > 0 && !arraysEqual(catFilters, selectedFilters)) {
-          setSelectedFilters(catFilters);
-          setFilteredDataState(filterDataByFilters(catFilters));
+
+        if (catFilters.length > 0) {
+          const filteredByCat = filterDataByFilters(catFilters);
+          if (filteredByCat.length === 0) {
+            setMatchItems(false);
+            console.log('Filtered data is empty for catFilters:', catFilters, 'catParam:', catParam, 'typeParam:', typeParam, 'selectedFilters:', selectedFilters);
+            setFilteredDataState(data);
+          } else {
+            setMatchItems(true);
+            setFilteredDataState(filteredByCat);
+          }
           return;
         }
-    
-        // If no cat/type derived filters, then use whatever the user has selected (selectedFilters)
+
+        // Otherwise, use user-selected filters
         if (selectedFilters.length === 0) {
+          setMatchItems(true);
           setFilteredDataState(data);
         } else {
-          setFilteredDataState(filterDataByFilters(selectedFilters));
+          const filteredByUser = filterDataByFilters(selectedFilters);
+          if (filteredByUser.length === 0) {
+            setMatchItems(false);
+            console.log('Filtered data is empty for user selected filters:', selectedFilters, 'catParam:', catParam, 'typeParam:', typeParam);
+            setFilteredDataState(data);
+          } else {
+            setMatchItems(true);
+            setFilteredDataState(filteredByUser);
+          }
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [catParam, typeParam, selectedFilters]);
     
     
@@ -420,6 +406,11 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                                     className="flex items-center space-x-2 text-[14px] text-gray-700"
                                 >
                                     <input
+                                    checked={
+                                      selectedFilters.includes(item) ||
+                                      (!!typeParam && splitFilterWords(item).some((w) => typeParam.toLowerCase().includes(w))) ||
+                                      (!!catParam && (categories[Object.keys(categories).find((k)=>k.toLowerCase()===catParam.toLowerCase()) as keyof typeof categories] || []).includes(item))
+                                    }
                                     type="checkbox"
                                     onChange={() => handleFilterChange(item)}
                                     className="h-4 w-4 rounded border-gray-400 text-black focus:ring-0"
@@ -431,30 +422,34 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                         </div>
                     ))}
                 </div>
-                <div className="hidden lg:grid grid-cols-2 h-fit justify-start gap-[8px] gap-x-[8px] ">
-                    {filteredDataState.map((item, index) => (
-                        <button 
-                            onClick={() => {
-                                router.push(`/product/${index+1}`)
-                            }}
+                <div>
+                    {matchItems ? '' : <p className='text-[24px] mb-[12px]' >Sorry No items, showing all Products</p> }
+                    <div className="hidden lg:grid grid-cols-2 h-fit justify-start gap-[8px] gap-x-[8px] ">
+                        
+                        {filteredDataState.map((item, index) => (
+                            <button 
+                                onClick={() => {
+                                    router.push(`/product/${index+1}`)
+                                }}
 
-                            key={`desktop-${index}`} className=" h-fit">
-                            <div className='relative h-[428px] rounded-[8px] overflow-hidden'>
-                                <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent'></div>
-                                <Image 
-                                    src={item.mainImage} 
-                                    alt={item.name} 
-                                    width={1000} 
-                                    height={1000} 
-                                    className=" h-full object-cover"
-                                />
-                                <div className='absolute bottom-0 left-0 p-[20px] text-white text-left'>
-                                    <p className='text-[36px] font-medium uppercase'>{item.name}</p>
-                                    <p className='text-[20px] mt-[-10px] font-extralight uppercase'>{item.title}</p>
+                                key={`desktop-${index}`} className=" h-fit">
+                                <div className='relative h-[428px] rounded-[8px] overflow-hidden'>
+                                    <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent'></div>
+                                    <Image 
+                                        src={item.mainImage} 
+                                        alt={item.name} 
+                                        width={1000} 
+                                        height={1000} 
+                                        className=" h-full object-cover"
+                                    />
+                                    <div className='absolute bottom-0 left-0 p-[20px] text-white text-left'>
+                                        <p className='text-[36px] font-medium uppercase'>{item.name}</p>
+                                        <p className='text-[20px] mt-[-10px] font-extralight uppercase'>{item.title}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </button>
-                    ))}
+                            </button>
+                        ))}
+                    </div>
                 </div>
             </div>
 
@@ -491,6 +486,11 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                                 >
                                 <input
                                     type="checkbox"
+                                    checked={
+                                      selectedFilters.includes(item) ||
+                                      (!!typeParam && splitFilterWords(item).some((w) => typeParam.toLowerCase().includes(w))) ||
+                                      (!!catParam && (categories[Object.keys(categories).find((k)=>k.toLowerCase()===catParam.toLowerCase()) as keyof typeof categories] || []).includes(item))
+                                    }
                                     onChange={() => handleFilterChange(item)}
                                     className="h-4 w-4 rounded border-gray-400 text-black focus:ring-0"
                                 />
@@ -508,6 +508,7 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                         <p className='text-[14px]   flex justify-center items-center gap-[10px] ' >Filter <GiSettingsKnobs size={20} className='transform rotate-90' /></p>
                     </button>
                 </div>
+                {matchItems ? '' : <p className='text-[12px]' >Sorry No items, showing all Products</p> }
                 <div className="lg:hidden grid grid-cols-2 gap-[3px] gap-y-[3px] mt-[14px] w-full">
                     {filteredDataState.map((item, index) => (
                         <button 
