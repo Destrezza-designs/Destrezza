@@ -241,7 +241,7 @@ const Page = () => {
                         ))}
                     </div>
                 </div>
-                <div className='text-black m-[48px] w-[38vw]'  >
+                <div className='text-black m-[48px] w-[32vw]'  >
                     <p className='text-[36px] font-normal' >{data[idNum-1].name}</p>
                     <p className='text-[15px] font-thin leading-[18px] mt-[-10px]'  >{data[idNum-1].title}</p>
                     <p className='text-[14px] font-light mt-[10px]' >{data[idNum-1].disc}</p>
