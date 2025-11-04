@@ -3,7 +3,7 @@ import React,{useState,useEffect} from 'react'
 import Image from 'next/image'
 import logo from '@/public/header/Icon.png'
 import brand from '@/public/header/Brand.png'
-import { useRouter } from 'next/navigation'
+import { useRouter,usePathname } from 'next/navigation'
 import { FaAngleDown } from "react-icons/fa6";
 
   /**
@@ -47,6 +47,8 @@ import { FaAngleDown } from "react-icons/fa6";
 const Header = () => {
 
   const router = useRouter()
+  const pathname = usePathname();
+
 
   const [navbar,setNavbar] = useState(false);
   const [navbarMenu,setNavbarMenu] = useState(false);
@@ -157,7 +159,11 @@ const Header = () => {
                   </li>
                   <li className="cursor-pointer ">
                     <div className="w-[65vw] text-left flex justify-between items-center">
-                      <button onClick={() => router.push("/product")}>PRODUCTS</button>
+                      <button onClick={() => {
+                        localStorage.setItem("selectedCat", JSON.stringify(''));
+                        localStorage.setItem("selectedItem", JSON.stringify('no-filter'));
+                        router.push("/product")
+                      }}>PRODUCTS</button>
                       <button onClick={() => setNavbarMenu(!navbarMenu)}>
                         <FaAngleDown
                           size={18}
@@ -206,11 +212,14 @@ const Header = () => {
                                 <button
                                   key={i}
                                   onClick={() => {
-                                    router.push(
-                                      `/product?cat=${category.toLowerCase()}&type=${item
-                                        .toLowerCase()
-                                        .replace(/\s+/g, "-")}`
-                                    );
+                                    localStorage.setItem("selectedCat", JSON.stringify(category));
+                                    localStorage.setItem("selectedItem", JSON.stringify(item));
+                                    if (pathname === "/product") {
+                                        router.refresh();
+                                      } else {
+                                        router.push("/product");
+                                      }
+
                                     setNavbar(false);
                                   }}
                                   className="text-left hover:text-yellow-500 transition-all duration-200"

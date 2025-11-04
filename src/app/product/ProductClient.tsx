@@ -248,8 +248,7 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
     const searchParams = useSearchParams();
 
     // URL params (reactive to navigation)
-    const catParam = useMemo(() => searchParams?.get('cat') ?? initialCat ?? null, [searchParams, initialCat]);
-    const typeParam = useMemo(() => searchParams?.get('type') ?? initialType ?? null, [searchParams, initialType]);
+    
 
     const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
     const [mobileViewNavbar,setMobileViewNavbar] = useState(false);
@@ -258,7 +257,10 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
 
   // Toggle checkbox (user-driven)
     const handleFilterChange = (item: string) => {
+        console.log(item);
         const newSelected = selectedFilters.includes(item) ? selectedFilters.filter(f => f !== item) : [...selectedFilters, item];
+        localStorage.setItem("selectedCat", JSON.stringify(''));
+        localStorage.setItem("selectedItem", JSON.stringify(''));
         setSelectedFilters(newSelected);
         const filtered = filterDataByFilters(newSelected);
         if (filtered.length === 0) {
@@ -283,12 +285,6 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
           })
           .filter(Boolean);
 
-    const arraysEqual = (a: string[], b: string[]) => {
-        if (a.length !== b.length) return false;
-            const sa = [...a].sort();
-            const sb = [...b].sort();
-        return sa.every((v, i) => v === sb[i]);
-    };
         
       
 
@@ -308,60 +304,14 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
     
 
       useEffect(() => {
+
+        const Item = JSON.parse(localStorage.getItem("selectedItem") || "null");
         // Build category filters (derived, no state updates for selection)
-        let catFilters: string[] = [];
-        if (catParam) {
-          const matchedKey = Object.keys(categories).find(
-            (k) => k.toLowerCase() === catParam.toLowerCase()
-          );
-          if (matchedKey) {
-            catFilters = categories[matchedKey as keyof typeof categories] ?? [];
-          }
+        if(Item != "no-filter" && Item){
+            console.log("calling filter",Item)
+            handleFilterChange(Item);
         }
-
-        // Prefer URL-driven filters when present
-        if (typeParam) {
-          const filteredByType = filterDataByFilters([typeParam]);
-          if (filteredByType.length === 0) {
-            setMatchItems(false);
-            console.log('Filtered data is empty for typeParam:', typeParam, 'catParam:', catParam, 'selectedFilters:', selectedFilters);
-            setFilteredDataState(data);
-          } else {
-            setMatchItems(true);
-            setFilteredDataState(filteredByType);
-          }
-          return;
-        }
-
-        if (catFilters.length > 0) {
-          const filteredByCat = filterDataByFilters(catFilters);
-          if (filteredByCat.length === 0) {
-            setMatchItems(false);
-            console.log('Filtered data is empty for catFilters:', catFilters, 'catParam:', catParam, 'typeParam:', typeParam, 'selectedFilters:', selectedFilters);
-            setFilteredDataState(data);
-          } else {
-            setMatchItems(true);
-            setFilteredDataState(filteredByCat);
-          }
-          return;
-        }
-
-        // Otherwise, use user-selected filters
-        if (selectedFilters.length === 0) {
-          setMatchItems(true);
-          setFilteredDataState(data);
-        } else {
-          const filteredByUser = filterDataByFilters(selectedFilters);
-          if (filteredByUser.length === 0) {
-            setMatchItems(false);
-            console.log('Filtered data is empty for user selected filters:', selectedFilters, 'catParam:', catParam, 'typeParam:', typeParam);
-            setFilteredDataState(data);
-          } else {
-            setMatchItems(true);
-            setFilteredDataState(filteredByUser);
-          }
-        }
-      }, [catParam, typeParam, selectedFilters]);
+      }, []);
     
     
 
@@ -407,9 +357,7 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                                 >
                                     <input
                                     checked={
-                                      selectedFilters.includes(item) ||
-                                      (!!typeParam && splitFilterWords(item).some((w) => typeParam.toLowerCase().includes(w))) ||
-                                      (!!catParam && (categories[Object.keys(categories).find((k)=>k.toLowerCase()===catParam.toLowerCase()) as keyof typeof categories] || []).includes(item))
+                                      selectedFilters.includes(item) 
                                     }
                                     type="checkbox"
                                     onChange={() => handleFilterChange(item)}
@@ -487,10 +435,7 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                                 <input
                                     type="checkbox"
                                     checked={
-                                      selectedFilters.includes(item) ||
-                                      (!!typeParam && splitFilterWords(item).some((w) => typeParam.toLowerCase().includes(w))) ||
-                                      (!!catParam && (categories[Object.keys(categories).find((k)=>k.toLowerCase()===catParam.toLowerCase()) as keyof typeof categories] || []).includes(item))
-                                    }
+                                      selectedFilters.includes(item) }
                                     onChange={() => handleFilterChange(item)}
                                     className="h-4 w-4 rounded border-gray-400 text-black focus:ring-0"
                                 />
