@@ -12,14 +12,18 @@ const data = [
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFLY09099%20Large.png?alt=media&token=a819db1c-2d9f-4124-a150-3a5b8e3c8fb0",
         "image" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFLY09123%20Large.png?alt=media&token=cc13fea2-6a8b-4de3-aefc-de0f610b711b",
-        "image2":"/kizuki.png",
+        "image2":"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FGenerative%20Fill%20copy%20Large.png?alt=media&token=56dc1a6e-964e-4324-be3f-fe22f89a8412",
         "name" : "KIzuki",
         "title" : "Study table and chair",
         "disc" : "Rooted in calm, functional elegance, the Kizuki Study Table & Chair set is a nod to mindful living and purposeful work. Inspired by Japanese simplicity and crafted with natural materials, it creates a serene workspace where clarity, creativity, and comfort coexist.Whether it’s for a home office, creative nook, or reading corner, this set offers a peaceful no clutter, no distractions. Just you and your thoughts.",
         "material": "FSC-Certified Solid Oakwood / Natural Rattan Cane / Matte Water-Based Lacquer Finish / Powder-Coated Steel or Brass Connectors (Hidden Joints)",
         "color":"Natural Wood (Warm Oak)Optional finish: Soft Charcoal Stain or Light Ash",
         "care":"Wipe With Soft Damp Cloth Only. Avoid Direct Sunlight, Excess Moisture, Or Abrasive Cleaners. Use Coasters and Mats to Prevent Surface Marks. Periodically Check and Tighten Joints Every 6–8 Months.",
-        "year":"2024 Collection"
+        "year":"2024 Collection",
+        "cat": {
+            "category": "Home Office",
+            "subCategory": "Writing Desk"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FHelm1.png?alt=media&token=83ac9fb6-baef-4a8f-8a50-bbdf52fc7084",
@@ -31,7 +35,11 @@ const data = [
         "material": "FSC-Certified Solid Oakwood / Natural Rattan Cane Backrest / Upholstered Fabric Seat / Matte Water-Based Lacquer Finish",
         "color": "Natural Wood (Warm Oak) with Blue Upholstery and Subtle Red Piping",
         "care": "Wipe with a soft damp cloth. Avoid prolonged direct sunlight, moisture, or abrasive cleaners. Use seat cushions or mats to maintain upholstery. Periodically check and tighten joints every 6–8 months.",
-        "year": "2024 Collection"
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Chairs & Loveseats"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FZigZag1.png?alt=media&token=faa44047-5224-4d63-a477-5d111dcbe8a2",
@@ -43,7 +51,11 @@ const data = [
         "material": "FSC-Certified Solid Oakwood Frame / Upholstered Fabric Seat & Backrest / Patterned Fabric Armrests / Matte Water-Based Lacquer Finish",
         "color": "Natural Wood Base with Beige Upholstery and Black-White Geometric Patterned Armrests",
         "care": "Vacuum or brush lightly to remove dust. Spot clean fabric with mild upholstery cleaner. Keep away from direct sunlight and moisture. Avoid harsh cleaners on wood surfaces. Tighten joints periodically every 6–8 months.",
-        "year": "2024 Collection"
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Accent | Lounge Chairs"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FWellash1.png?alt=media&token=2d733f2c-3912-4cba-ad87-45d394c8ebc5",
@@ -55,7 +67,11 @@ const data = [
         "material": "FSC-Certified Solid Oakwood Frame / Natural Rattan Cane Seat / Matte Water-Based Lacquer Finish",
         "color": "Natural Wood (Rich Walnut Tone) with Light Rattan Seat",
         "care": "Dust regularly with a soft dry cloth. Avoid direct sunlight, excessive moisture, and abrasive cleaners. Protect rattan from heavy loads to preserve its weave. Tighten joints periodically every 6–8 months.",
-        "year": "2024 Collection"
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Chairs & Loveseats"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FAshcaen1.png?alt=media&token=b5aa56a6-c2ab-4c3f-8b01-e34195ad5af4",
@@ -67,7 +83,11 @@ const data = [
         "material": "FSC-Certified Solid Oakwood Tabletop & Frame / Matte Water-Based Lacquer Finish / Rattan-Back Dining Chairs with Upholstered Cushions",
         "color": "Natural Wood (Deep Walnut Finish) with Light Beige Upholstered Seating and Cane Backs",
         "care": "Wipe table and chairs with a soft damp cloth. Avoid direct sunlight, excess heat, or abrasive cleaners. Use coasters, placemats, and trivets to protect surfaces. Tighten joints every 6–8 months for lasting durability.",
-        "year": "2024 Collection"
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Dining",
+            "subCategory": "Dining Tables"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FMeridian1.png?alt=media&token=e30c0f29-7f21-4a17-988d-ab0ff04e6b78",
@@ -79,7 +99,11 @@ const data = [
         "material": "FSC-Certified Solid Oakwood Frame & Panels / Veneered Finish with Diagonal Detailing / Matte Water-Based Lacquer",
         "color": "Warm Walnut Frame with Contrasting Golden-Bronze Toned Panels",
         "care": "Dust regularly with a soft dry cloth. Clean spills immediately with a slightly damp cloth. Avoid direct sunlight, excess heat, and abrasive cleaners. Use mats or runners to protect the surface from scratches.",
-        "year": "2024 Collection"
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Consoles"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FAshtone3.png?alt=media&token=dcd66bf4-74fa-4f7d-ac27-c80a903dab85",
@@ -91,7 +115,11 @@ const data = [
         "material": "Engineered Stone Tabletop with Matte Finish / Powder-Coated Metal Base / Upholstered Fabric Chairs with High-Density Foam and Solid Wood Legs",
         "color": "Soft Grey Stone Top with Deep Black Base / Taupe Upholstered Chairs with Black Frames",
         "care": "Clean the tabletop with a soft damp cloth; avoid harsh chemicals and acidic cleaners. Use placemats and coasters to prevent stains and scratches. Vacuum chair upholstery gently with a soft brush attachment. Keep away from direct sunlight and high humidity to preserve finish and fabric.",
-        "year": "2024 Collection"
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Dining",
+            "subCategory": "Dining Tables"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCrown1.png?alt=media&token=b037495f-4153-482d-b913-dbbf5f39d23e",
@@ -103,7 +131,11 @@ const data = [
         "material": "FSC-Certified Solid Wood Frame / High-Density Foam Cushioning / Upholstered Fabric Seat and Backrest / Removable Accent Cushions",
         "color": "Walnut Brown Frame with Olive Green Upholstery / Decorative Cushions in Geometric and Striped Patterns (Red, Black, and White Accents)",
         "care": "Vacuum fabric regularly using a soft brush attachment. Spot clean spills immediately with a damp cloth and mild detergent. Keep away from direct sunlight to prevent fading. Polish wooden frame occasionally with furniture wax for long-lasting sheen.",
-        "year": "2024 Collection"
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Accent | Lounge Chairs"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFlummox3.png?alt=media&token=ac60f135-4d11-4dab-aceb-411eb3d4ccea",
@@ -115,7 +147,11 @@ const data = [
         "material": "Solid Wood Frame with Upholstered Panels / High-Density Foam Padding / Premium Fabric Upholstery / Optional Storage Base",
         "color": "Soft Taupe Upholstered Frame with Neutral Undertones / Customizable Bedding Options",
         "care": "Vacuum upholstery regularly using a soft brush attachment. Spot clean stains immediately with a damp cloth and mild fabric cleaner. Rotate mattress regularly for longevity. Avoid exposure to direct sunlight and high humidity to preserve the fabric and structure.",
-        "year": "2024 Collection"
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Beds"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCosmos1.png?alt=media&token=cc19c536-4f5c-451b-a5f0-6b29188c8592",
@@ -127,7 +163,11 @@ const data = [
         "material": "Solid Wood Frame / Engineered Wood Panel with Fluted Finish / Smooth Sliding Mechanism",
         "color": "Natural Wood Frame with Deep Blue Fluted Front",
         "care": "Dust regularly with a soft, dry cloth. Wipe spills immediately with a damp cloth to prevent staining. Avoid harsh chemicals and abrasive cleaners. Keep away from direct sunlight and high humidity to maintain finish and structure.",
-        "year": "2024 Collection"
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Consoles"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCarbon2.png?alt=media&token=e4f92ec4-4aad-4440-9ca8-8e42c3d3d854",
@@ -139,7 +179,11 @@ const data = [
         "material": "Solid Wood Frame / Rattan Side Panels / High-Density Foam Cushioning / Premium Upholstered Fabric Seat",
         "color": "Black Wooden Frame with Red Rattan Sides / Upholstery in Muted Grey and Burgundy Patterns / Accent Cushion in Burnt Red",
         "care": "Vacuum upholstery regularly using a soft brush attachment. Spot clean fabric with a damp cloth and mild detergent. Keep rattan and wood dust-free with a dry cloth. Avoid direct sunlight to preserve colors and prevent fading.",
-        "year": "2024 Collection"
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Accent | Lounge Chairs"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FBansih2.png?alt=media&token=cb16bfc7-ed60-473e-b4c6-a944a6f8fc00",
@@ -152,6 +196,10 @@ const data = [
         "color": "Natural Wood with Rattan Detailing / Yellow Cushions / Blue and Beige Patterned Backrest",
         "care": "Vacuum cushions and upholstery regularly using a soft brush. Spot clean with a damp cloth and mild detergent. Wipe rattan and wood surfaces with a dry or slightly damp cloth. Keep away from direct sunlight and excess moisture to preserve colors and textures.",
         "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Sofas & Sectionals"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FHeaven3.png?alt=media&token=d657f2ec-5b17-47d7-a4b7-1ffcab33c1b8",
@@ -163,7 +211,11 @@ const data = [
         "material": "Solid Wood Accents / High-Density Foam Cushioning / Premium Upholstered Fabric / Metal Coffee Table Base",
         "color": "White Upholstery with Wooden Side Accents / Earth-Tone Patterned Cushions / Dark Brown and Black Coffee Table",
         "care": "Vacuum upholstery regularly with a soft brush attachment. Blot spills immediately with a clean, dry cloth. For stains, use a mild fabric cleaner and spot test before applying. Wipe wood and metal surfaces with a dry or slightly damp cloth. Keep away from direct sunlight and moisture to prevent fading or warping.",
-        "year": "2024 Collection"
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Sofas & Sectionals"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FAshrattan3.png?alt=media&token=8cf96504-6e96-40c0-9197-297dfc51e8d3",
@@ -176,6 +228,10 @@ const data = [
         "color": "Natural Wood with Rattan Detailing / Rose-Pink Upholstery / Dark Walnut Table",
         "care": "Dust rattan and wood surfaces regularly with a dry cloth. Vacuum cushions with a soft brush attachment. Spot clean upholstery with mild soap solution and a damp cloth. Avoid harsh cleaners. Keep away from direct sunlight and moisture to prevent fading and warping.",
         "year": "2024 Collection",
+        "cat": {
+            "category": "Dining",
+            "subCategory": "Dining Collections"
+        }
     },
     {
         "mainImage" : "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FHeavenChair2.png?alt=media&token=3c2fb938-349f-4ac7-b92b-98693f98bcf0",
@@ -188,8 +244,29 @@ const data = [
         "color": "White Upholstery with Natural Wooden Side Accents",
         "care": "Vacuum upholstery regularly with a soft brush. Blot spills immediately with a clean, dry cloth. For stains, use a mild upholstery cleaner and spot test before applying. Wipe wooden accents with a dry or slightly damp cloth. Keep away from direct sunlight and excessive moisture to prevent fading and warping.",
         "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Chairs & Loveseats"
+        }
     },
-]
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FClyra1.jpg?alt=media&token=aa49a21f-4880-4a68-88d6-6fd4aaa6b257", 
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FClyra2.jpg?alt=media&token=66669865-2537-4cf4-acad-556542a74627",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FClyra3.jpg?alt=media&token=0feafda7-87fe-4364-a51e-77b005e8bcd6",
+        "name": "Clyra",
+        "title": "Single Seater",
+        "disc": "The Clyra Single Seater embodies the gentle harmony of craftsmanship and comfort. Its refined frame combines solid wood with natural cane weave, creating a clean and inviting silhouette. The soft leather seat and plush fabric backrest enhance both luxury and relaxation, while the angled wooden arms provide balance and poise. Perfect for living spaces or reading corners, Clyra merges tactile warmth with timeless design.",
+        "material": "Solid Wood Frame / Natural Rattan Cane Side Panels / Premium Leather Seat Cushion / Soft Fabric Backrest / Matte Lacquer Finish",
+        "color": "Walnut Brown Frame with Beige Fabric Backrest and Charcoal Leather Seat",
+        "care": "Wipe leather surfaces with a soft, damp cloth. Dust cane and wood regularly with a dry cloth. Avoid prolonged exposure to sunlight or humidity. Use mild upholstery cleaner for fabric when necessary. Tighten joints periodically every 6–8 months.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Accent | Lounge Chairs"
+        }
+    }
+
+];
 
 
 const Page = () => {

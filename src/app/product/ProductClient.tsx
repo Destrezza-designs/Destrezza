@@ -246,7 +246,24 @@ const data = [
             "category": "Living",
             "subCategory": "Chairs & Loveseats"
         }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FClyra1.jpg?alt=media&token=aa49a21f-4880-4a68-88d6-6fd4aaa6b257", 
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FClyra2.jpg?alt=media&token=66669865-2537-4cf4-acad-556542a74627",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FClyra3.jpg?alt=media&token=0feafda7-87fe-4364-a51e-77b005e8bcd6",
+        "name": "Clyra",
+        "title": "Single Seater",
+        "disc": "The Clyra Single Seater embodies the gentle harmony of craftsmanship and comfort. Its refined frame combines solid wood with natural cane weave, creating a clean and inviting silhouette. The soft leather seat and plush fabric backrest enhance both luxury and relaxation, while the angled wooden arms provide balance and poise. Perfect for living spaces or reading corners, Clyra merges tactile warmth with timeless design.",
+        "material": "Solid Wood Frame / Natural Rattan Cane Side Panels / Premium Leather Seat Cushion / Soft Fabric Backrest / Matte Lacquer Finish",
+        "color": "Walnut Brown Frame with Beige Fabric Backrest and Charcoal Leather Seat",
+        "care": "Wipe leather surfaces with a soft, damp cloth. Dust cane and wood regularly with a dry cloth. Avoid prolonged exposure to sunlight or humidity. Use mild upholstery cleaner for fabric when necessary. Tighten joints periodically every 6–8 months.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Accent | Lounge Chairs"
+        }
     }
+
 ];
 
 const categories = {
