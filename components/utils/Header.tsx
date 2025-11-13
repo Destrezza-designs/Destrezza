@@ -214,11 +214,13 @@ const Header = () => {
                                   onClick={() => {
                                     localStorage.setItem("selectedCat", JSON.stringify(category));
                                     localStorage.setItem("selectedItem", JSON.stringify(item));
+                                    
+                                    // 👇 Trigger re-filter event if already on /product
                                     if (pathname === "/product") {
-                                        router.refresh();
-                                      } else {
-                                        router.push("/product");
-                                      }
+                                      window.dispatchEvent(new Event("productFilterUpdate"));
+                                    } else {
+                                      router.push("/product");
+                                    }
 
                                     setNavbar(false);
                                   }}
