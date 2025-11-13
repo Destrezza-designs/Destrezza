@@ -221,7 +221,7 @@ const Page = () => {
             <div className='flex gap' >
                 <div className='flex gap-[4px] h-[614px] w-[50vw] ' >
                     <Image 
-                        unoptimized  src={currentImage} width={1000} height={1000} className='w-full h-full object-cover' alt='Main Image' />
+                        unoptimized  src={currentImage} width={1000} height={1000} className='w-[calc(50vw-250px)] h-full object-cover' alt='Main Image' />
                     <div className='flex flex-col gap-[4px] w-[250px] ' >
                         {[data[idNum-1].mainImage, data[idNum-1].image, data[idNum-1].image2].map((imgSrc, index) => (
                             <button 
