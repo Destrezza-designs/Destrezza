@@ -56,9 +56,16 @@ const Footor = () => {
                     <p className='text-[18px] font-[400]' >Terms & Conditions</p>
                 </div>
                 <div className='flex justify-between gap-[24px]' >
-                    <p className='text-[18px] font-[400]' >Facebook</p>
-                    <p className='text-[18px] font-[400]' >Instagram</p>
-                    <p className='text-[18px] font-[400]' >YouTube</p>
+                    <button
+                        onClick={()=> router.push('https://www.instagram.com/destrezzza_?igsh=MWlmZHYyaHR1b3Zxeg==')}
+                    >
+                        <p className='text-[18px] font-[400]' >Instagram</p>
+                    </button>
+                    <button 
+                        onClick={() => router.push('https://youtube.com/@destrezzzaarthouseprivatel9046?si=OKqFX9HHYk3gGph5')}
+                        >
+                        <p className='text-[18px] font-[400]' >YouTube</p>
+                    </button>
                 </div>
             </div>
 
@@ -104,9 +111,18 @@ const Footor = () => {
 
             <p className='text-[16px] uppercase font-[600] py-[12px] mt-[31px]' >Platforms</p>
             <div className='flex justify-between gap-[12px] w-fit mt-[12px]' >
-                <p className='text-[14px] text-[#E0E0E0] font-[300]' >Facebook</p>
-                <p className='text-[14px] text-[#E0E0E0] font-[300]' >Instagram</p>
-                <p className='text-[14px] text-[#E0E0E0] font-[300]' >YouTube</p>
+                
+                <button
+                    onClick={() => router.push('https://www.instagram.com/destrezzza_?igsh=MWlmZHYyaHR1b3Zxeg==')}
+                >
+                    <p className='text-[14px] text-[#E0E0E0] font-[300]' >Instagram</p>
+                </button>
+
+                <button
+                    onClick={() => router.push('https://youtube.com/@destrezzzaarthouseprivatel9046?si=OKqFX9HHYk3gGph5')}
+                >
+                    <p className='text-[14px] text-[#E0E0E0] font-[300]' >YouTube</p>
+                </button>
             </div>
 
             <p className='text-[24px] font-[500] my-[19px]' >hello@destrezzzaarthouse.com</p>
