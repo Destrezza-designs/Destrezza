@@ -264,6 +264,70 @@ const data = [
             "category": "Living",
             "subCategory": "Accent | Lounge Chairs"
         }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FDavrik1.jpg?alt=media&token=11be0be6-a9c1-42a3-923f-736f091b2513",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FDavrik2.jpg?alt=media&token=d43ab335-4f06-4bca-bb9f-d62a8c67f085",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FDavrik3.jpg?alt=media&token=0c612c17-c376-4b02-b519-9d76b5176e45",
+        "name": "Dravik",
+        "title": "Center Table",
+        "disc": "The Dravik Center Table embodies sculpted precision and serene strength. Crafted from solid wood, its rhythmic fluted base forms a bold architectural statement while maintaining a minimalist silhouette. The smooth circular top rests gracefully above slender black metal legs, creating a balance between grounded stability and refined elegance. Designed as a centerpiece for living spaces, Dravik celebrates form, texture, and timeless craftsmanship.",
+        "material": "Solid Wood Frame and Top / Fluted Wood Detailing / Powder-Coated Metal Legs / Matte Lacquer Finish",
+        "color": "Deep Walnut Brown with Black Metal Legs",
+        "care": "Wipe with a soft, dry cloth to remove dust. Avoid harsh cleaners or abrasives. Use coasters to prevent moisture rings and protect the wooden surface. Keep away from direct sunlight and excessive heat to maintain the finish.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Coffee Tables"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FElstra3.jpg?alt=media&token=04309f26-7d32-4094-874e-693b5bfc16d3",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FElstra1.jpg?alt=media&token=434935f9-ef18-40ff-a5f9-ccc9b815e85b",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FElstra2.jpg?alt=media&token=ae202a80-f8a0-4ad3-93cd-994f94be42ed",
+        "name": "Elstra",
+        "title": "Axen Chair & Foot Stool",
+        "disc": "The Elstra Axen Chair & Foot Stool redefines minimal relaxation through a sculptural blend of form and balance. Crafted from smooth solid wood and woven natural cane, its upward lines and curved silhouette evoke calm sophistication. Designed for posture and comfort, the extended reclined back pairs harmoniously with the matching foot stool, making Elstra an ideal statement piece for contemporary living rooms, reading corners, or lounge spaces.",
+        "material": "FSC-Certified Solid Wood Frame / Natural Rattan Cane Seat and Backrest / Matte Water-Based Lacquer Finish",
+        "color": "Natural Oak Wood with Light Rattan Weave",
+        "care": "Dust regularly with a soft, dry cloth. Avoid direct sunlight, moisture, and harsh cleaners. Protect rattan surfaces from heavy pressure to maintain weave integrity. Tighten joints periodically every 6–8 months.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Loungers"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFlurea1.jpg?alt=media&token=ae8cddfb-cc53-4e5a-b361-b951066fa23e",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFlurea2.jpg?alt=media&token=ac1aa9df-6498-4506-b38a-5f714896b763",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFlurea3.jpg?alt=media&token=9426c349-1666-4e5b-b8a3-85ea1c70b522",
+        "name": "Flurea",
+        "title": "Single Seater",
+        "disc": "The Flurea Single Seater celebrates gentle curves and crafted comfort. Inspired by the natural unfolding of petals, its sculpted silhouette and soft form invite both beauty and ease. The soothing cream hue is complemented by a bold accent cushion, blending elegance with personality. Designed for modern interiors, Flurea strikes the perfect balance between cozy relaxation and refined artistry.",
+        "material": "Solid Wood Internal Frame / Premium Upholstered Fabric / High-Density Foam Cushioning / Metal Legs with Matte Gold Finish",
+        "color": "Soft Cream Upholstery with Burnt Red Accent Cushion / Matte Gold Legs",
+        "care": "Vacuum regularly with a soft brush attachment. Blot spills immediately using a clean, dry cloth. Use mild upholstery cleaner for stains after testing on a hidden area. Avoid direct sunlight and moisture to preserve fabric tone and texture.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Accent | Lounge Chairs"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FKaelix1.jpg?alt=media&token=4a25f6b9-379e-43fa-92fa-6a987ac3a488",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FKaelix2.jpg?alt=media&token=4025e1e5-6a51-42dd-a8d1-4cadd6170c7c",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FKaelix3.jpg?alt=media&token=07022d45-aacf-4d0b-9f1d-57b238c3dbd1",
+        "name": "Kaelix",
+        "title": "Single Seater",
+        "disc": "The Kaelix Single Seater embodies bold modern artistry with a serene balance of form and comfort. Its sculpted curves flow effortlessly around the body, while the textured upholstery adds visual depth and tactile luxury. Supported by a matte black wooden frame, Kaelix redefines minimal design through confident structure and inviting presence — making it an ideal statement for refined modern interiors.",
+        "material": "Solid Wood Frame with Matte Black Finish / Premium Textured Upholstery / High-Density Foam Cushioning / Smooth Curved Backrest",
+        "color": "Muted Sage Green Upholstery with Matte Black Wooden Frame",
+        "care": "Vacuum regularly with a soft brush attachment. Blot stains immediately with a dry cloth. Use mild upholstery cleaner when needed. Avoid placing in direct sunlight or near heat sources to preserve color and texture.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Accent | Lounge Chairs"
+        }
     }
 
 ];
