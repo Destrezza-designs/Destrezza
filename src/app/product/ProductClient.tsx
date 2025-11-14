@@ -326,10 +326,183 @@ const data = [
             "category": "Living",
             "subCategory": "Accent | Lounge Chairs"
         }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FThaliora1.jpg?alt=media&token=5e9a5bcc-8c6e-4b6d-b6ce-a1c59e0bb362",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FThaliora2.jpg?alt=media&token=7a19dff1-3e64-473d-949b-463e64bbbebd",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FThaliora3.jpg?alt=media&token=a696bdde-9508-46f8-9755-aa9c45993153",
+        "name": "Thaliora",
+        "title": "Night Stand",
+        "disc": "The Thaliora Night Stand captures the essence of timeless craftsmanship through its clean lines and balanced form. Designed to complement the Thaliora Bed Cot, it blends vintage inspiration with modern practicality. Its warm wooden tone, spacious open shelf, and discreet drawer make it ideal for bedside storage while adding refined sophistication to any bedroom setting.",
+        "material": "Solid Wood Frame / Engineered Wood Drawer Base / Matte Lacquer Finish / Precision Joinery",
+        "color": "Warm Walnut Brown with Subtle Matte Sheen",
+        "care": "Wipe with a soft, dry cloth. Avoid using harsh chemicals or abrasive materials. Use coasters for items that may cause moisture or stains. Keep away from direct sunlight and high humidity to preserve the finish.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Nightstands"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FOrvessa1.jpg?alt=media&token=83afc227-2730-4549-beb4-3bc2ef0d3387",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FOrvessa2.jpg?alt=media&token=21baf077-9bfb-4099-9fd9-349662b72578",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FOrvessa3.jpg?alt=media&token=89b04bd3-9be2-4f24-9d9f-982798222601",
+        "name": "Orvessa",
+        "title": "Night Stand",
+        "disc": "The Orvessa Night Stand brings together classic form and modern refinement in perfect harmony. Crafted with a smooth cylindrical profile, it anchors the bedside with understated sophistication. Two seamlessly curved drawers offer discreet storage while maintaining the table’s sculptural integrity. Designed for modern bedrooms, Orvessa stands out through its elegant geometry and natural wood finish.",
+        "material": "Solid Wood Structure / Dual Soft-Closing Drawers / Concealed Metal Runners / Matte Lacquer Finish",
+        "color": "Rich Walnut Brown with Subtle Satin Finish",
+        "care": "Dust regularly with a soft, dry cloth. Wipe spills immediately to prevent staining. Avoid direct sunlight and high humidity. Use coasters for decorative items to protect the wooden surface from scratches or moisture rings.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Nightstands"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsavannah1.jpg?alt=media&token=2a467991-c05c-4bf2-8146-7024c68470ff",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsavannah2.jpg?alt=media&token=7f2f2016-92b3-41b3-9524-8e4c0aad7d4f",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsavannah3.jpg?alt=media&token=278a67ee-645c-4c94-b5b8-4a9033544ab7",
+        "name": "Savannah",
+        "title": "Night Stand",
+        "disc": "The Savannah Night Stand blends traditional charm with modern functionality. Designed as part of the Savannah collection, it features a graceful wooden frame accented by a natural rattan drawer front. The turned wooden legs add a classic touch, while the light-toned finish brings an airy, timeless elegance to your bedroom. Both drawers provide ample storage, making it as practical as it is beautiful.",
+        "material": "Solid Wood Frame / Natural Rattan Cane Drawer Front / Wooden Turned Legs / Matte Water-Based Lacquer Finish",
+        "color": "Light Ash Wood with Natural Cane Accents",
+        "care": "Dust regularly with a soft, dry cloth. Avoid using harsh chemicals or water directly on cane surfaces. Wipe wood gently with a slightly damp cloth and dry immediately. Keep away from direct sunlight and heat to preserve the natural finish.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Nightstands"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FNoir1.jpg?alt=media&token=f9e855ce-23d2-46bd-a597-d13fb44197e5",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FNoir2.jpg?alt=media&token=be91be47-2db5-47f8-9be3-3bef43220ab7",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FNoir3.jpg?alt=media&token=9cec0916-a092-45db-a363-7d7e3101b2cb",
+        "name": "Noir",
+        "title": "Console",
+        "disc": "The Noir Console is crafted for those who appreciate the beauty of simplicity. With its elegantly fluted wooden doors and refined proportions, it embodies quiet sophistication. Functional at its core, yet graceful in presence, Noir serves as both a storage solution and a statement of modern minimalism — enhancing the ambience of any space it inhabits.",
+        "material": "Solid Wood Frame / Fluted Veneer Sliding Doors / Concealed Storage Compartments / Matte Lacquer Finish",
+        "color": "Warm Walnut Brown with Subtle Satin Texture",
+        "care": "Dust with a soft, dry cloth. Wipe spills immediately to prevent marks. Avoid direct sunlight, heat, and humidity. Use coasters or mats to protect the surface from scratches or moisture rings.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Consoles"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FNuvra1.jpg?alt=media&token=d427783c-c227-47ba-9a5d-00b2be185c01",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FNuvra2.jpg?alt=media&token=15b1fd79-fa0d-4b39-8d04-d878257f53f9",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FNuvra3.jpg?alt=media&token=6d2d2b18-4346-4c41-8073-44479d614284",
+        "name": "Nuvra",
+        "title": "Center Table",
+        "disc": "The Nuvra Center Table is a gentle expression of balance and beauty. With its sculpted triangular base wrapped in natural cane and a smooth solid wood top, it brings warmth and character to any living space. Nuvra’s rounded edges and seamless proportions turn simplicity into elegance, making it a versatile centerpiece that blends craftsmanship with contemporary charm.",
+        "material": "Solid Wood Top / Natural Rattan Cane Wrapped Base Panels / Matte Lacquer Finish / Hidden Joinery Detailing",
+        "color": "Deep Walnut Brown with Natural Cane Accents",
+        "care": "Dust regularly using a soft, dry cloth. Wipe spills immediately with a damp cloth and dry thoroughly. Avoid direct sunlight, moisture, and harsh chemicals. Use coasters or placemats to protect the tabletop from heat and water rings.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Coffee Tables"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Forren1.jpg?alt=media&token=c69efd63-d3a9-4859-816f-b4a3edc02ffe",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Forren2.jpg?alt=media&token=25d42be4-fcf9-4278-b5f5-52b08cbec231",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Forren3.jpg?alt=media&token=7d18f186-5519-4fe9-b56f-7bf0a8f9a1b6",
+        "name": "Orren",
+        "title": "Chair",
+        "disc": "The Orren Chair is a seamless blend of tradition and modernity. Its handcrafted cane backrest brings timeless warmth, while the vibrant orange cushion adds a lively contemporary touch. Designed with soft curves and a graceful silhouette, Orren offers both comfort and elegance, making it a welcoming addition to dining rooms, cafes, and living spaces alike.",
+        "material": "Solid Wood Frame / Handwoven Natural Rattan Cane Backrest / Premium Upholstered Cushion / Matte Water-Based Lacquer Finish",
+        "color": "Walnut Brown Frame with Natural Cane & Burnt Orange Upholstered Seat",
+        "care": "Dust wood and cane using a dry cloth. Vacuum the cushion gently with a soft brush attachment. Clean fabric with mild upholstery cleaner when needed. Avoid direct sunlight and moisture to preserve color and texture.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Dining",
+            "subCategory": "Dining Chairs"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FOrvessa1.jpg?alt=media&token=af1a015c-1910-44fb-b977-a926464bf145",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FOrvessa2.jpg?alt=media&token=ca51894f-5043-4c12-837e-5cbb2a4e8d43",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FOrvessa3.jpg?alt=media&token=97ba396c-b4eb-4eeb-9736-355f5d9706b9",
+        "name": "Orvessa",
+        "title": "Bed Cot",
+        "disc": "The Orvessa Bed Cot is a timeless ode to vintage-inspired design. With its bold wooden frame and refined detailing, it merges strength with serenity, transforming rest into an experience of grace. The extended headboard enhances visual balance while adding a sculptural presence to the bedroom. Crafted to elevate modern interiors, Orvessa offers the perfect harmony of comfort, elegance, and craftsmanship.",
+        "material": "Solid Wood Frame / Precision Joinery / Matte Lacquer Finish / Extended Headboard Panel",
+        "color": "Rich Walnut Brown with Satin Finish",
+        "care": "Dust regularly with a soft cloth. Avoid harsh chemicals or abrasive cleaners. Keep away from prolonged direct sunlight and moisture. Use a mattress protector to extend fabric longevity.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Beds"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fravelle1.jpg?alt=media&token=6553e5d1-94cd-4f4d-a4d5-2487181d22e6",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fravelle2.jpg?alt=media&token=77d5c783-d856-496d-890b-be4da075a6f7",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fravelle3.jpg?alt=media&token=ffcdd85e-76a6-4941-b526-9acecd34ee99",
+        "name": "Ravelle",
+        "title": "Bed Cot",
+        "disc": "The Ravelle Bed Cot blends elegance with organic charm. Its handcrafted cane panels soften the clean wooden structure, creating a design that feels airy, natural, and effortlessly luxurious. The rounded top frame adds a subtle sculptural touch while maintaining a minimal silhouette. Ravelle transforms the bedroom into a sanctuary of calm refinement, celebrating comfort through thoughtful craftsmanship.",
+        "material": "Solid Wood Frame / Natural Handwoven Rattan Cane Headboard Panels / Matte Lacquer Finish / Rounded Top Rail",
+        "color": "Deep Walnut Brown Frame with Natural Cane Details",
+        "care": "Dust regularly with a soft, dry cloth. Avoid excessive moisture on cane surfaces. Keep away from direct sunlight to preserve the natural tones. Use a mattress protector to maintain fabric freshness.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Beds"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsavannah1.jpg?alt=media&token=376ffb56-e153-4a63-b626-92365351f5cd",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsavannah2.jpg?alt=media&token=560b6a3c-e717-47b9-97f2-face3663f1b8",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsavannah3.jpg?alt=media&token=6ca603e0-eaf2-49d4-95dd-0317ba4b1af3",
+        "name": "Savannah",
+        "title": "Bed Cot",
+        "disc": "The Savannah Bed Cot is more than a place to rest — it is a sanctuary of comfort and elegance. With its handcrafted cane panels, sculpted wooden posts, and refined classic silhouette, it carries a timeless charm. Designed to bring warmth and calmness to the bedroom, Savannah blends artisanal detail with graceful presence, transforming your space into a haven of serene, refined living.",
+        "material": "Solid Wood Frame / Handwoven Natural Cane Headboard and Footboard Panels / Decorative Turned Posts / Matte Lacquer Finish",
+        "color": "Soft Ivory Wood with Natural Cane Detailing",
+        "care": "Dust regularly with a soft cloth. Clean cane gently with a dry brush. Avoid harsh chemicals and protect from prolonged sunlight. Use a mattress protector to maintain bedding freshness and longevity.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Beds"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fserra1.jpg?alt=media&token=1d75e126-0c97-43b5-b332-979f30f7f9c7",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fserra2.jpg?alt=media&token=b9644da7-c534-4933-8814-0bc6018cda52",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fserra3.jpg?alt=media&token=ab4ac4a5-644f-4409-8f3f-a109b0c34c38",
+        "name": "Serra",
+        "title": "Single Seater",
+        "disc": "The Serra Single Seater is an expression of calm sophistication. Designed with soft, enveloping curves and textured upholstery, it embraces you with comfort while maintaining a timeless contemporary profile. Its sleek matte-black wooden frame adds structure and elegance, making Serra a refined addition to living spaces, reading corners, and modern lounges.",
+        "material": "Solid Wood Frame with Matte Black Finish / Premium Textured Upholstery / High-Density Foam Padding / Ergonomic Curved Backrest",
+        "color": "Ivory Textured Fabric with Matte Black Frame",
+        "care": "Vacuum regularly with a soft brush attachment. Blot spills immediately with a clean, dry cloth. Use mild fabric cleaner when needed. Avoid placing in direct sunlight to preserve the upholstery tone and texture.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Accent | Lounge Chairs"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsylvara1.jpg?alt=media&token=f5f11cf5-99d8-433e-9aed-a4803ff0a129",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsylvara2.jpg?alt=media&token=b622f08c-b04e-4d45-8203-b4eeaabdec6b",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsylvara3.jpg?alt=media&token=ae6214d6-c73d-4bce-99af-abb186534940",
+        "name": "Sylvara",
+        "title": "Bed Cot",
+        "disc": "The Sylvara Bed Cot blends refreshing style with a calming aesthetic inspired by open skies. Its soothing aqua-toned frame, paired with handcrafted cane panels, creates a serene atmosphere in any bedroom. With elegant turned legs, soft curves, and a matching bench at the foot, Sylvara brings harmony, comfort, and a touch of artistic charm to modern living spaces.",
+        "material": "Solid Wood Frame / Handcrafted Cane Headboard & Footboard / Premium Upholstered Bench / Matte Lacquer Finish",
+        "color": "Aqua Blue Frame with Natural Cane Weave / Beige Upholstered Bench",
+        "care": "Dust wood and cane surfaces regularly with a soft dry cloth. Avoid direct sunlight to preserve color and cane integrity. Clean upholstered sections with mild fabric cleaner as needed. Keep away from excessive moisture.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Beds"
+        }
     }
-
-
-
 
 
 ];
