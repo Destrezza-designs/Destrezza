@@ -346,9 +346,9 @@ const data = [
         }
     },
     {
-        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FOrvessa1.jpg?alt=media&token=83afc227-2730-4549-beb4-3bc2ef0d3387",
-        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FOrvessa2.jpg?alt=media&token=21baf077-9bfb-4099-9fd9-349662b72578",
-        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FOrvessa3.jpg?alt=media&token=89b04bd3-9be2-4f24-9d9f-982798222601",
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Forvv1.jpg?alt=media&token=c9546ad6-c77a-4502-926a-61030cfa4172",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Forvv2.jpg?alt=media&token=91f2f465-8fda-40ae-9793-5589a79f75f2",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Forvv3.jpg?alt=media&token=759996e0-ced6-408a-8a09-7d29c11ad704",
         "name": "Orvessa",
         "title": "Night Stand",
         "disc": "The Orvessa Night Stand brings together classic form and modern refinement in perfect harmony. Crafted with a smooth cylindrical profile, it anchors the bedside with understated sophistication. Two seamlessly curved drawers offer discreet storage while maintaining the table’s sculptural integrity. Designed for modern bedrooms, Orvessa stands out through its elegant geometry and natural wood finish.",
@@ -362,9 +362,9 @@ const data = [
         }
     },
     {
-        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsavannah1.jpg?alt=media&token=2a467991-c05c-4bf2-8146-7024c68470ff",
-        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsavannah2.jpg?alt=media&token=7f2f2016-92b3-41b3-9524-8e4c0aad7d4f",
-        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsavannah3.jpg?alt=media&token=278a67ee-645c-4c94-b5b8-4a9033544ab7",
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsava1.jpg?alt=media&token=29bc5585-ea79-4196-86ff-1636c80942d3",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsava2.jpg?alt=media&token=c785daa3-3dab-4562-8589-544c519c7c60",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsava3.jpg?alt=media&token=d44025ce-4722-45c0-b604-574192bb08fa",
         "name": "Savannah",
         "title": "Night Stand",
         "disc": "The Savannah Night Stand blends traditional charm with modern functionality. Designed as part of the Savannah collection, it features a graceful wooden frame accented by a natural rattan drawer front. The turned wooden legs add a classic touch, while the light-toned finish brings an airy, timeless elegance to your bedroom. Both drawers provide ample storage, making it as practical as it is beautiful.",
@@ -503,6 +503,38 @@ const data = [
         "cat": {
             "category": "Bedroom",
             "subCategory": "Beds"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fthaliora2.jpg?alt=media&token=260fd1c6-279e-43ad-90b2-1375d19c76fb",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fthaliora1.jpg?alt=media&token=eb732911-ef25-4443-8355-d95e5c3ca47a",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fthaliora3.jpg?alt=media&token=a6407a39-aa7a-4236-9160-a5eed5898fd5",
+        "name": "Thaliora",
+        "title": "Bed Cot",
+        "disc": "The Thaliora Bed Cot is a tribute to vintage-inspired craftsmanship, blending intricate spindle work with timeless elegance. Its gracefully carved four-poster structure adds grandeur while maintaining a warm, inviting presence. The rich wooden texture and refined detailing make Thaliora the centerpiece of any bedroom—bringing heritage charm into modern living with comfort and sophistication.",
+        "material": "Solid Wood Frame / Hand-Turned Spindle Headboard & Footboard / Four-Poster Bed Structure / Matte Water-Based Lacquer Finish",
+        "color": "Warm Walnut Brown",
+        "care": "Dust regularly using a soft dry cloth. Avoid direct sunlight and excessive moisture to preserve the wood’s natural tone. For deeper cleaning, use a mild wood-safe polish. Periodically check and tighten structural joints for longevity.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Beds"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FZereth1.jpg?alt=media&token=f9ecf2b0-1310-422b-8e59-2d59295faec0",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FZereth2.jpg?alt=media&token=99e4c587-4fe1-4a9b-990c-f671fbca6bb9",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FZereth3.jpg?alt=media&token=b88904bb-d9a8-47c2-b062-bb71a98c3ca1",
+        "name": "Zereth",
+        "title": "Console",
+        "disc": "The Zereth Console is where design meets distinction. Built with clean geometry and accented with vertical fluted detailing, it balances modern minimalism with bold presence. Its rich wood grain, seamless storage layout, and elevated base create depth and sophistication—making Zereth an elegant anchor for living rooms, entryways, or dining spaces.",
+        "material": "Solid Wood Frame / Veneered Panels / Vertical Fluted Detailing / Matte Water-Based Lacquer Finish",
+        "color": "Warm Walnut Brown",
+        "care": "Dust with a soft dry cloth. Clean spills immediately with a slightly damp cloth. Avoid harsh chemicals and prolonged sunlight exposure. Use coasters or runners to protect the surface.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Consoles"
         }
     }
 
