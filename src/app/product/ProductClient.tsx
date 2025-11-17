@@ -1040,6 +1040,7 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                             >
                             <div className="relative h-[45vw] w-full rounded-[8px] overflow-hidden">
                                 {/* Gradient overlay */}
+                                <p className={` ${newProducts.includes(index) ? 'flex' : 'hidden'} z-10 absolute top-[12px] left-[12px] px-[8px] py-[0px] text-[12px] font-bold rounded-[12px] uppercase bg-white`} >NEW</p>
                                 <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent"></div>
 
                                 {/* Image */}
