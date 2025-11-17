@@ -534,11 +534,183 @@ const data = [
             "category": "Living",
             "subCategory": "Consoles"
         }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FArthene1.jpg?alt=media&token=0cd91054-c2d9-4385-a3aa-0581349ac296",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FArthene2.jpg?alt=media&token=0deae361-5490-4ed8-9f6b-4bbc8adb95bd",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FArthene3.jpg?alt=media&token=33e17a71-d97f-45c2-8b7f-ac4a2dfe258f",
+        "name": "Arthene",
+        "title": "Single Seater",
+        "disc": "Where craftsmanship meets calm. Arthene is defined by its beautifully sculpted wooden frame and plush dual cushions that offer deep, inviting comfort. Its sleek angled silhouette, rich walnut tones, and olive leather upholstery bring quiet sophistication to modern living spaces. A piece that doesn’t just complement your space — it defines it.",
+        "material": "Solid Wood Frame / Premium Upholstered Leatherette Cushions / High-Density Foam Padding / Matte Lacquer Finish",
+        "color": "Walnut Brown Frame with Olive Green Cushions",
+        "care": "Dust the wooden frame regularly with a soft dry cloth. Wipe upholstery with a slightly damp cloth and mild soap when needed. Avoid harsh cleaners, direct sunlight, and excess moisture to preserve the finish and upholstery.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Accent | Lounge Chairs"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FArvonic1.jpg?alt=media&token=47ca6abd-8138-4956-b29e-fbcc473415ac",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FArvonic2.jpg?alt=media&token=6c16aa37-989c-48c4-8f4a-cccdb0abc65a",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FArvonic3.jpg?alt=media&token=06873e37-448c-4137-ba38-21890605a495",
+        "name": "Arvionc",
+        "title": "Console",
+        "disc": "The Arvionc Console stands as a reflection of modern refinement. Strong in presence and graceful in detail, it blends clean structure with warm wooden textures. The dual drawers offer functional storage, while the open lower shelves provide versatile display or utility space. Designed to bring harmony and understated elegance into contemporary interiors, Arvionc is both practical and beautifully crafted.",
+        "material": "Solid Wood Frame / Veneered Drawer Panels / Open Lower Shelves / Matte Water-Based Lacquer Finish",
+        "color": "Warm Walnut Brown",
+        "care": "Dust regularly with a dry soft cloth. Clean spills immediately using a slightly damp cloth. Avoid harsh solvents and prolonged direct sunlight. Use protective pads when placing decorative items on the surface.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Consoles"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FAureo1.jpg?alt=media&token=3195344b-42b8-4f35-9f7a-358a00f7b762",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FAureo2.jpg?alt=media&token=54f4a8a2-ac86-498c-96bf-c01f92e45cd0",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FAureo3.jpg?alt=media&token=40c35fa3-b347-4450-928a-39505656021e",
+        "name": "Aureo",
+        "title": "Exquisite Chair",
+        "disc": "Minimal in form, rich in presence. The Aureo Chair embodies a perfect balance of function and sophistication. Its sculpted circular frame flows seamlessly into a handcrafted cane backrest, creating a piece that stands out through refined geometry and warm natural textures. Aureo adds an artistic statement to living spaces while offering a uniquely comfortable seating experience.",
+        "material": "Solid Wood Frame / Handwoven Natural Cane Backrest / Matte Lacquer Finish",
+        "color": "Warm Walnut Brown with Natural Cane",
+        "care": "Dust wood and cane surfaces regularly with a dry cloth. Avoid direct sunlight and high humidity to preserve the cane’s natural durability. Wipe gently with a slightly damp cloth when needed. Do not use harsh chemicals.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Accent | Lounge Chairs"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCavora3.jpg?alt=media&token=8fe0a2c6-9e02-459a-9e31-96e1af0becca",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCavora1.jpg?alt=media&token=50574bad-317d-4b5d-869e-13d28debf6b8",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCavora2.jpg?alt=media&token=fc9ee436-7635-406f-8e84-f803d19be505",
+        "name": "Cavora",
+        "title": "Sofa & Single Seater",
+        "disc": "The Cavora collection captures the essence of refined comfort through its smooth curves, sculpted forms, and inviting plush seating. Whether in its expansive sofa form or as an elegant single seater, Cavora redefines minimal luxury. Thoughtfully crafted to stand out while blending effortlessly into modern spaces, it offers a soft, cloud-like seating experience that feels both artistic and timeless.",
+        "material": "Premium Upholstered Fabric / High-Density Foam Cushions / Reinforced Wooden Internal Frame / Matte Black Base Support",
+        "color": "Soft Grey Sofa with Burnt Red Accent Cushions / Warm Terracotta Single Seater",
+        "care": "Vacuum regularly using a soft brush attachment. Blot spills immediately with a clean, dry cloth. Use mild upholstery cleaner when required. Avoid direct sunlight to preserve fabric color and texture.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Sofas & Sectionals"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FDevora1.jpg?alt=media&token=db3adf7a-9504-4edf-9ec5-9541b0028aa7",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FDevora2.jpg?alt=media&token=4c93ab1c-fe82-4f67-aba0-31232638071c",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FDevora3.jpg?alt=media&token=9c466787-5a79-4365-bae4-997117e0be50",
+        "name": "Devora",
+        "title": "Console",
+        "disc": "Devora stands as a statement of refined living — thoughtfully crafted to enhance interior spaces not just with functionality, but with a graceful presence that lingers in every detail. Its curved silhouette, paired with handwoven cane panels and rich wood textures, creates an atmosphere of subtle luxury. A perfect blend of form and function, Devora elevates any room with its warm elegance.",
+        "material": "Solid Wood Frame / Natural Handwoven Cane Panels / Matte Lacquer Finish",
+        "color": "Warm Walnut Brown with Natural Cane",
+        "care": "Wipe with a soft dry cloth. Avoid excessive moisture on cane surfaces. Keep away from direct sunlight and high humidity to preserve natural materials. Use mild wood polish occasionally to maintain finish.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Consoles & Sideboards"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FElaris3.jpg?alt=media&token=ef6edd1b-e7c0-4885-83c1-ba24dd952f4b",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FElaris1.jpg?alt=media&token=4ed9ee00-945d-43eb-9982-e92a734c9dcf",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FElaris2.jpg?alt=media&token=47b72171-75a5-4af4-8b23-2c436a8384a0",
+        "name": "Elaris",
+        "title": "Single Seater",
+        "disc": "Elaris is a sanctuary of comfort crafted with refined elegance. Designed with smooth, flowing curves and a gracefully balanced rocking frame, it offers a soothing rhythm that invites relaxation. The natural cane backrest paired with a plush seat brings a blend of sophistication and warmth, making it not just a chair, but an immersive experience of living art.",
+        "material": "Solid Wood Frame / Natural Handwoven Cane Backrest / Upholstered Fabric Seat / Matte Lacquer Finish",
+        "color": "Walnut Brown Frame with Natural Cane and Grey Upholstery",
+        "care": "Dust regularly with a soft cloth. Avoid prolonged moisture exposure on cane. Wipe gently with a slightly damp cloth when needed. Keep away from direct sunlight to preserve finish and fabric color.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Accent | Lounge Chairs"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FIsmara1.jpg?alt=media&token=7fa20b61-9c1d-4987-8180-378684c6ac85",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FIsmara3.jpg?alt=media&token=b0deafe2-0b2a-414b-8eb3-28a206475509",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FIsmara2.jpg?alt=media&token=7037c9cd-e363-4cca-8281-736edf626787",
+        "name": "Ismara",
+        "title": "Bed Cot",
+        "disc": "A contemporary sanctuary, Ismara blends sleek design with lasting comfort. Its minimal yet expressive structure creates a centerpiece of modern living. With clean lines, a soft upholstered headboard, and harmonious proportions, Ismara transforms the bedroom into a calming escape that feels luxurious yet effortlessly refined.",
+        "material": "Upholstered Headboard / Solid Wood Frame / High-Density Support Base / Matte Finish",
+        "color": "Warm Grey Upholstery with Walnut-Toned Frame",
+        "care": "Vacuum fabric surfaces regularly. Clean spills immediately using a mild fabric-safe cleaner. Avoid placing the bed in direct sunlight to prevent discoloration. Dust wooden components with a soft cloth.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Bed Cot"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLiora2.jpg?alt=media&token=8341ad1a-5baa-4f2a-a14f-ea204bfc1933",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLiora1.jpg?alt=media&token=9a7b28d3-f6dc-4e13-9dac-43d084789f7b",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLiora3.jpg?alt=media&token=96517bcb-e698-4b29-8369-d744dc299e45",
+        "name": "Liora",
+        "title": "Night Stand",
+        "disc": "A refined blend of function and elegance, Liora keeps essentials close while adding a quiet charm to your bedroom. Its flowing rounded edges, solid wood body, and handcrafted cane drawer front create a warm and timeless aesthetic. Liora brings both utility and beauty together, making it a graceful companion to any modern bedroom setting.",
+        "material": "Solid Wood Structure / Handwoven Natural Cane Drawer Front / Matte Lacquer Finish / Metal Glide Drawer System",
+        "color": "Deep Walnut Brown with Natural Cane",
+        "care": "Dust regularly with a dry soft cloth. Avoid moisture contact with cane. Wipe gently with a damp cloth when needed. Keep away from direct sunlight to maintain wood color and cane durability.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Night Stand"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLuresta1.jpg?alt=media&token=72f8c77e-5f08-44c8-b946-c5f32fa29255",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLuresta2.jpg?alt=media&token=81609d1c-aa9c-4276-b942-51958920c752",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLuresta3.jpg?alt=media&token=37f2aca3-6aae-4ee0-a724-2093cde8ed4b",
+        "name": "Luresta",
+        "title": "Bed Cot",
+        "disc": "With its soft lines, refined structure, and thoughtfully balanced proportions, Luresta turns your bedroom into a place of quiet luxury. The warm wooden finish, paired with upholstered accents, creates a comforting, contemporary presence. Designed for those who believe rest should be as beautiful as it is serene, Luresta offers a timeless blend of style and tranquility.",
+        "material": "Solid Wood Frame / Upholstered Headboard Panels / Premium Mattress Support Base / Matte Lacquer Finish",
+        "color": "Walnut Brown Frame with Mocha Upholstered Headboard",
+        "care": "Dust wooden surfaces regularly. Clean upholstery with a mild fabric-safe cleanser. Keep away from direct sunlight to prevent fading. Wipe gently with a damp cloth when needed.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Bed Cot"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLureth1.jpg?alt=media&token=996becef-d8a1-42bd-b818-2afa745648f7",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLureth2.jpg?alt=media&token=e088dd3a-f019-4b22-b7b8-cc00cab04de3",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLureth3.jpg?alt=media&token=a1f97c47-0fa9-47d8-a1c3-91495c5e14c0",
+        "name": "Lureth",
+        "title": "Chair",
+        "disc": "Blending craftsmanship with quiet sophistication, Lureth brings a touch of warmth and luxury into spaces that value design with meaning. The rich wooden frame paired with a handwoven cane backrest and an intricately patterned upholstered seat creates a piece that feels both timeless and expressive.",
+        "material": "Solid Wood Frame / Handwoven Cane Backrest / Premium Upholstered Fabric Seat / Matte Lacquer Finish",
+        "color": "Walnut Brown Frame with Patterned Terracotta Seat",
+        "care": "Clean cane gently with a dry brush. Dust wooden surfaces regularly. Dab fabric with a mild upholstery cleaner when needed. Avoid prolonged sun exposure to preserve color and material longevity.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Living",
+            "subCategory": "Chairs & Loveseats"
+        }
+    },
+    {
+        "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FMalvera2.jpg?alt=media&token=8a9c2950-0cf0-4d43-91b1-c6482dde322f",
+        "image": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FMalvera3.jpg?alt=media&token=7b48143c-c132-40f5-ad97-1d17c166fba6",
+        "image2": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FMalvera1.jpg?alt=media&token=012e6751-ce09-494f-9eac-3fb3ce0e438c",
+        "name": "Malvera",
+        "title": "Bed Cot",
+        "disc": "Where elegance meets strength. Malvera blends contemporary structure with soft, inviting comfort, creating a bed that enhances modern living. With its sleek frame, refined design language, and warm earthy bedding tones, Malvera brings balance, beauty, and lasting comfort to any bedroom space.",
+        "material": "Solid Wood Frame / Powder-Coated Metal Posts / Premium Upholstered Headboard / High-Durability Finish",
+        "color": "Olive Green Frame with Mustard & Taupe Bedding Accents",
+        "care": "Dust regularly with a dry cloth. Clean the frame gently using a soft damp cloth. Avoid harsh chemicals. Rotate and air bedding fabrics to maintain freshness and longevity.",
+        "year": "2024 Collection",
+        "cat": {
+            "category": "Bedroom",
+            "subCategory": "Bed Cot"
+        }
     }
-
-
-
-
 ];
 
 const categories = {
