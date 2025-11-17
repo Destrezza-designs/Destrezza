@@ -946,6 +946,7 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
 
                                 key={`desktop-${index}`} className=" h-fit">
                                 <div className='relative h-[428px] rounded-[8px] overflow-hidden'>
+                                    <p className={` ${index < 5 ? 'flex' : 'hidden'} absolute top-[12px] left-[12px] px-[8px] py-[0px] text-[12px] font-bold rounded-[12px] uppercase bg-white`} >NEW</p>
                                     <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent'></div>
                                     <Image 
                                         src={item.mainImage} 
