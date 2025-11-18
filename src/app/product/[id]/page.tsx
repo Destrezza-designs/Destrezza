@@ -23,7 +23,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Accent | Lounge Chairs"
-    }
+    },
+    "id": 1
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FArvonic1.jpg?alt=media&token=47ca6abd-8138-4956-b29e-fbcc473415ac",
@@ -39,7 +40,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Consoles"
-    }
+    },
+    "id": 2
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FAshcaen1.png?alt=media&token=b5aa56a6-c2ab-4c3f-8b01-e34195ad5af4",
@@ -55,7 +57,8 @@ const data = [
     "cat": {
       "category": "Dining",
       "subCategory": "Dining Tables"
-    }
+    },
+    "id": 3
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FAshrattan3.png?alt=media&token=8cf96504-6e96-40c0-9197-297dfc51e8d3",
@@ -71,7 +74,8 @@ const data = [
     "cat": {
       "category": "Dining",
       "subCategory": "Dining Collections"
-    }
+    },
+    "id": 4
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FAshtone3.png?alt=media&token=dcd66bf4-74fa-4f7d-ac27-c80a903dab85",
@@ -87,7 +91,8 @@ const data = [
     "cat": {
       "category": "Dining",
       "subCategory": "Dining Tables"
-    }
+    },
+    "id": 5
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FAureo1.jpg?alt=media&token=3195344b-42b8-4f35-9f7a-358a00f7b762",
@@ -103,7 +108,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Accent | Lounge Chairs"
-    }
+    },
+    "id": 6
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FBansih2.png?alt=media&token=cb16bfc7-ed60-473e-b4c6-a944a6f8fc00",
@@ -119,7 +125,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Sofas & Sectionals"
-    }
+    },
+    "id": 7
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCarbon2.png?alt=media&token=e4f92ec4-4aad-4440-9ca8-8e42c3d3d854",
@@ -135,7 +142,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Accent | Lounge Chairs"
-    }
+    },
+    "id": 8
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCavora3.jpg?alt=media&token=8fe0a2c6-9e02-459a-9e31-96e1af0becca",
@@ -151,7 +159,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Sofas & Sectionals"
-    }
+    },
+    "id": 9
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FClyra1.jpg?alt=media&token=aa49a21f-4880-4a68-88d6-6fd4aaa6b257",
@@ -167,7 +176,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Accent | Lounge Chairs"
-    }
+    },
+    "id": 10
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCosmos1.png?alt=media&token=cc19c536-4f5c-451b-a5f0-6b29188c8592",
@@ -183,7 +193,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Consoles"
-    }
+    },
+    "id": 11
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCrown1.png?alt=media&token=b037495f-4153-482d-b913-dbbf5f39d23e",
@@ -199,7 +210,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Accent | Lounge Chairs"
-    }
+    },
+    "id": 12
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FDevora1.jpg?alt=media&token=db3adf7a-9504-4edf-9ec5-9541b0028aa7",
@@ -215,7 +227,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Consoles & Sideboards"
-    }
+    },
+    "id": 13
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FDavrik1.jpg?alt=media&token=11be0be6-a9c1-42a3-923f-736f091b2513",
@@ -231,7 +244,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Coffee Tables"
-    }
+    },
+    "id": 14
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FElaris3.jpg?alt=media&token=ef6edd1b-e7c0-4885-83c1-ba24dd952f4b",
@@ -247,7 +261,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Accent | Lounge Chairs"
-    }
+    },
+    "id": 15
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FElstra3.jpg?alt=media&token=04309f26-7d32-4094-874e-693b5bfc16d3",
@@ -263,7 +278,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Loungers"
-    }
+    },
+    "id": 16
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFlummox3.png?alt=media&token=ac60f135-4d11-4dab-aceb-411eb3d4ccea",
@@ -279,7 +295,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Beds"
-    }
+    },
+    "id": 17
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFlurea1.jpg?alt=media&token=ae8cddfb-cc53-4e5a-b361-b951066fa23e",
@@ -295,7 +312,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Accent | Lounge Chairs"
-    }
+    },
+    "id": 18
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FHeaven3.png?alt=media&token=d657f2ec-5b17-47d7-a4b7-1ffcab33c1b8",
@@ -311,7 +329,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Sofas & Sectionals"
-    }
+    },
+    "id": 19
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FHeavenChair2.png?alt=media&token=3c2fb938-349f-4ac7-b92b-98693f98bcf0",
@@ -327,7 +346,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Chairs & Loveseats"
-    }
+    },
+    "id": 20
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FHelm1.png?alt=media&token=83ac9fb6-baef-4a8f-8a50-bbdf52fc7084",
@@ -343,7 +363,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Chairs & Loveseats"
-    }
+    },
+    "id": 21
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FIsmara1.jpg?alt=media&token=7fa20b61-9c1d-4987-8180-378684c6ac85",
@@ -359,7 +380,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Bed Cot"
-    }
+    },
+    "id": 22
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FKaelix1.jpg?alt=media&token=4a25f6b9-379e-43fa-92fa-6a987ac3a488",
@@ -375,7 +397,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Accent | Lounge Chairs"
-    }
+    },
+    "id": 23
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFLY09099%20Large.png?alt=media&token=a819db1c-2d9f-4124-a150-3a5b8e3c8fb0",
@@ -391,7 +414,8 @@ const data = [
     "cat": {
       "category": "Home Office",
       "subCategory": "Writing Desk"
-    }
+    },
+    "id": 24
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLiora2.jpg?alt=media&token=8341ad1a-5baa-4f2a-a14f-ea204bfc1933",
@@ -407,7 +431,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Night Stand"
-    }
+    },
+    "id": 25
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLuresta1.jpg?alt=media&token=72f8c77e-5f08-44c8-b946-c5f32fa29255",
@@ -423,7 +448,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Bed Cot"
-    }
+    },
+    "id": 26
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLureth1.jpg?alt=media&token=996becef-d8a1-42bd-b818-2afa745648f7",
@@ -439,7 +465,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Chairs & Loveseats"
-    }
+    },
+    "id": 27
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FMalvera2.jpg?alt=media&token=8a9c2950-0cf0-4d43-91b1-c6482dde322f",
@@ -455,7 +482,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Bed Cot"
-    }
+    },
+    "id": 28
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FMeridian1.png?alt=media&token=e30c0f29-7f21-4a17-988d-ab0ff04e6b78",
@@ -471,7 +499,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Consoles"
-    }
+    },
+    "id": 29
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FNoir1.jpg?alt=media&token=f9e855ce-23d2-46bd-a597-d13fb44197e5",
@@ -487,7 +516,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Consoles"
-    }
+    },
+    "id": 30
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FNuvra1.jpg?alt=media&token=d427783c-c227-47ba-9a5d-00b2be185c01",
@@ -503,7 +533,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Coffee Tables"
-    }
+    },
+    "id": 31
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Forren1.jpg?alt=media&token=c69efd63-d3a9-4859-816f-b4a3edc02ffe",
@@ -519,7 +550,8 @@ const data = [
     "cat": {
       "category": "Dining",
       "subCategory": "Dining Chairs"
-    }
+    },
+    "id": 32
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Forvv1.jpg?alt=media&token=c9546ad6-c77a-4502-926a-61030cfa4172",
@@ -535,7 +567,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Nightstands"
-    }
+    },
+    "id": 33
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FOrvessa1.jpg?alt=media&token=af1a015c-1910-44fb-b977-a926464bf145",
@@ -551,7 +584,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Beds"
-    }
+    },
+    "id": 34
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fravelle1.jpg?alt=media&token=6553e5d1-94cd-4f4d-a4d5-2487181d22e6",
@@ -567,7 +601,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Beds"
-    }
+    },
+    "id": 35
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsava1.jpg?alt=media&token=29bc5585-ea79-4196-86ff-1636c80942d3",
@@ -583,7 +618,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Nightstands"
-    }
+    },
+    "id": 36
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsavannah1.jpg?alt=media&token=376ffb56-e153-4a63-b626-92365351f5cd",
@@ -599,7 +635,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Beds"
-    }
+    },
+    "id": 37
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fserra1.jpg?alt=media&token=1d75e126-0c97-43b5-b332-979f30f7f9c7",
@@ -615,7 +652,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Accent | Lounge Chairs"
-    }
+    },
+    "id": 38
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fsylvara1.jpg?alt=media&token=f5f11cf5-99d8-433e-9aed-a4803ff0a129",
@@ -631,7 +669,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Beds"
-    }
+    },
+    "id": 39
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FThaliora1.jpg?alt=media&token=5e9a5bcc-8c6e-4b6d-b6ce-a1c59e0bb362",
@@ -647,7 +686,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Nightstands"
-    }
+    },
+    "id": 40
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2Fthaliora2.jpg?alt=media&token=260fd1c6-279e-43ad-90b2-1375d19c76fb",
@@ -663,7 +703,8 @@ const data = [
     "cat": {
       "category": "Bedroom",
       "subCategory": "Beds"
-    }
+    },
+    "id": 41
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FWellash1.png?alt=media&token=2d733f2c-3912-4cba-ad87-45d394c8ebc5",
@@ -679,7 +720,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Chairs & Loveseats"
-    }
+    },
+    "id": 42
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FZereth1.jpg?alt=media&token=f9ecf2b0-1310-422b-8e59-2d59295faec0",
@@ -695,7 +737,8 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Consoles"
-    }
+    },
+    "id": 43
   },
   {
     "mainImage": "https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FZigZag1.png?alt=media&token=faa44047-5224-4d63-a477-5d111dcbe8a2",
@@ -711,10 +754,10 @@ const data = [
     "cat": {
       "category": "Living",
       "subCategory": "Accent | Lounge Chairs"
-    }
+    },
+    "id": 44
   }
 ]
-
 
 
 const Page = () => {
