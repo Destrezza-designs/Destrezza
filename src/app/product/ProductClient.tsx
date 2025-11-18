@@ -889,6 +889,11 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
     };
       }, []);
     
+
+    const resetFilter = () => {
+        setSelectedFilters([]);
+        setMatchItems(true);
+    };
     
 
   return (
@@ -947,34 +952,43 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                     ))}
                 </div>
                 <div>
-                    {matchItems ? '' : <p className='text-[24px] mb-[12px]' >Sorry No items, showing all Products</p> }
-                    <div className="hidden lg:grid grid-cols-2 h-fit justify-start gap-[8px] gap-x-[8px] ">
-                        
-                        {filteredDataState.map((item, index) => (
-                            <button 
-                                onClick={() => {
-                                    router.push(`/product/${index+1}`)
-                                }}
-
-                                key={`desktop-${index}`} className=" h-fit">
-                                <div className='relative h-[428px] rounded-[8px] overflow-hidden'>
-                                    <p className={` ${newProducts.includes(index) ? 'flex' : 'hidden'} absolute top-[12px] left-[12px] px-[8px] py-[0px] text-[12px] font-bold rounded-[12px] uppercase bg-white`} >NEW</p>
-                                    <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent'></div>
-                                    <Image 
-                                        src={item.mainImage} 
-                                        alt={item.name} 
-                                        width={1000} 
-                                        height={1000} 
-                                        className=" h-full object-cover"
-                                    />
-                                    <div className='absolute bottom-0 left-0 p-[20px] text-white text-left'>
-                                        <p className='text-[36px] font-medium uppercase'>{item.name}</p>
-                                        <p className='text-[20px] mt-[-10px] font-extralight uppercase'>{item.title}</p>
-                                    </div>
-                                </div>
-                            </button>
-                        ))}
+                    <div className='w-[70vw]' >
+                        {matchItems ? '' : <p className='text-[24px] mb-[12px]' >Sorry No items, showing all Products</p> }
+                        {matchItems ? '' : <button
+                            onClick={resetFilter}
+                            className='text-[14px] mb-[12px] bg-black text-white px-[24px] py-[5px] rounded-[24px]' >Reset Filter</button> }
                     </div>
+                    {
+                        matchItems ?
+                            <div className="hidden lg:grid grid-cols-2 h-fit justify-start gap-[8px] gap-x-[8px] ">
+                        
+                                {filteredDataState.map((item, index) => (
+                                    <button 
+                                        onClick={() => {
+                                            router.push(`/product/${index+1}`)
+                                        }}
+
+                                        key={`desktop-${index}`} className=" h-fit">
+                                        <div className='relative h-[428px] rounded-[8px] overflow-hidden'>
+                                            <p className={` ${newProducts.includes(index) ? 'flex' : 'hidden'} absolute top-[12px] left-[12px] px-[8px] py-[0px] text-[12px] font-bold rounded-[12px] uppercase bg-white`} >NEW</p>
+                                            <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent'></div>
+                                            <Image 
+                                                src={item.mainImage} 
+                                                alt={item.name} 
+                                                width={1000} 
+                                                height={1000} 
+                                                className=" h-full object-cover"
+                                            />
+                                            <div className='absolute bottom-0 left-0 p-[20px] text-white text-left'>
+                                                <p className='text-[36px] font-medium uppercase'>{item.name}</p>
+                                                <p className='text-[20px] mt-[-10px] font-extralight uppercase'>{item.title}</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                ))}
+                            </div>
+                        : ''
+                    }
                 </div>
             </div>
 
@@ -1030,38 +1044,45 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                         <p className='text-[14px]   flex justify-center items-center gap-[10px] ' >Filter <GiSettingsKnobs size={20} className='transform rotate-90' /></p>
                     </button>
                 </div>
-                {matchItems ? '' : <p className='text-[12px]' >Sorry No items, showing all Products</p> }
-                <div className="lg:hidden grid grid-cols-2 gap-[3px] gap-y-[3px] mt-[14px] w-full">
-                    {filteredDataState.map((item, index) => (
-                        <button 
-                            key={`mobile-${index}`} 
-                            onClick={() => router.push(`/product/${index + 1}`)}
-                            className="flex flex-col h-fit"
-                            >
-                            <div className="relative h-[45vw] w-full rounded-[8px] overflow-hidden">
-                                {/* Gradient overlay */}
-                                <p className={` ${newProducts.includes(index) ? 'flex' : 'hidden'} z-10 absolute top-[12px] left-[12px] px-[8px] py-[0px] text-[12px] font-bold rounded-[12px] uppercase bg-white`} >NEW</p>
-                                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent"></div>
-
-                                {/* Image */}
-                                <Image
-                                    blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'
-                                    src={item.mainImage}
-                                    alt={item.name}
-                                    fill
-                                    className="object-cover w-full h-full"
-                                    sizes="(max-width: 768px) 50vw, 100vw"
-                                    />
-
-                                {/* Title overlay */}
-                                <div className="absolute bottom-0 left-0 p-[10px] text-white text-left">
-                                    <p className="text-[18px] font-medium uppercase">{item.name}</p>
-                                    <p className="text-[12px] mt-[-4px] font-extralight uppercase">{item.title}</p>
-                                </div>
-                            </div>
-                        </button>
-                    ))}
+                <div className='w-[70vw]' >
+                    {matchItems ? '' : <p className='text-[12px]' >Sorry No items, showing all Products</p> }
+                    {matchItems ? '' : <button
+                        onClick={resetFilter}
+                        className='text-[12px] mt-[12px] mb-[12px] bg-black text-white px-[24px] py-[5px] rounded-[24px]' >Reset Filter</button> }
                 </div>
+                {matchItems ?
+                    <div className="lg:hidden grid grid-cols-2 gap-[3px] gap-y-[3px] mt-[14px] w-full">
+                        {filteredDataState.map((item, index) => (
+                            <button 
+                                key={`mobile-${index}`} 
+                                onClick={() => router.push(`/product/${index + 1}`)}
+                                className="flex flex-col h-fit"
+                                >
+                                <div className="relative h-[45vw] w-full rounded-[8px] overflow-hidden">
+                                    {/* Gradient overlay */}
+                                    <p className={` ${newProducts.includes(index) ? 'flex' : 'hidden'} z-10 absolute top-[12px] left-[12px] px-[8px] py-[0px] text-[12px] font-bold rounded-[12px] uppercase bg-white`} >NEW</p>
+                                    <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent"></div>
+
+                                    {/* Image */}
+                                    <Image
+                                        blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'
+                                        src={item.mainImage}
+                                        alt={item.name}
+                                        fill
+                                        className="object-cover w-full h-full"
+                                        sizes="(max-width: 768px) 50vw, 100vw"
+                                        />
+
+                                    {/* Title overlay */}
+                                    <div className="absolute bottom-0 left-0 p-[10px] text-white text-left">
+                                        <p className="text-[18px] font-medium uppercase">{item.name}</p>
+                                        <p className="text-[12px] mt-[-4px] font-extralight uppercase">{item.title}</p>
+                                    </div>
+                                </div>
+                            </button>
+                        ))}
+                    </div>
+                    : ''}
             </div>
 
         </div>
