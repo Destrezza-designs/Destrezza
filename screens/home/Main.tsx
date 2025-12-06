@@ -2,10 +2,9 @@ import React from 'react'
 import Header from '../../components/utils/Header'
 import paper from '@/public/home/Paper44.png'
 import Image from 'next/image'
-import Img3 from '@/public/home/Img3.png'
-import about_1 from '@/public/home-page-1.jpeg'
-import about_2 from '@/public/home-page-2.jpeg'
-import about_3 from '@/public/home/Img.png'
+import about_1 from '@/public/updatedImages/43.jpg'
+import about_2 from '@/public/updatedImages/6.jpg'
+import about_3 from '@/public/updatedImages/48.jpg'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -38,11 +37,11 @@ const Main = () => {
   };
 
   const carouselImages = [
-    '/12.jpeg',
-    '/14.jpeg',
-    '/home/bg-sm-landing.jpg',
-    '/36.jpeg',
-    '/60.jpeg'
+    '/updatedImages/8.jpg',
+    '/updatedImages/40.jpg',
+    '/updatedImages/56.jpg',
+    '/updatedImages/59.jpg',
+    '/updatedImages/65.jpg'
   ];
 
   return (
