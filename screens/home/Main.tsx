@@ -184,7 +184,11 @@ const Main = () => {
             }}
             className="h-full w-full"
           >
-            {['/bg.png', '/home-page-1.jpeg', '/home-page-2.jpeg'].map((image, index) => (
+            {['/updatedImages/8.jpg',
+              '/updatedImages/40.jpg',
+              '/updatedImages/56.jpg',
+              '/updatedImages/59.jpg',
+              '/updatedImages/65.jpg'].map((image, index) => (
               <div key={index} className="h-[500px] w-full">
                 <div 
                   className="h-full w-full bg-cover bg-center"
@@ -289,11 +293,11 @@ const Main = () => {
             data-aos="fade-up"
             className="mx-[16px] relative h-[200px] bg-cover bg-center rounded-xl overflow-hidden 
                        border-white"   // 👈 add border classes here
-            style={{ backgroundImage: "url('/home/products/one.png')", backgroundPosition: "left", backgroundSize: "cover",borderRadius:20 }}
+            style={{ backgroundImage: "url('/updatedImages/59.jpg')", backgroundPosition: "left", backgroundSize: "cover",borderRadius:20 }}
           >
             <div className="absolute bottom-4 left-[16px] text-white py-2">
-              <p className={`${inter.className} inter font-[300] text-[24px] leading-[22px]`}>
-                KIZUKI STUDY TABLE
+              <p className={`${inter.className} inter font-[300] text-[24px] leading-[22px] uppercase`}>
+                Aureo Single Seater
               </p>
             </div>
           </div>
@@ -301,11 +305,11 @@ const Main = () => {
             data-aos="fade-up"
             className="mx-[16px] relative h-[200px] bg-cover bg-center rounded-xl overflow-hidden 
                        border-white"   // 👈 add border classes here
-            style={{ backgroundImage: "url('/home/products/two.png')", backgroundPosition: "left", backgroundSize: "cover",borderRadius:20 }}
+            style={{ backgroundImage: "url('/updatedImages/48.jpg')", backgroundPosition: "left", backgroundSize: "cover",borderRadius:20 }}
           >
             <div className="absolute bottom-4 left-[16px] text-white py-2">
-              <p className={`${inter.className} inter font-[300] text-[24px] leading-[22px]`}>
-                COMFISH MASTER
+              <p className={`${inter.className} inter font-[300] text-[24px] leading-[22px] uppercase`}>
+                Elaris Single Seater
               </p>
             </div>
           </div>
@@ -313,7 +317,7 @@ const Main = () => {
             data-aos="fade-up"
             className="mx-[16px] relative h-[200px] bg-cover bg-center rounded-xl overflow-hidden 
                        border-white"   // 👈 add border classes here
-            style={{ backgroundImage: "url('/home/products/third.png')", backgroundPosition: "left", backgroundSize: "cover",borderRadius:20 }}
+            style={{ backgroundImage: "url('/productsShowcase/PP2-34.jpeg')", backgroundPosition: "left", backgroundSize: "cover",borderRadius:20 }}
           >
             <div className="absolute bottom-4 left-[16px] text-white py-2">
               <p className={`${inter.className} inter font-[100] text-[24px] leading-[22px]`}>
