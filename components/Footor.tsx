@@ -133,15 +133,9 @@ const Footor = () => {
                 <p className='text-[13px] text-[#CECDCD] font-[300]' >Terms & Conditions</p>
             </div>
 
-            <div className='flex justify-center items-center my-[9px]' >
-                <p className='text-[17vw] font-[600] flex justify-center items-center' >DESTRE
-                <Image blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'  src={logo} alt='logo' className='h-[12vw] w-auto '  />A</p>
-            </div>
-            <p className='text-center font-[600] text-[5vw] mt-[-2vh] w-[90%] mx-auto '>
-                ART HOUSE
-            </p>
+            <Image alt='logo' src={'/logo-bottom.png'} width={1440} height={900} className='w-[100%] h-auto' />
 
-            <div className=' mt-[35px] text-center' >
+            <div className=' mt-[15px] text-center' >
                 <p className='text-[12px] font-[300] uppercase text-[#FFFFFF80]' >© 2025. Destrezzza Art House. All Rights Reserved</p>
                 <p className='text-[12px] font-[300] uppercase text-[#FFFFFF80]' >Designed with intent by Dosense Creative Co.</p>
             </div>
