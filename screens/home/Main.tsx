@@ -2,9 +2,9 @@ import React from 'react'
 import Header from '../../components/utils/Header'
 import paper from '@/public/home/Paper44.png'
 import Image from 'next/image'
-import about_1 from '@/public/updatedImages/43.jpg'
-import about_2 from '@/public/updatedImages/6.jpg'
-import about_3 from '@/public/updatedImages/48.jpg'
+import about_1 from '@/public/Cover/5.jpg'
+import about_2 from '@/public/Cover/4.jpg'
+import about_3 from '@/public/Cover/3.jpg'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -37,11 +37,11 @@ const Main = () => {
   };
 
   const carouselImages = [
-    '/updatedImages/8.jpg',
-    '/updatedImages/40.jpg',
-    '/updatedImages/56.jpg',
-    '/updatedImages/59.jpg',
-    '/updatedImages/65.jpg'
+    '/Cover/10.jpg',
+    '/Cover/11.jpg',
+    '/Cover/12.jpg',
+    '/Cover/13.jpg',
+    '/Cover/Cavora.jpg'
   ];
 
   return (
@@ -184,11 +184,11 @@ const Main = () => {
             }}
             className="h-full w-full"
           >
-            {['/updatedImages/8.jpg',
-              '/updatedImages/40.jpg',
-              '/updatedImages/56.jpg',
-              '/updatedImages/59.jpg',
-              '/updatedImages/65.jpg'].map((image, index) => (
+            {['/Cover/10.jpg',
+              '/Cover/11.jpg',
+              '/Cover/12.jpg',
+              '/Cover/13.jpg',
+              '/Cover/Cavora.jpg'].map((image, index) => (
               <div key={index} className="h-[500px] w-full">
                 <div 
                   className="h-full w-full bg-cover bg-center"
@@ -362,18 +362,18 @@ const Main = () => {
                 <Image 
                     
                   alt='chair' 
-                  src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FElstra3.jpg?alt=media&token=04309f26-7d32-4094-874e-693b5bfc16d3"} 
+                  src={"/Cover/2.jpg"} 
                   width={150} height={500}
-                  className='rounded-[12px] w-[150px] h-[305px] object-cover object-left' />
+                  className='rounded-[12px] w-[150px] h-[305px] object-cover object-center' />
                 <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
                   <Image   
                     alt='chair' 
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFlurea1.jpg?alt=media&token=ae8cddfb-cc53-4e5a-b361-b951066fa23e"} 
+                    src={"/Cover/5.jpg"} 
                     width={150} height={150}
                     className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
                   <Image   
                     alt='chair' 
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFlummox3.png?alt=media&token=ac60f135-4d11-4dab-aceb-411eb3d4ccea"} 
+                    src={"/Cover/6.jpg"} 
                     width={150} height={150}
                     className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
                   
@@ -384,20 +384,20 @@ const Main = () => {
                 <Image 
                     
                   alt='chair' 
-                  src={'/gallery-images/gallery-images4.jpeg'} 
+                  src={'/Cover/8.jpg'} 
                   width={150} height={500}
-                  className='rounded-[12px] w-[150px] h-[305px] object-cover object-left' />
+                  className='rounded-[12px] w-[150px] h-[305px] object-cover object-center' />
                 <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
                   <Image   
                     alt='chair' 
-                    src={'/gallery-images/gallery-images3-dv.jpeg'} 
+                    src={'/Cover/9.jpg'} 
                     width={150} height={150}
                     className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
                   <Image   
                     alt='chair' 
-                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FHelm1.png?alt=media&token=83ac9fb6-baef-4a8f-8a50-bbdf52fc7084"} 
+                    src={"/Cover/10.jpg"} 
                     width={150} height={150}
-                    className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
+                    className=' rounded-[12px] w-[150px] h-[150px] object-cover ' />
                   
                 </div>
                 

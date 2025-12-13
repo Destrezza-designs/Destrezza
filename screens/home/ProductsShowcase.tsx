@@ -2,13 +2,13 @@
 
 import Image from 'next/image'
 import React from 'react'
-import P1 from '@/public/productsShowcase/58.jpeg'
-import P2 from '@/public/productsShowcase/54.jpeg'
-import P3 from '@/public/productsShowcase/PP2-34.jpeg'
-import P4 from '@/public/productsShowcase/home-page-2.jpeg'
-import P5 from '@/public/productsShowcase/one.jpeg'
-import P6 from '@/public/productsShowcase/48.jpeg'
-import P7 from '@/public/productsShowcase/21.jpeg'
+import P1 from '@/public/Cover/2.jpg'
+import P2 from '@/public/Cover/5.jpg'
+import P3 from '@/public/Cover/6.jpg'
+import P4 from '@/public/Cover/8.jpg'
+import P5 from '@/public/Cover/9.jpg'
+import P6 from '@/public/Cover/10.jpg'
+import P7 from '@/public/Cover/12.jpg'
 import { useRouter } from 'next/navigation'
 
 const ProductsShowcase = () => {
@@ -25,16 +25,16 @@ const ProductsShowcase = () => {
         
             <div data-aos="fade-up" className='flex flex-col gap-[24px]' >
                 <Image   
-                src={P1} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px]' />
+                src={P1} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px] object-cover' />
                 <Image   
-                src={P2} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px]' />
+                src={P2} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px] object-cover' />
             </div>
 
             <div data-aos="fade-up" className='flex flex-col gap-[24px]' >
                 <Image   
-                src={P6} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px]' />
+                src={P6} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px] object-cover' />
                 <Image   
-                src={P7} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px]' />
+                src={P7} alt='Product Image' className='popup rounded-[16px] w-auto h-[600px] object-cover' />
             </div>
             <div data-aos="fade-up" className='flex flex-col gap-[24px]' >
                 <Image   
