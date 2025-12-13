@@ -6,7 +6,6 @@ import ProductsShowcase from './home/ProductsShowcase'
 import Visit from './home/Visit'
 import OurLogo from './home/OurLogo'
 import Footor from '@/components/Footor'
-import FullPageLoader from '@/components/utils/FullPageLoader'
 
 const Landing = () => {
 

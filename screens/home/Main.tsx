@@ -291,13 +291,18 @@ const Main = () => {
 
           <div 
             data-aos="fade-up"
-            className="mx-[16px] relative h-[200px] bg-cover bg-center rounded-xl overflow-hidden 
-                       border-white"   // 👈 add border classes here
-            style={{ backgroundImage: "url('/updatedImages/59.jpg')", backgroundPosition: "left", backgroundSize: "cover",borderRadius:20 }}
+            className="mx-[16px] relative h-[200px] bg-cover bg-center rounded-xl overflow-hidden border-white"
+            style={{ 
+              backgroundImage: `url("https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FArthene3.jpg?alt=media&token=33e17a71-d97f-45c2-8b7f-ac4a2dfe258f")`,
+              backgroundPosition: "left",
+              backgroundSize: "cover",
+              borderRadius: 20
+            }}
           >
+          
             <div className="absolute bottom-4 left-[16px] text-white py-2">
               <p className={`${inter.className} inter font-[300] text-[24px] leading-[22px] uppercase`}>
-                Aureo Single Seater
+                Arthene Single Seater
               </p>
             </div>
           </div>
@@ -305,11 +310,16 @@ const Main = () => {
             data-aos="fade-up"
             className="mx-[16px] relative h-[200px] bg-cover bg-center rounded-xl overflow-hidden 
                        border-white"   // 👈 add border classes here
-            style={{ backgroundImage: "url('/updatedImages/48.jpg')", backgroundPosition: "left", backgroundSize: "cover",borderRadius:20 }}
+            style={{ 
+              backgroundImage: `url("https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FCosmos1.png?alt=media&token=cc19c536-4f5c-451b-a5f0-6b29188c8592")`,
+              backgroundPosition: "left",
+              backgroundSize: "cover",
+              borderRadius: 20
+            }}
           >
             <div className="absolute bottom-4 left-[16px] text-white py-2">
               <p className={`${inter.className} inter font-[300] text-[24px] leading-[22px] uppercase`}>
-                Elaris Single Seater
+                Cosmos Console
               </p>
             </div>
           </div>
@@ -317,7 +327,12 @@ const Main = () => {
             data-aos="fade-up"
             className="mx-[16px] relative h-[200px] bg-cover bg-center rounded-xl overflow-hidden 
                        border-white"   // 👈 add border classes here
-            style={{ backgroundImage: "url('/productsShowcase/PP2-34.jpeg')", backgroundPosition: "left", backgroundSize: "cover",borderRadius:20 }}
+            style={{ 
+              backgroundImage: `url("https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FDavrik3.jpg?alt=media&token=0c612c17-c376-4b02-b519-9d76b5176e45")`,
+              backgroundPosition: "left",
+              backgroundSize: "cover",
+              borderRadius: 20
+            }}
           >
             <div className="absolute bottom-4 left-[16px] text-white py-2">
               <p className={`${inter.className} inter font-[100] text-[24px] leading-[22px]`}>
@@ -347,18 +362,18 @@ const Main = () => {
                 <Image 
                     
                   alt='chair' 
-                  src={about_3} 
+                  src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FElstra3.jpg?alt=media&token=04309f26-7d32-4094-874e-693b5bfc16d3"} 
                   width={150} height={500}
-                  className='rounded-[12px] w-[150px] h-[305px] object-cover' />
+                  className='rounded-[12px] w-[150px] h-[305px] object-cover object-left' />
                 <div className='flex flex-col gap-[4px] lg:gap-[24px]' >
                   <Image   
                     alt='chair' 
-                    src={about_1} 
+                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFlurea1.jpg?alt=media&token=ae8cddfb-cc53-4e5a-b361-b951066fa23e"} 
                     width={150} height={150}
                     className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
                   <Image   
                     alt='chair' 
-                    src={about_2} 
+                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FFlummox3.png?alt=media&token=ac60f135-4d11-4dab-aceb-411eb3d4ccea"} 
                     width={150} height={150}
                     className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
                   
@@ -380,7 +395,7 @@ const Main = () => {
                     className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
                   <Image   
                     alt='chair' 
-                    src={'/gallery-images/gallery-images6-dv.jpeg'} 
+                    src={"https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FHelm1.png?alt=media&token=83ac9fb6-baef-4a8f-8a50-bbdf52fc7084"} 
                     width={150} height={150}
                     className=' rounded-[12px] w-[150px] h-[150px] object-cover' />
                   
