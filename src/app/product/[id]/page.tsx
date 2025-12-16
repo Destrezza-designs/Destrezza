@@ -7,19 +7,23 @@ import Footor from '@/components/Footor';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import ImageLoader from '@/components/utils/ImageLoader';
-import productData from '../productData'
-const { data, categories } = productData;
+import { getProductById } from '../productService'
 
 
 const Page = () => {
 
     const {id} = useParams();
     const idNum = Number(id);
-
+    const product = getProductById(idNum);
+    
     const router = useRouter();
 
-    const [currentImage, setCurrentImage] = useState(data[idNum-1].mainImage);
+    const [currentImage, setCurrentImage] = useState(product?.mainImage || '');
     const [currentDisc,setCurrentDisc] = useState('Material')
+    
+    if (!product) {
+        return <div>Product not found</div>
+    }
 
 
   return (
@@ -32,8 +36,8 @@ const Page = () => {
         </div>
         
         <div className='lg:hidden text-black flex flex-col mt-[40px] mx-[20px] ' >
-            <p className='text-[36px] leading-[40px] font-[500] uppercase  bg-red-5 ' >{data[idNum-1].name}  </p>
-            <p className='text-[15px] font-thin' >{data[idNum-1].title}</p>
+            <p className='text-[36px] leading-[40px] font-[500] uppercase  bg-red-5 ' >{product.name}  </p>
+            <p className='text-[15px] font-thin' >{product.title}</p>
         </div>
 
         <div className='hidden lg:flex flex-col m-[48px]' >
@@ -42,7 +46,7 @@ const Page = () => {
                     <Image 
                         unoptimized  src={currentImage} width={1000} height={1000} className='w-[calc(50vw-250px)] h-full object-cover' alt='Main Image' />
                     <div className='flex flex-col gap-[4px] w-[250px] ' >
-                        {[data[idNum-1].mainImage, data[idNum-1].image, data[idNum-1].image2].map((imgSrc, index) => (
+                        {[product.mainImage, product.image, product.image2].map((imgSrc, index) => (
                             <button 
                                 key={index}
                                 onClick={() => setCurrentImage(imgSrc)}
@@ -61,9 +65,9 @@ const Page = () => {
                     </div>
                 </div>
                 <div className='text-black m-[48px] w-[32vw]'  >
-                    <p className='text-[36px] font-normal' >{data[idNum-1].name}</p>
-                    <p className='text-[15px] font-thin leading-[18px] mt-[-10px]'  >{data[idNum-1].title}</p>
-                    <p className='text-[14px] font-light mt-[10px]' >{data[idNum-1].disc}</p>
+                    <p className='text-[36px] font-normal' >{product.name}</p>
+                    <p className='text-[15px] font-thin leading-[18px] mt-[-10px]'  >{product.title}</p>
+                    <p className='text-[14px] font-light mt-[10px]' >{product.disc}</p>
                     <div className='mt-[25px] gap-[10px]' >
                         <div className='flex text-[14px] font-normal gap-[10px]' >
                             {['Material', 'Designer', 'Type', 'Year'].map((disc) => (

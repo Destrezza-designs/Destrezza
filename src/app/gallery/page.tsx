@@ -3,6 +3,7 @@ import UtilsHeader from '@/components/utils/Header'
 import Image from 'next/image'
 import React from 'react'
 import Footor from '@/components/Footor'
+import AOSProvider from '@/lib/AOSWrapper'
 import image1 from '@/public/gallery-images/gallery-images1.jpeg'
 import image2 from '@/public/gallery-images/gallery-images2.jpeg'
 import image3 from '@/public/gallery-images/gallery-images3.jpeg'
@@ -207,6 +208,7 @@ const data = [
 
 const page = () => {
   return (
+    <AOSProvider>
     <div>
         <div className='hidden lg:flex  mx-[48px] mt-[48px]' >
             <Header />
@@ -556,6 +558,7 @@ const page = () => {
 
         <Footor />
     </div>
+    </AOSProvider>
   )
 }
 

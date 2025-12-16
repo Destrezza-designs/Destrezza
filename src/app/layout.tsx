@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import AOSWrapper from "@/lib/AOSWrapper";
 import { Inter } from "next/font/google";
+import GlobalLoader from "@/components/utils/GlobalLoader";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
 export const metadata: Metadata = {
   title: "Destrezzza Art House",
@@ -18,14 +18,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  
   return (
     <html lang="en">
-      <body className={inter.className} >
-        <AOSWrapper >
+      <body className={inter.className}>
+        <GlobalLoader />
         {children}
-        </AOSWrapper>
       </body>
     </html>
   );

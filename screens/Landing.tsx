@@ -1,32 +1,33 @@
-'use client'
-import React, { useEffect, useState } from 'react'
-import Main from './home/Main'
-import Products from './home/Products'
-import ProductsShowcase from './home/ProductsShowcase'
-import Visit from './home/Visit'
-import OurLogo from './home/OurLogo'
+import React from 'react'
+import dynamic from 'next/dynamic'
 import Footor from '@/components/Footor'
 
+// Dynamic imports for client components
+const Main = dynamic(() => import('./home/Main'), {
+  loading: () => <div className="h-screen bg-gray-100 animate-pulse" />
+})
+const Products = dynamic(() => import('./home/Products'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+})
+const ProductsShowcase = dynamic(() => import('./home/ProductsShowcase'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+})
+const Visit = dynamic(() => import('./home/Visit'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+})
+const OurLogo = dynamic(() => import('./home/OurLogo'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+})
+
 const Landing = () => {
-
-  const [loading,setLoading] = useState(true);
-
-  useEffect(()=>{
-    setTimeout(()=>{
-      setLoading(false);
-    },5000)
-  },[])
   return (
     <div>
-
-        {/* {loading && <FullPageLoader />} */}
-
-        <Main />
-        <Products />
-        <ProductsShowcase />
-        <Visit />
-        <OurLogo />
-        <Footor />
+      <Main />
+      <Products />
+      <ProductsShowcase />
+      <Visit />
+      <OurLogo />
+      <Footor />
     </div>
   )
 }

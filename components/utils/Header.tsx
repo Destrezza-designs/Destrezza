@@ -4,6 +4,7 @@ import Image from 'next/image'
 import logo from '@/public/header/Icon.png'
 import brand from '@/public/header/Brand.png'
 import { useRouter,usePathname } from 'next/navigation'
+import Link from 'next/link'
 import { FaAngleDown } from "react-icons/fa6";
 
   /**
@@ -77,22 +78,22 @@ const Header = () => {
           <nav className=' lg:flex md:hidden sm:hidden justify-center items-center text-[14px]' >
             <ul className="hidden md:flex gap-8 text-sm text-white tracking-widest">
               <li className="cursor-pointer hover:text-yellow-400">
-                <button className='text-[12px]' >HOME</button>
+                <Link href="/" className='text-[12px]'>HOME</Link>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button className='text-[12px]'  onClick={() => router.push('/about')} >ABOUT US</button>
+                <Link href="/about" className='text-[12px]' prefetch={true}>ABOUT US</Link>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button className='text-[12px]'  onClick={() => router.push('/product')} >PRODUCTS </button>
+                <Link href="/product" className='text-[12px]' prefetch={true}>PRODUCTS</Link>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button className='text-[12px]'  onClick={() => router.push('/gallery')} >GALLERY</button>
+                <Link href="/gallery" className='text-[12px]' prefetch={true}>GALLERY</Link>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
                 <button className='text-[12px]'  onClick={handleScroll} >OUR LOGO</button>
               </li>
               <li className="cursor-pointer hover:text-yellow-400">
-                <button className='text-[12px]'  onClick={() => router.push('/contact')} >CONTACT</button>
+                <Link href="/contact" className='text-[12px]' prefetch={true}>CONTACT</Link>
               </li>
             </ul>
           </nav>

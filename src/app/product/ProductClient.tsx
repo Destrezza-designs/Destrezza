@@ -3,11 +3,11 @@ import Footor from '@/components/Footor'
 import Header from '@/components/product/Header'
 import UtilsHeader from '@/components/utils/Header'
 import Image from 'next/image'
-import React,{useState,useEffect, useMemo} from 'react'
+import React,{useState,useEffect} from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { GiSettingsKnobs } from "react-icons/gi";
-import productData from "./productData"
-const { data, categories } = productData;
+import { getProducts, getFilteredProducts, categories } from './productService'
+import { useCallback } from 'react'
   
 
 type DataItem = {
@@ -48,12 +48,31 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
 
     const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
     const [mobileViewNavbar,setMobileViewNavbar] = useState(false);
-    const [filteredDataState, setFilteredDataState] = useState<DataItem[]>(data);
+    const [currentPage, setCurrentPage] = useState(1)
+    const [filteredDataState, setFilteredDataState] = useState<DataItem[]>([]);
     const [matchItems,setMatchItems] = useState(true);
+    const [hasMore, setHasMore] = useState(true)
+    const [loading, setLoading] = useState(false)
+    
+    const ITEMS_PER_PAGE = 12
     
 
-  // Toggle checkbox (user-driven)
-   const handleFilterChange = (item: string) => {
+  const loadProducts = useCallback(async (filters: string[], page: number = 1) => {
+    setLoading(true)
+    const result = getFilteredProducts(filters, page, ITEMS_PER_PAGE)
+    
+    if (page === 1) {
+      setFilteredDataState(result.products)
+    } else {
+      setFilteredDataState(prev => [...prev, ...result.products])
+    }
+    
+    setHasMore(result.hasMore)
+    setMatchItems(result.products.length > 0)
+    setLoading(false)
+  }, [ITEMS_PER_PAGE])
+
+  const handleFilterChange = useCallback((item: string) => {
     const newSelected = selectedFilters.includes(item)
         ? selectedFilters.filter(f => f !== item)
         : [...selectedFilters, item];
@@ -61,105 +80,48 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
     localStorage.setItem("selectedCat", JSON.stringify(""));
     localStorage.setItem("selectedItem", JSON.stringify(""));
     setSelectedFilters(newSelected);
+    setCurrentPage(1)
+    loadProducts(newSelected, 1)
+  }, [selectedFilters, loadProducts])
 
-    const filtered = filterDataByFilters(newSelected);
-
-    if (filtered.length === 0) {
-        console.log("⚠️ Filtered data is empty for selected filters:", newSelected);
-        setFilteredDataState(data);
-        setMatchItems(false);
-    } else {
-        setFilteredDataState(filtered);
-        setMatchItems(true);
+  const loadMore = useCallback(() => {
+    if (!loading && hasMore) {
+      loadProducts(selectedFilters, currentPage + 1)
+      setCurrentPage(prev => prev + 1)
     }
-    };
-
-    const normalize = (text: string) =>
-        text.toLowerCase().replace(/\s+/g, " ").trim();
-
-
-
-    // Split a filter label into meaningful words
-    const splitFilterWords = (filter: string) =>
-        filter
-          .split(/[\s&|]+/) // split by space, &, or |
-          .map((w) => w.toLowerCase())
-          .map((w) => {
-            if (w.endsWith("es")) return w.slice(0, -2);
-            if (w.endsWith("s")) return w.slice(0, -1);
-            return w;
-          })
-          .filter(Boolean);
-
-        
-      
-
-    // Filter data
-    const filterDataByFilters = (activeFilters: string[]) => {
-        if (activeFilters.length === 0) return data;
-
-        return data.filter((item) => {
-            const text = normalize(`${item.name} ${item.title} ${item.disc}`);
-            const catCategory = normalize(item.cat?.category || "");
-            const catSub = normalize(item.cat?.subCategory || "");
-
-            // Match against product info or category/subcategory fields
-            return activeFilters.some((filter) => {
-            const f = normalize(filter);
-            return (
-                text.includes(f) ||
-                catCategory.includes(f) ||
-                catSub.includes(f)
-            );
-            });
-        });
-        };
+  }, [loading, hasMore, selectedFilters, currentPage, loadProducts])
 
     // No manual history patching needed; we rely on useSearchParams above.
     
     
 
-      useEffect(() => {
-
-      function sortDataAlphabetically(data: DataItem[]) {
-          return [...data]
-              .sort((a, b) => a.name.localeCompare(b.name))
-              .map((item, index) => ({
-                  ...item,
-                  id: index + 1
-              }));
+  useEffect(() => {
+    // Load initial products
+    loadProducts([], 1)
+    
+    const handleStorageChange = () => {
+      const Item = JSON.parse(localStorage.getItem("selectedItem") || "null");
+      if (Item && Item !== "no-filter") {
+        handleFilterChange(Item);
       }
-
-        const sortedData = sortDataAlphabetically(data);
-
-        console.log(sortedData);
-
-        const handleStorageChange = () => {
-        const Item = JSON.parse(localStorage.getItem("selectedItem") || "null");
-        if (Item && Item !== "no-filter") {
-            console.log("🔁 Detected storage change, applying filter:", Item);
-            handleFilterChange(Item);
-        }
     };
 
-    // Listen for custom event or localStorage updates
     window.addEventListener("storage", handleStorageChange);
     window.addEventListener("productFilterUpdate", handleStorageChange);
-
-    // Run once initially too
     handleStorageChange();
 
     return () => {
-        window.removeEventListener("storage", handleStorageChange);
-        window.removeEventListener("productFilterUpdate", handleStorageChange);
+      window.removeEventListener("storage", handleStorageChange);
+      window.removeEventListener("productFilterUpdate", handleStorageChange);
     };
-      }, []);
+  }, [loadProducts, handleFilterChange]);
     
 
-    const resetFilter = () => {
-        setSelectedFilters([]);
-        setMatchItems(true);
-    };
+  const resetFilter = useCallback(() => {
+    setSelectedFilters([]);
+    setCurrentPage(1)
+    loadProducts([], 1)
+  }, [loadProducts]);
     
 
   return (
@@ -224,26 +186,26 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                             onClick={resetFilter}
                             className='text-[14px] mb-[12px] bg-black text-white px-[24px] py-[5px] rounded-[24px]' >Reset Filter</button> }
                     </div>
-                    {
-                        matchItems ?
-                            <div className="hidden lg:grid grid-cols-2 h-fit justify-start gap-[8px] gap-x-[8px] ">
-                        
+                    {matchItems ? (
+                        <>
+                            <div className="hidden lg:grid grid-cols-2 h-fit justify-start gap-[8px] gap-x-[8px]">
                                 {filteredDataState.map((item, index) => (
                                     <button 
-                                        onClick={() => {
-                                            router.push(`/product/${item.id}`)
-                                        }}
-
-                                        key={`desktop-${index}`} className=" h-fit">
+                                        onClick={() => router.push(`/product/${item.id}`)}
+                                        key={`desktop-${index}`} 
+                                        className="h-fit"
+                                    >
                                         <div className='relative h-[428px] rounded-[8px] overflow-hidden'>
                                             <p className={` ${newProducts.includes(index) ? 'flex' : 'hidden'} absolute top-[12px] left-[12px] px-[8px] py-[0px] text-[12px] font-bold rounded-[12px] uppercase bg-white`} >NEW</p>
                                             <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent'></div>
                                             <Image 
                                                 src={item.mainImage} 
                                                 alt={item.name} 
-                                                width={1000} 
-                                                height={1000} 
-                                                className=" h-full object-cover"
+                                                width={400} 
+                                                height={428} 
+                                                sizes="(max-width: 768px) 50vw, 33vw"
+                                                priority={index < 4}
+                                                className="h-full object-cover"
                                             />
                                             <div className='absolute bottom-0 left-0 p-[20px] text-white text-left'>
                                                 <p className='text-[36px] font-medium uppercase'>{item.name}</p>
@@ -253,8 +215,19 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                                     </button>
                                 ))}
                             </div>
-                        : ''
-                    }
+                            {hasMore && (
+                                <div className="flex justify-center mt-8">
+                                    <button 
+                                        onClick={loadMore}
+                                        disabled={loading}
+                                        className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 disabled:opacity-50"
+                                    >
+                                        {loading ? 'Loading...' : 'Load More'}
+                                    </button>
+                                </div>
+                            )}
+                        </>
+                    ) : null}
                 </div>
             </div>
 
@@ -316,39 +289,48 @@ const ProductClient = ({ initialCat,initialType }: Props) => {
                         onClick={resetFilter}
                         className='text-[12px] mt-[12px] mb-[12px] bg-black text-white px-[24px] py-[5px] rounded-[24px]' >Reset Filter</button> }
                 </div>
-                {matchItems ?
-                    <div className="lg:hidden grid grid-cols-2 gap-[3px] gap-y-[3px] mt-[14px] w-full">
-                        {filteredDataState.map((item, index) => (
-                            <button 
-                                key={`mobile-${index}`} 
-                                onClick={() => router.push(`/product/${item.id}`)}
-                                className="flex flex-col h-fit"
+                {matchItems ? (
+                    <>
+                        <div className="lg:hidden grid grid-cols-2 gap-[3px] gap-y-[3px] mt-[14px] w-full">
+                            {filteredDataState.map((item, index) => (
+                                <button 
+                                    key={`mobile-${index}`} 
+                                    onClick={() => router.push(`/product/${item.id}`)}
+                                    className="flex flex-col h-fit"
                                 >
-                                <div className="relative h-[45vw] w-full rounded-[8px] overflow-hidden">
-                                    {/* Gradient overlay */}
-                                    <p className={` ${newProducts.includes(index) ? 'flex' : 'hidden'} z-10 absolute top-[12px] left-[12px] px-[8px] py-[0px] text-[12px] font-bold rounded-[12px] uppercase bg-white`} >NEW</p>
-                                    <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent"></div>
-
-                                    {/* Image */}
-                                    <Image
-                                        blurDataURL='https://firebasestorage.googleapis.com/v0/b/fir-e4bcf.appspot.com/o/Wrk%2FLoader.png?alt=media&token=edd96dbd-3bd3-476b-86e2-e7b2afd1d600'
-                                        src={item.mainImage}
-                                        alt={item.name}
-                                        fill
-                                        className="object-cover w-full h-full"
-                                        sizes="(max-width: 768px) 50vw, 100vw"
+                                    <div className="relative h-[45vw] w-full rounded-[8px] overflow-hidden">
+                                        <p className={` ${newProducts.includes(index) ? 'flex' : 'hidden'} z-10 absolute top-[12px] left-[12px] px-[8px] py-[0px] text-[12px] font-bold rounded-[12px] uppercase bg-white`} >NEW</p>
+                                        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#00000040] to-transparent"></div>
+                                        <Image
+                                            src={item.mainImage}
+                                            alt={item.name}
+                                            width={200}
+                                            height={200}
+                                            sizes="50vw"
+                                            priority={index < 4}
+                                            className="object-cover w-full h-full"
                                         />
-
-                                    {/* Title overlay */}
-                                    <div className="absolute bottom-0 left-0 p-[10px] text-white text-left">
-                                        <p className="text-[18px] font-medium uppercase">{item.name}</p>
-                                        <p className="text-[12px] mt-[-4px] font-extralight uppercase">{item.title}</p>
+                                        <div className="absolute bottom-0 left-0 p-[10px] text-white text-left">
+                                            <p className="text-[18px] font-medium uppercase">{item.name}</p>
+                                            <p className="text-[12px] mt-[-4px] font-extralight uppercase">{item.title}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </button>
-                        ))}
-                    </div>
-                    : ''}
+                                </button>
+                            ))}
+                        </div>
+                        {hasMore && (
+                            <div className="flex justify-center mt-8">
+                                <button 
+                                    onClick={loadMore}
+                                    disabled={loading}
+                                    className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 disabled:opacity-50"
+                                >
+                                    {loading ? 'Loading...' : 'Load More'}
+                                </button>
+                            </div>
+                        )}
+                    </>
+                ) : null}
             </div>
 
         </div>

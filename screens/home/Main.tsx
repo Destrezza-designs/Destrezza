@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Header from '../../components/utils/Header'
 import paper from '@/public/home/Paper44.png'
@@ -12,6 +13,7 @@ import { useRouter } from 'next/navigation'
 
 
 import { Inter } from "next/font/google";
+import AOSProvider from '@/lib/AOSWrapper'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +47,7 @@ const Main = () => {
   ];
 
   return (
+    <AOSProvider >
     <div>
       <div className="relative hidden lg:block ">
         <div className="absolute inset-0 z-0">
@@ -422,6 +425,7 @@ const Main = () => {
       </div>
       
     </div>
+    </AOSProvider>
   )
 }
 

@@ -7,6 +7,7 @@ import React from 'react'
 import I2 from '@/public/About/Approch.png'
 import I3 from '@/public/About/Imageback.jpg'
 import Footor from '@/components/Footor'
+import AOSProvider from '@/lib/AOSWrapper'
 import { useRouter } from 'next/navigation'
 
 
@@ -16,6 +17,7 @@ const Page = () => {
     const router = useRouter();
 
   return (
+    <AOSProvider>
     <div className='text-[#141414] overflow-x-hidden' >
 
         <div className='hidden lg:flex  mx-[48px] mt-[48px]' >
@@ -130,6 +132,7 @@ const Page = () => {
         
         <Footor />
     </div>
+    </AOSProvider>
   )
 }
 

@@ -10,10 +10,12 @@
 @font-face {
   font-family: 'Inter';
   src: url('/fonts/inter.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Geist';
   src: url('/fonts/Geist-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
 }
 
 

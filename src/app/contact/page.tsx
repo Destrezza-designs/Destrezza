@@ -3,9 +3,8 @@ import Footor from '@/components/Footor'
 import Header from '@/components/product/Header'
 import UtilsHeader from '@/components/utils/Header'
 import React,{useState} from 'react'
-import { collection, addDoc } from 'firebase/firestore';
-import {db } from '@/lib/firebase'
-import FullPageLoader from '@/components/utils/FullPageLoader';
+import FullPageLoader from '@/components/utils/FullPageLoader'
+import AOSProvider from '@/lib/AOSWrapper'
 
 const Page = () => {
 
@@ -15,23 +14,25 @@ const Page = () => {
   const [loading,setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
     setLoading(true);
-    console.log("Form submission started");
+    
     try {
+      // Lazy load Firebase
+      const { collection, addDoc } = await import('firebase/firestore');
+      const { db } = await import('@/lib/firebase');
+      
       await addDoc(collection(db, 'Destrezza'), {
         name,
         email,
         message,
       });
-      console.log("✅ Document successfully written!");
-      // Clear form after successful submission
+      
       setName('');
       setEmail('');
       setMessage('');
-      setLoading(false);
-} catch (error: unknown) {
-      console.error("❌ Error writing document: ", error);
+    } catch (error: unknown) {
+      console.error('Error:', error);
       alert(error instanceof Error ? error.message : 'An unknown error occurred');
     } finally {
       setLoading(false);
@@ -41,6 +42,7 @@ const Page = () => {
 
 
   return (
+    <AOSProvider>
     <div className='text-black' >
         
         <div className='hidden lg:flex  mx-[48px] mt-[48px]' >
@@ -156,6 +158,7 @@ const Page = () => {
         {loading && <FullPageLoader />}
         <Footor />
     </div>
+    </AOSProvider>
   )
 }
 
