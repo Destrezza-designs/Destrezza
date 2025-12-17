@@ -67,7 +67,7 @@ const Header = () => {
   };
 
   return (
-    <div className='mb-[80px]' >
+    <div className='mb-[80px] max-w-screen' >
       <header className="w-full border-b-[0px] border-white  fixed z-50 shadow-md  shadow-slate-500/10 backdrop-filter backdrop-blur-[10px] bg-[rgba(0,0,0,0.2)]  flex flex-1 pl-[16px] pr-[16px] lg:pr-[48px] lg:pl-[48px] py-[10px] pt-[30px] lg:py-[10px] " >
         <div className="flex flex-1 items-center justify-between ">
           

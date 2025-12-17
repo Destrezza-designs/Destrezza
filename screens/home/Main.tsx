@@ -48,7 +48,7 @@ const Main = () => {
 
   return (
     <AOSProvider >
-    <div>
+    <div className='max-w-[100vw] overflow-hidden' >
       <div className="relative hidden lg:block ">
         <div className="absolute inset-0 z-0">
           {/* slider */}

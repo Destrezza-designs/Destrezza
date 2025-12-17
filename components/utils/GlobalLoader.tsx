@@ -9,11 +9,12 @@ export default function GlobalLoader() {
   useEffect(() => {
     setLoading(true);
 
-    const t = setTimeout(() => {
+    // Ensure loader shows for minimum 2 seconds
+    const minDurationTimer = setTimeout(() => {
       setLoading(false);
-    }, 300); // small delay to feel smooth
+    }, 1500);
 
-    return () => clearTimeout(t);
+    return () => clearTimeout(minDurationTimer);
   }, [pathname]);
 
   if (!loading) return null;
