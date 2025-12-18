@@ -8,9 +8,13 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import ImageLoader from '@/components/utils/ImageLoader';
 import { getProductById } from '../productService'
+import productData from '../productData'
+
 
 
 const Page = () => {
+
+    const { data, categories } = productData
 
     const {id} = useParams();
     const idNum = Number(id);
